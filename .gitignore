@@ -5,7 +5,7 @@ Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
 
-# Editor directories
+# Editor & IDE directories
 .idea/
 .vscode/
 *.suo
@@ -14,8 +14,19 @@ $RECYCLE.BIN/
 *.sln
 *.sw?
 
-# Node modules
+# Node modules & scratch files
 node_modules/
+extract_products.cjs
+parse_products.cjs
+parse_blogs.cjs
+extracted_products.json
+extracted_blogs.json
+generate_pages.cjs
+
+# Legacy backup folders
+1/
+2/
+dist/
 
 # Logs
 *.log

@@ -1,216 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Primary Landing Page -->
   <url>
     <loc>https://www.fludio.in/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/Fludio-Logo-Color.webp</image:loc>
+      <image:title>Fludio Water Solutions Logo</image:title>
+      <image:caption>Premier Musical Fountain Manufacturer and Fountain Solutions PAN India</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/musical_fountain_hero.jpg</image:loc>
+      <image:title>Turnkey Musical Fountain Engineering</image:title>
+      <image:caption>Automated Musical Fountain Show with DMX 512 Lighting and Audio Sync</image:caption>
+    </image:image>
   </url>
 
-  <!-- Products Hub Page (Keyword: Water Fountain Products) -->
+  <!-- Core Hub Pages -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.95</priority>
   </url>
-
-  <!-- Turnkey Services Page (Keyword: Fountain Design & Installation Services) -->
   <url>
     <loc>https://www.fludio.in/fountain-design-installation-services</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
-
-  <!-- About Fludio Engineering Page (Keyword: About Water Fountain Engineers) -->
   <url>
     <loc>https://www.fludio.in/about-water-fountain-engineers</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Installations Portfolio Page (Keyword: Water Fountain Projects Portfolio) -->
   <url>
     <loc>https://www.fludio.in/water-fountain-projects-portfolio</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
-
-  <!-- Technical Blog Hub Page (Keyword: Fountain Engineering Technical Blog) -->
   <url>
     <loc>https://www.fludio.in/fountain-engineering-blog</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Client Testimonials & Endorsements Page -->
-  <url>
-    <loc>https://www.fludio.in/client-reviews-testimonials</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- FAQ Knowledge Base (Keyword: Water Fountain FAQs) -->
   <url>
     <loc>https://www.fludio.in/water-fountain-faqs</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-
-  <!-- Contact & RFP Proposal Submission (Keyword: Contact Water Fountain Experts) -->
+  <url>
+    <loc>https://www.fludio.in/client-reviews-testimonials</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://www.fludio.in/contact-water-fountain-experts</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Individual Product Page 1: IP68 304L LED Spotlight -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/ip68-underwater-led-spotlight</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_underwater_light.jpg</image:loc>
+      <image:title>IP68 304L Stainless Steel LED Spotlight</image:title>
+      <image:caption>Certified IP68 underwater spotlight precision-machined from high-grade 304L stainless steel for maximum corrosion resistance and longevity in treated </image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 2: IP68 Donut Nozzle Submersible Ring Light -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/donut-nozzle-submersible-ring-light</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/underwater_ring_light.jpg</image:loc>
+      <image:title>IP68 Donut Nozzle Submersible Ring Light</image:title>
+      <image:caption>Center-hole donut ring LED fixture engineered to mount directly over fountain nozzle supply pipes for 360-degree illuminated water columns.</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 3: All Types of Fountain Nozzles -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/architectural-fountain-nozzles</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_nozzle.jpg</image:loc>
+      <image:title>All Types of Fountain Nozzles</image:title>
+      <image:caption>Complete professional range of precision-engineered fountain nozzles from Geyser and Cascade columns to multi-spray fan nozzles, CNC machined in 304L </image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 4: Floating Aerators Series -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/floating-lake-aerator-series</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/floating_lake_aerator.jpg</image:loc>
+      <image:title>Floating Aerators Series</image:title>
+      <image:caption>High-efficiency floating lake aerators engineered for lake water oxygenation, ecological revitalization, and striking aesthetic water displays.</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 5: Multidirection Dancing Nozzles -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/multidirectional-dancing-fountain-nozzles</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dancing_nozzle_motorized.jpg</image:loc>
+      <image:title>Multidirection Dancing Nozzles</image:title>
+      <image:caption>High-accuracy dual-axis motorized robotic nozzles capable of complex synchronized water patterns controlled via DMX 512 choreography software.</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 6: DMX 512 Dancing Fountain Control Panels -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/dmx512-musical-fountain-control-panel</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
+      <image:title>DMX 512 Dancing Fountain Control Panels</image:title>
+      <image:caption>Bespoke electrical automation panels integrated with customized DMX 512 controllers, Variable Frequency Drives (VFDs), and real-time audio synchroniza</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 7: Architectural Wall Sheetfall Fountain -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/architectural-waterfall-sheetfall-cascade</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</image:loc>
+      <image:title>Architectural Wall Sheetfall Fountain</image:title>
+      <image:caption>Precision-engineered linear waterfall spillways creating smooth, glass-like sheets of descending water for luxury hospitality entrances, modern villas</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 8: Laminar Flow Jumping Jet -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/laminar-flow-jumping-jets</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/laminar_jumping_jet.jpg</image:loc>
+      <image:title>Laminar Flow Jumping Jet</image:title>
+      <image:caption>Crystal-clear, non-turbulent illuminated glass-rod water jets capable of rapid pneumatic water cutting and interactive arc leaping across pedestrian p</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 9: Interactive Dry Deck Solenoid Jet -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/interactive-dry-deck-solenoid-jet</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dry_deck_solenoid_jet.jpg</image:loc>
+      <image:title>Interactive Dry Deck Solenoid Jet</image:title>
+      <image:caption>Flush-to-grade dry deck fountain system featuring non-slip SS304L cover plates, integrated IP68 LED lights, and instant-action solenoid valves for int</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 10: Classic Tiered Static Architectural Fountain -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/classic-tiered-architectural-fountain</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/static_tiered_fountain.jpg</image:loc>
+      <image:title>Classic Tiered Static Architectural Fountain</image:title>
+      <image:caption>Majestic multi-tier architectural static water fountain featuring central foaming geyser plumes, concentric cascading overflow rings, and continuous l</image:caption>
+    </image:image>
   </url>
-
-  <!-- Individual Product Page 11: Digital Water Curtain Modular Unit -->
   <url>
     <loc>https://www.fludio.in/water-fountain-products/interactive-digital-water-curtain</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Technical Blog Articles (Dedicated Pages) -->
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-engineering</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-nozzles-selection-guide</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/lake-aeration-eco-water-quality</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/architectural-sheetfall-water-curtains</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/digital_water_curtain.jpg</image:loc>
+      <image:title>Digital Water Curtain Modular Unit</image:title>
+      <image:caption>Interactive digital water curtain modules that dynamically write words, print company logos, and drop intricate geometric patterns through computerize</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.fludio.in/fountain-engineering-blog/ip68-explained</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_underwater_light.jpg</image:loc>
+      <image:title>IP68 Underwater LED Lighting Standards: 304L vs 316 Stainless Steel &amp; Ingress Protection Guide</image:title>
+      <image:caption>Discover why high-grade 304L stainless steel and IP68 certification are the industry gold standards for underwater durability. We break down the techn</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.fludio.in/fountain-engineering-blog/diff-automation-static</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/static_tiered_fountain.jpg</image:loc>
+      <image:title>Musical Dancing Fountain vs Static Fountain: Cost, PLC Automation &amp; Engineering Analysis</image:title>
+      <image:caption>Evaluating the maintenance, power requirements, cost, and public engagement impact of dynamic DMX 512 dancing systems versus architectural static feat</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.fludio.in/fountain-engineering-blog/hotel-resort-solutions</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_udaipur_resort.jpg</image:loc>
+      <image:title>Luxury Hotel &amp; Resort Water Feature Design: Acoustic Tuning, Spillover Pools &amp; Visual Focal Points</image:title>
+      <image:caption>How high-end synchronized water features and decorative landscape fountains elevate brand prestige, guests&#39; arrivals, and entertainment value in premi</image:caption>
+    </image:image>
   </url>
-
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
+      <image:title>DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync</image:title>
+      <image:caption>Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-engineering</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_pune_drydeck_plaza.jpg</image:loc>
+      <image:title>Dry Deck Interactive Plaza Fountains: Drainage Grates, Subterranean Reservoirs &amp; Hydraulic Design</image:title>
+      <image:caption>Discover the architectural engineering principles behind kid-friendly, walkable dry deck plaza fountains: hidden balance tanks, anti-slip stainless gr</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-nozzles-selection-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_nozzle.jpg</image:loc>
+      <image:title>Commercial Fountain Nozzle Selection Guide: Geyser, Cascade, Foam Jet, Fan &amp; Jumping Jets</image:title>
+      <image:caption>A comprehensive hydraulic engineering manual detailing spray geometries, wind resistance, water level dependencies, and flow rate equations for archit</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/lake-aeration-eco-water-quality</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/floating_lake_aerator.jpg</image:loc>
+      <image:title>Floating Lake Aerator Fountains: Dissolved Oxygen, Algae Control &amp; Ecological Water Management</image:title>
+      <image:caption>Understand the biological and hydraulic mechanisms of floating aerators: breaking thermal stratification, boosting dissolved oxygen, and eliminating f</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/architectural-sheetfall-water-curtains</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</image:loc>
+      <image:title>Architectural Sheetfall Cascades &amp; Digital Graphic Water Curtains: Fluid Dynamics &amp; Interior Walls</image:title>
+      <image:caption>Design manual for laminar sheetfalls and digital graphic water curtains: splash containment calculations, internal baffle physics, and binary solenoid</image:caption>
+    </image:image>
+  </url>
 </urlset>

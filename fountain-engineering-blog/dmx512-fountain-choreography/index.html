@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync | Fludio Engineering Technical Blog</title>
+    <meta name="description" content="Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical Read the comprehensive technical engineering guide by Fludio Water Solutions India." />
+    <link rel="canonical" href="https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography" />
+    <meta property="og:site_name" content="Fludio Water Solutions" />
+    <meta property="og:title" content="DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync | Fludio Engineering Technical Blog" />
+    <meta property="og:description" content="Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical Read the comprehensive technical engineering guide by Fludio Water Solutions India." />
+    <meta property="og:image" content="https://www.fludio.in/images/dmx_control_panel.jpg" />
+    <meta property="og:locale" content="en_IN" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync | Fludio Engineering Technical Blog" />
+    <meta name="twitter:description" content="Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical Read the comprehensive technical engineering guide by Fludio Water Solutions India." />
+    <meta name="twitter:image" content="https://www.fludio.in/images/dmx_control_panel.jpg" />
+
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MV4WMJGG');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ykat9pylsm");
+    </script>
+    <!-- End Microsoft Clarity -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fludio Water Solutions" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Local SEO & Geo Targeting (Pune, Mumbai, Maharashtra, India) -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Pune, Mumbai, Maharashtra, India" />
+    <meta name="geo.position" content="18.4485;73.8242" />
+    <meta name="ICBM" content="18.4485, 73.8242" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/webp" href="/images/Fludio-Logo-Color.webp" />
+    <link rel="apple-touch-icon" href="/images/Fludio-Logo-Color.webp" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MLEYXELL7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9MLEYXELL7', { send_page_view: true });
+    </script>
+    <script type="module" crossorigin src="/assets/index-CuwLdb-4.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CCiPlLJO.css">
+
+
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.fludio.in/#organization",
+    "name": "Fludio Water Solutions",
+    "url": "https://www.fludio.in",
+    "logo": "https://www.fludio.in/images/Fludio-Logo-Color.webp",
+    "image": "https://www.fludio.in/images/Fludio-Logo-Color.webp",
+    "email": "info@fludio.in",
+    "telephone": "+918530753091",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411041",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.facebook.com/fludio",
+      "https://www.instagram.com/fludio.in",
+      "https://www.linkedin.com/company/fludio"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.fludio.in/#localbusiness",
+    "name": "Fludio Water Solutions",
+    "url": "https://www.fludio.in",
+    "image": "https://www.fludio.in/images/Fludio-Logo-Color.webp",
+    "telephone": "+918530753091",
+    "email": "info@fludio.in",
+    "priceRange": "₹₹₹",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "128",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411041",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.4485,
+      "longitude": 73.8242
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "India"
+      },
+      {
+        "@type": "State",
+        "name": "Maharashtra"
+      },
+      {
+        "@type": "City",
+        "name": "Pune"
+      },
+      {
+        "@type": "City",
+        "name": "Mumbai"
+      },
+      {
+        "@type": "City",
+        "name": "Bengaluru"
+      },
+      {
+        "@type": "City",
+        "name": "Delhi"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.fludio.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Engineering Blog",
+        "item": "https://www.fludio.in/fountain-engineering-blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids & Audio Sync",
+        "item": "https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "@id": "https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography#article",
+    "headline": "DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids & Audio Sync",
+    "description": "Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical dancing fountains.",
+    "image": "https://www.fludio.in/images/dmx_control_panel.jpg",
+    "author": {
+      "@id": "https://www.fludio.in/#organization"
+    },
+    "publisher": {
+      "@id": "https://www.fludio.in/#organization"
+    },
+    "datePublished": "2026-09-17",
+    "dateModified": "2026-11-09",
+    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is 24V DC used for fountain solenoids instead of 230V AC?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Public aquatic safety mandates low voltage inside wet basins. Additionally, DC solenoids do not generate alternating magnetic hum, release faster than AC coils, and eliminate back-EMF voltage spikes when switched with solid-state relays."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maximum cable distance for DMX 512 fountain cabling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The theoretical maximum for RS-485 is 1,200 meters. However, due to submerged electrical noise from high-power pump cabling, runs exceeding 300 meters should use fiber optic transceivers or Art-Net Ethernet converters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if a DMX signal cable is cut during a show?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fludio PLC panels feature fail-safe heartbeat watchdogs. If DMX packet loss exceeds 500 ms, the system smoothly transitions all pumps and valves to a graceful standby idle mode to protect the hydraulics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can fountain choreography be created remotely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Using 3D hydraulic simulation software, choreographers design and preview entire shows in virtual reality against audio waveforms before deploying the compiled show file to the on-site PLC."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many DMX universes are typically required for a large musical fountain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A medium-to-large fountain with 100 RGBW lights, 40 solenoids, and 20 robotic nozzles typically utilizes 2 to 4 DMX universes (1,024 to 2,048 channels)."
+        }
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV4WMJGG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="root">
+      
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center">
+            <a href="/" class="flex items-center gap-3">
+              <img src="/images/Fludio-Logo-Color.webp" alt="Fludio Water Solutions" class="h-12 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-700">
+            <a href="/water-fountain-products" class="hover:text-cyan-600 transition-colors">Products</a>
+            <a href="/fountain-design-installation-services" class="hover:text-cyan-600 transition-colors">Services</a>
+            <a href="/about-water-fountain-engineers" class="hover:text-cyan-600 transition-colors">About Us</a>
+            <a href="/water-fountain-projects-portfolio" class="hover:text-cyan-600 transition-colors">Portfolio</a>
+            <a href="/fountain-engineering-blog" class="hover:text-cyan-600 transition-colors">Engineering Blog</a>
+            <a href="/water-fountain-faqs" class="hover:text-cyan-600 transition-colors">FAQs</a>
+            <a href="/contact-water-fountain-experts" class="hover:text-cyan-600 transition-colors">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="tel:+918530753091" class="hidden lg:flex items-center gap-2 text-sm font-semibold text-slate-800">
+              <span class="text-cyan-600">📞</span> +91 85307 53091
+            </a>
+            <a href="https://wa.me/918530753091?text=Hi%20Fludio%20Water%20Solutions,%20I%20would%20like%20to%20request%20a%20technical%20quote." target="_blank" rel="noopener noreferrer" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md transition-all">
+              Request Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+
+      <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-6 flex items-center gap-2">
+          <a href="/" class="hover:text-cyan-600">Home</a>
+          <span>/</span>
+          <a href="/fountain-engineering-blog" class="hover:text-cyan-600">Engineering Blog</a>
+          <span>/</span>
+          <span class="text-slate-800 font-semibold">DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync</span>
+        </nav>
+
+        <header class="mb-8">
+          <span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Automation &amp; Tech &bull; 9 min read
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 leading-tight">
+            DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync
+          </h1>
+          <p class="text-lg text-slate-700 mt-4 leading-relaxed">
+            Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical dancing fountains.
+          </p>
+        </header>
+
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md mb-8">
+          <img src="/images/dmx_control_panel.jpg" alt="DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync" class="w-full h-auto object-cover max-h-[480px]" />
+        </div>
+
+        <div class="prose prose-slate max-w-none">
+          
+    <section class="mt-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-3"></h2>
+      <p class="text-base text-slate-700 leading-relaxed mb-4">DMX 512 transmits asynchronous serial data packets at 250 kbit/s across daisy-chained 3-pin or 5-pin twisted-pair shielded cables. Each universe supports 512 discrete 8-bit control channels (0–255 intensity levels). In a commercial musical fountain, a single dynamic jet cluster typically requires 8 channels: 4 for RGBW lighting, 1 for solenoid valve trigger duration, 2 for dual-axis servo positioners, and 1 for VFD pressure feedback. Fludio integrates optical DMX splitters and galvanic isolators to protect delicate microcontrollers from inductive ground loops inside water basins.</p>
+      
+    </section>
+  
+    <section class="mt-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-3"></h2>
+      <p class="text-base text-slate-700 leading-relaxed mb-4">The defining visual hallmark of a dancing fountain is the rapid firing and rhythmic &#39;popping&#39; of water columns. Standard industrial solenoid valves suffer from mechanical cycle lag (100–300 ms). Fludio employs specialized 24V DC low-mass diaphragm solenoids with sub-25 millisecond opening response times. Encapsulated in IP68 silicone-potted coils, these valves withstand millions of rapid-pulsed actuations without overheating or seal fatigue.</p>
+      
+    </section>
+  
+    <section class="mt-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-3"></h2>
+      <p class="text-base text-slate-700 leading-relaxed mb-4">While solenoids provide instantaneous cutoffs, majestic gradual water surges require variable frequency drives to throttle multi-stage centrifugal pump motor speeds. Controlled via Modbus TCP or 0–10V analog signals from the central PLC, VFDs adjust pump motor frequencies between 20 Hz and 60 Hz within 0.2-second acceleration curves. Built-in hydraulic anti-cavitation logic prevents sudden vacuum collapse in header manifolds.</p>
+      
+    </section>
+  
+    <section class="mt-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-3"></h2>
+      <p class="text-base text-slate-700 leading-relaxed mb-4">Fountain choreography software utilizes linear timecode (SMPTE LTC) or Art-Net over Ethernet to synchronize audio playback with visual cues. Timeline markers trigger automation keyframes: a bass drum kick opens center geyser solenoids, while high-frequency synthesizer arpeggios oscillate outer 2D robotic nozzle arrays. The resulting choreography transforms complex musical rhythms into tangible water sculpture.</p>
+      
+    </section>
+  
+          
+    <section class="mt-12 pt-8 border-t border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
+      <div class="space-y-4">
+        
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+            <h3 class="text-base font-bold text-slate-900 mb-2">Why is 24V DC used for fountain solenoids instead of 230V AC?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Public aquatic safety mandates low voltage inside wet basins. Additionally, DC solenoids do not generate alternating magnetic hum, release faster than AC coils, and eliminate back-EMF voltage spikes when switched with solid-state relays.</p>
+          </div>
+        
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+            <h3 class="text-base font-bold text-slate-900 mb-2">What is the maximum cable distance for DMX 512 fountain cabling?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">The theoretical maximum for RS-485 is 1,200 meters. However, due to submerged electrical noise from high-power pump cabling, runs exceeding 300 meters should use fiber optic transceivers or Art-Net Ethernet converters.</p>
+          </div>
+        
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+            <h3 class="text-base font-bold text-slate-900 mb-2">What happens if a DMX signal cable is cut during a show?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Fludio PLC panels feature fail-safe heartbeat watchdogs. If DMX packet loss exceeds 500 ms, the system smoothly transitions all pumps and valves to a graceful standby idle mode to protect the hydraulics.</p>
+          </div>
+        
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+            <h3 class="text-base font-bold text-slate-900 mb-2">Can fountain choreography be created remotely?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Yes. Using 3D hydraulic simulation software, choreographers design and preview entire shows in virtual reality against audio waveforms before deploying the compiled show file to the on-site PLC.</p>
+          </div>
+        
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+            <h3 class="text-base font-bold text-slate-900 mb-2">How many DMX universes are typically required for a large musical fountain?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">A medium-to-large fountain with 100 RGBW lights, 40 solenoids, and 20 robotic nozzles typically utilizes 2 to 4 DMX universes (1,024 to 2,048 channels).</p>
+          </div>
+        
+      </div>
+    </section>
+  
+        </div>
+
+        <div class="mt-16 p-8 bg-slate-900 rounded-2xl text-white">
+          <h3 class="text-xl font-bold mb-2">Have a Fountain Project Requiring Expert Engineering?</h3>
+          <p class="text-slate-400 text-sm mb-6">
+            Consult with Fludio's hydraulic engineers for complete DMX 512 choreography, pump sizing, and certified 304L stainless steel hardware.
+          </p>
+          <a href="https://wa.me/918530753091?text=Hi%20Fludio,%20I%20read%20your%20article%20on%20DMX%20512%20Musical%20Fountain%20Programming%3A%20PLC%20Architecture%2C%20Fast%20Solenoids%20%26%20Audio%20Sync" target="_blank" rel="noopener noreferrer" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-lg inline-block shadow">
+            Consult Our Engineering Team
+          </a>
+        </div>
+      </article>
+
+      
+    <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 mt-20 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+          <img src="/images/Fludio-Logo-Color.webp" alt="Fludio Water Solutions Logo" class="h-10 w-auto mb-4 brightness-200" />
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">
+            India's leading fountain solutions company &amp; turnkey musical fountain manufacturer. Precision hydraulic engineering, IP68 304L underwater lights, and DMX 512 automation.
+          </p>
+          <p class="text-xs text-slate-500">ISO 9001 Compliant Standards &bull; Certified IP68 Immersion</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-4">Equipment &amp; Products</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="/water-fountain-products/ip68-underwater-led-spotlight" class="hover:text-cyan-400">IP68 LED Spotlights</a></li>
+            <li><a href="/water-fountain-products/donut-nozzle-submersible-ring-light" class="hover:text-cyan-400">Donut Ring Lights</a></li>
+            <li><a href="/water-fountain-products/architectural-fountain-nozzles" class="hover:text-cyan-400">Fountain Nozzles</a></li>
+            <li><a href="/water-fountain-products/interactive-digital-water-curtain" class="hover:text-cyan-400">Digital Water Curtains</a></li>
+            <li><a href="/water-fountain-products/laminar-flow-jumping-jets" class="hover:text-cyan-400">Laminar Jumping Jets</a></li>
+            <li><a href="/water-fountain-products/dmx512-musical-fountain-control-panel" class="hover:text-cyan-400">DMX 512 Control Panels</a></li>
+            <li><a href="/water-fountain-products/floating-lake-aerator-series" class="hover:text-cyan-400">Floating Lake Aerators</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-4">Turnkey Services</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="/fountain-design-installation-services" class="hover:text-cyan-400">Turnkey Fountain Projects</a></li>
+            <li><a href="/fountain-design-installation-services" class="hover:text-cyan-400">DMX 512 Programming &amp; Audio Sync</a></li>
+            <li><a href="/fountain-design-installation-services" class="hover:text-cyan-400">Annual Maintenance &amp; Repair (AMC)</a></li>
+            <li><a href="/water-fountain-projects-portfolio" class="hover:text-cyan-400">Project Case Studies</a></li>
+            <li><a href="/fountain-engineering-blog" class="hover:text-cyan-400">Fountain Engineering Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-4">Registered Office &amp; Works</h4>
+          <p class="text-sm text-slate-400 leading-relaxed mb-3">
+            Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road, Pune 411041, Maharashtra, India
+          </p>
+          <p class="text-sm text-slate-300 font-semibold mb-1">Direct Helpline:</p>
+          <p class="text-cyan-400 font-bold mb-3"><a href="tel:+918530753091">+91 85307 53091</a></p>
+          <p class="text-sm text-slate-300 font-semibold mb-1">Email Inquiries:</p>
+          <p class="text-cyan-400"><a href="mailto:info@fludio.in">info@fludio.in</a></p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Fludio Water Solutions. All Rights Reserved.</p>
+        <p>Serving Pune, Mumbai, Navi Mumbai, Thane, Bengaluru, Hyderabad, Delhi NCR, and PAN India.</p>
+      </div>
+    </footer>
+  
+    </div>
+  </body>
+</html>
