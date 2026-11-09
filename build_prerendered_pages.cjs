@@ -49,6 +49,10 @@ function escapeHtml(str) {
 }
 
 const COMMON_HEAD_SCRIPTS = `
+    <!-- Preconnect to Google Fonts for Core Web Vitals -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -166,7 +170,7 @@ function renderNav() {
         <div class="flex justify-between items-center h-20">
           <div class="flex items-center">
             <a href="/" class="flex items-center gap-3">
-              <img src="/images/Fludio-Logo-Color.webp" alt="Fludio Water Solutions" class="h-12 w-auto" />
+              <img src="/images/Fludio-Logo-Color.webp" alt="Fludio Water Solutions" class="h-12 w-auto" width="180" height="48" fetchpriority="high" />
             </a>
           </div>
           <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-700">
@@ -197,7 +201,7 @@ function renderFooter() {
     <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 mt-20 border-t border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
-          <img src="/images/Fludio-Logo-Color.webp" alt="Fludio Water Solutions Logo" class="h-10 w-auto mb-4 brightness-200" />
+          <img src="/images/Fludio-Logo-Color.webp" alt="Fludio Water Solutions Logo" class="h-10 w-auto mb-4 brightness-200" width="150" height="40" loading="lazy" />
           <p class="text-sm text-slate-400 leading-relaxed mb-4">
             India's leading fountain solutions company &amp; turnkey musical fountain manufacturer. Precision hydraulic engineering, IP68 304L underwater lights, and DMX 512 automation.
           </p>
@@ -553,7 +557,7 @@ ${JSON.stringify(schemas, null, 2)}
 
           <div>
             <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
-              <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-auto object-cover max-h-[500px]" />
+              <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-auto object-cover max-h-[500px]" width="600" height="400" fetchpriority="high" />
             </div>
             ${advantagesHtml}
             ${applicationsHtml}
@@ -723,7 +727,7 @@ ${JSON.stringify(schemas, null, 2)}
         </header>
 
         <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md mb-8">
-          <img src="${b.imageUrl}" alt="${escapeHtml(b.title)}" class="w-full h-auto object-cover max-h-[480px]" />
+          <img src="${b.imageUrl}" alt="${escapeHtml(b.title)}" class="w-full h-auto object-cover max-h-[480px]" width="768" height="400" fetchpriority="high" />
         </div>
 
         <div class="prose prose-slate max-w-none">
@@ -996,7 +1000,7 @@ ${JSON.stringify(schemas, null, 2)}
               const s = Fh[p.id] || p.id;
               return `
                 <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-44 object-cover" />
+                  <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-44 object-cover" width="400" height="176" loading="lazy" />
                   <div class="p-5">
                     <span class="text-xs font-bold text-cyan-600 uppercase">${escapeHtml(p.category)}</span>
                     <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">
@@ -1176,7 +1180,7 @@ ${JSON.stringify(schemas, null, 2)}
             const s = Fh[p.id] || p.id;
             return `
               <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-48 object-cover" />
+                <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-48 object-cover" width="400" height="192" loading="lazy" />
                 <div class="p-6">
                   <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">${escapeHtml(p.category)}</span>
                   <h3 class="text-lg font-bold text-slate-900 mt-2 mb-2">

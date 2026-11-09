@@ -15,6 +15,15 @@
 - **PAN India Contracting**: Turnkey municipal, commercial, and resort installations across Delhi NCR, Bengaluru, Hyderabad, Jaipur, Udaipur, Kolkata, and Goa.
 - **Contact & RFQ**: Telephone: +91 85307 53091 | Email: info@fludio.in | Hours: Mon-Sat 09:00 AM - 06:00 PM IST.
 
+## Regional Engineering Hubs (Dedicated Pages)
+
+- [Pune & PCMC Works](https://www.fludio.in/fountain-manufacturer-pune): Factory direct at Narhe Dhayari Industrial Estate, live test tank demonstrations, and 2-hour technician dispatch to Hinjawadi, Baner, and PCMC.
+- [Mumbai, BKC & Thane](https://www.fludio.in/fountain-manufacturer-mumbai): Marine-grade 316L stainless steel for coastal salinity resilience, BKC corporate plazas, and 3-hour mobilization via the Expressway.
+- [Bengaluru Tech Parks](https://www.fludio.in/fountain-manufacturer-bengaluru): Electronic City and Whitefield corporate reflection pools, closed-loop 98%+ water recirculation, and LEED green building compliance.
+- [Delhi NCR & Smart Cities](https://www.fludio.in/fountain-manufacturer-delhi-ncr): Monumental municipal fountains, scale-resistant hard-water engineering, and CPWD code compliance.
+- [Hyderabad & Telangana](https://www.fludio.in/fountain-manufacturer-hyderabad): Gated villa community cascading sheetfalls, HITEC City plaza fountains, and large residential township lake aerators.
+- [Luxury Resorts & Hotels](https://www.fludio.in/fountain-manufacturer-resorts-hotels): Destination resorts across Goa, Udaipur, Jaipur, and Kerala; sub-45 dB acoustic decibel dampening for silent nights.
+
 ## Product Catalog (Dedicated Pages & Specifications)
 
 - [IP68 304L Stainless Steel LED Spotlight](https://www.fludio.in/water-fountain-products/ip68-underwater-led-spotlight): Submersible spotlight available in 9W, 18W, 27W, and 36W RGBW with DMX 512 control for columns up to 10m.
@@ -28,6 +37,13 @@
 - [Interactive Dry Deck Solenoid Jet](https://www.fludio.in/water-fountain-products/interactive-dry-deck-solenoid-jet): Flush-to-grade plaza fountains with slip-resistant SS304L grates, 24V millisecond solenoid valves, and integrated RGBW LED rings.
 - [Classic Tiered Static Architectural Fountain](https://www.fludio.in/water-fountain-products/classic-tiered-architectural-fountain): Multi-tier cascading fountains built with 304L distribution manifolds, foaming geyser plumes, and continuous filtration.
 - [Digital Water Curtain Modular Unit](https://www.fludio.in/water-fountain-products/interactive-digital-water-curtain): Interactive computerized graphic waterfalls releasing water droplets via 64 micro-solenoids/meter to print text, logos, and geometric patterns in mid-air.
+
+## Competitive Engineering Superiority (Comparison Matrix)
+
+- **Metallurgy**: Certified CNC-machined 304L and marine 316L stainless steel eliminating rust and pitting in chlorinated water, compared to cheap die-cast aluminum or 201 scrap steel that corrodes within months.
+- **Ingress Rating**: Hermetically sealed IP68 submersible certification pressure-tested up to 10m continuous depth vs. uncertified IP65/IP67 alternatives prone to lens fogging.
+- **Automation Standards**: Open-standard DMX 512 / RDM with industrial Siemens & Schneider PLCs vs. unshielded decoders or closed-source proprietary European software.
+- **Procurement & Support**: Direct factory pricing in INR with zero import customs duties (vs. 40%+ tariffs on European imports like Lumiartecnia) and rapid 24–48 hour on-site engineer dispatch across India.
 
 ## Core Turnkey Services
 
