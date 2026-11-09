@@ -18,7 +18,6 @@ const Fh = {
   "digital-water-curtain": "interactive-digital-water-curtain"
 };
 
-// Realistic INR price ranges for commercial fountain hardware
 const PRODUCT_PRICES = {
   "underwater-light": { low: "3500", high: "18500" },
   "ring-light": { low: "4800", high: "22000" },
@@ -217,13 +216,14 @@ function renderFooter() {
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold text-base mb-4">Turnkey Services</h4>
+          <h4 class="text-white font-semibold text-base mb-4">Regional Engineering Hubs</h4>
           <ul class="space-y-2 text-sm text-slate-400">
-            <li><a href="/fountain-design-installation-services" class="hover:text-cyan-400">Turnkey Fountain Projects</a></li>
-            <li><a href="/fountain-design-installation-services" class="hover:text-cyan-400">DMX 512 Programming &amp; Audio Sync</a></li>
-            <li><a href="/fountain-design-installation-services" class="hover:text-cyan-400">Annual Maintenance &amp; Repair (AMC)</a></li>
-            <li><a href="/water-fountain-projects-portfolio" class="hover:text-cyan-400">Project Case Studies</a></li>
-            <li><a href="/fountain-engineering-blog" class="hover:text-cyan-400">Fountain Engineering Blog</a></li>
+            <li><a href="/fountain-manufacturer-pune" class="hover:text-cyan-400">Pune &amp; PCMC (Works)</a></li>
+            <li><a href="/fountain-manufacturer-mumbai" class="hover:text-cyan-400">Mumbai, BKC &amp; Thane</a></li>
+            <li><a href="/fountain-manufacturer-bengaluru" class="hover:text-cyan-400">Bengaluru Tech Parks</a></li>
+            <li><a href="/fountain-manufacturer-delhi-ncr" class="hover:text-cyan-400">Delhi NCR &amp; Smart Cities</a></li>
+            <li><a href="/fountain-manufacturer-hyderabad" class="hover:text-cyan-400">Hyderabad &amp; Telangana</a></li>
+            <li><a href="/fountain-manufacturer-resorts-hotels" class="hover:text-cyan-400">Goa &amp; Luxury Resorts</a></li>
           </ul>
         </div>
         <div>
@@ -245,8 +245,82 @@ function renderFooter() {
   `;
 }
 
+function renderComparisonTable(productTitle) {
+  return `
+    <section class="mt-14 bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+      <div class="px-6 py-5 bg-gradient-to-r from-slate-900 to-cyan-950 text-white">
+        <span class="text-cyan-400 text-xs font-bold uppercase tracking-wider">Engineering Comparison Matrix</span>
+        <h2 class="text-xl sm:text-2xl font-bold mt-1">Fludio vs. Competitors &amp; Imported Systems</h2>
+        <p class="text-slate-300 text-sm mt-1">Why commercial architects, municipal corporations, and luxury developers select Fludio ${escapeHtml(productTitle)}.</p>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm text-slate-700">
+          <thead class="bg-slate-100 text-slate-800 font-bold uppercase text-xs">
+            <tr>
+              <th class="px-6 py-4">Engineering Feature</th>
+              <th class="px-6 py-4 bg-cyan-50 text-cyan-900 border-x border-cyan-200">Fludio Water Solutions</th>
+              <th class="px-6 py-4">Cheap Chinese / Unbranded Imports</th>
+              <th class="px-6 py-4">European Imports (e.g. Spain/Germany)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-semibold text-slate-900">Material &amp; Metallurgy</td>
+              <td class="px-6 py-4 bg-cyan-50/50 font-semibold text-cyan-950 border-x border-cyan-100">
+                Precision CNC 304L / Marine 316L Stainless Steel. Zero rust in chlorinated or salt water.
+              </td>
+              <td class="px-6 py-4 text-slate-600">Die-cast aluminum or recycled 201/202 steel. Pitting &amp; corrosion within 6-12 months.</td>
+              <td class="px-6 py-4 text-slate-600">High-grade stainless steel. Excellent quality.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-semibold text-slate-900">Ingress Protection (IP Rating)</td>
+              <td class="px-6 py-4 bg-cyan-50/50 font-semibold text-cyan-950 border-x border-cyan-100">
+                Certified IP68 Submersible (Hermetic dual O-ring seal tested up to 10m continuous immersion).
+              </td>
+              <td class="px-6 py-4 text-slate-600">Nominal IP65/IP67. Internal lens condensation and driver burnout common.</td>
+              <td class="px-6 py-4 text-slate-600">Certified IP68 immersion standards.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-semibold text-slate-900">Automation &amp; Controls</td>
+              <td class="px-6 py-4 bg-cyan-50/50 font-semibold text-cyan-950 border-x border-cyan-100">
+                Standard DMX 512 / RDM with Siemens &amp; Schneider PLCs. Millisecond music synchronization.
+              </td>
+              <td class="px-6 py-4 text-slate-600">Basic analog relays or cheap unshielded DMX decoders prone to signal lag.</td>
+              <td class="px-6 py-4 text-slate-600">Proprietary closed-source controllers requiring expensive recurring licenses.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-semibold text-slate-900">Cost &amp; Tariffs</td>
+              <td class="px-6 py-4 bg-cyan-50/50 font-semibold text-cyan-950 border-x border-cyan-100">
+                Direct Indian Factory Pricing in INR with full GST input credit. Zero import customs.
+              </td>
+              <td class="px-6 py-4 text-slate-600">Low initial unit cost, but 3x higher lifecycle replacement and maintenance cost.</td>
+              <td class="px-6 py-4 text-slate-600">40%+ Indian import customs duties, expensive international freight, and Euro currency markups.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-semibold text-slate-900">Support &amp; Spares SLA</td>
+              <td class="px-6 py-4 bg-cyan-50/50 font-semibold text-cyan-950 border-x border-cyan-100">
+                24–48 hr on-site engineer dispatch across India. Direct spares stock in Pune factory.
+              </td>
+              <td class="px-6 py-4 text-slate-600">No local engineering support, replacement parts, or technical documentation.</td>
+              <td class="px-6 py-4 text-slate-600">Overseas remote support only; 4–8 weeks wait for replacement components.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-6 py-4 font-semibold text-slate-900">Design Customization &amp; CAD</td>
+              <td class="px-6 py-4 bg-cyan-50/50 font-semibold text-cyan-950 border-x border-cyan-100">
+                Full 3D fluid simulation, civil-hydraulic schematics, and custom manifold fabrication included.
+              </td>
+              <td class="px-6 py-4 text-slate-600">Fixed catalog models only; no engineering adaptation for site conditions.</td>
+              <td class="px-6 py-4 text-slate-600">Customization available at premium European consulting rates.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  `;
+}
+
 // --------------------------------------------------------------------------
-// 1. GENERATE PRODUCT PAGES
+// 1. GENERATE PRODUCT PAGES WITH COMPETITOR COMPARISON
 // --------------------------------------------------------------------------
 products.forEach(p => {
   const slug = Fh[p.id] || p.id;
@@ -311,7 +385,6 @@ products.forEach(p => {
   const schemas = [SHARED_ORG_SCHEMA, SHARED_LOCAL_SCHEMA, breadcrumbsSchema, productSchema];
   if (faqSchema) schemas.push(faqSchema);
 
-  // Subproducts Table HTML
   let subproductsHtml = '';
   if (p.subproducts && p.subproducts.length > 0) {
     subproductsHtml = `
@@ -348,7 +421,6 @@ products.forEach(p => {
     `;
   }
 
-  // Specifications Grid HTML
   let specsHtml = '';
   if (p.specifications && Object.keys(p.specifications).length > 0) {
     specsHtml = `
@@ -409,7 +481,6 @@ products.forEach(p => {
     <meta name="description" content="${escapeHtml(metaDesc)}" />
     <link rel="canonical" href="${canonicalUrl}" />
 
-    <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="product" />
     <meta property="og:url" content="${canonicalUrl}" />
     <meta property="og:site_name" content="Fludio Water Solutions" />
@@ -418,7 +489,6 @@ products.forEach(p => {
     <meta property="og:image" content="https://www.fludio.in${p.imageUrl}" />
     <meta property="og:locale" content="en_IN" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(metaDesc)}" />
@@ -440,7 +510,6 @@ ${JSON.stringify(schemas, null, 2)}
       ${renderNav()}
 
       <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <!-- Breadcrumb navigation -->
         <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-6 flex items-center gap-2">
           <a href="/" class="hover:text-cyan-600">Home</a>
           <span>/</span>
@@ -449,7 +518,6 @@ ${JSON.stringify(schemas, null, 2)}
           <span class="text-slate-800 font-semibold">${escapeHtml(p.title)}</span>
         </nav>
 
-        <!-- Product Hero Block -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div class="space-y-6">
             <div class="inline-block bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -494,6 +562,7 @@ ${JSON.stringify(schemas, null, 2)}
 
         ${subproductsHtml}
         ${specsHtml}
+        ${renderComparisonTable(p.title)}
         ${faqsHtml}
 
         <!-- RFQ CTA Banner -->
@@ -682,7 +751,309 @@ ${JSON.stringify(schemas, null, 2)}
 });
 
 // --------------------------------------------------------------------------
-// 3. GENERATE CORE HUB PAGES
+// 3. GENERATE 6 REGIONAL ENGINEERING HUBS (BEATING SYMPHONY IN INDIA)
+// --------------------------------------------------------------------------
+const regionalHubs = [
+  {
+    path: 'fountain-manufacturer-pune',
+    city: 'Pune & PCMC',
+    title: 'Musical Fountain Manufacturer in Pune | Turnkey Fountain Solutions | Fludio',
+    desc: 'Fludio Water Solutions is Pune premier musical fountain manufacturer based at Narhe Dhayari Industrial Estate. Turnkey DMX 512 fountains, IP68 lights & nozzles across Pune & PCMC.',
+    h1: 'Premier Musical Fountain Manufacturer & Contractor in Pune',
+    sub: 'Direct engineering works at Khedekar Industrial Estate, Narhe Dhayari Road, Pune. Factory visits, live hydraulic testing, and 24-hour on-site engineer dispatch across Pune, PCMC, Baner, Hinjawadi, and Kothrud.',
+    highlights: [
+      'Pune Factory Direct: Visit our live demo test tank and manufacturing facility at Narhe Dhayari.',
+      'Fast Field Support: 2-hour technician dispatch across Hinjawadi, Kharadi, Baner, and Chakan industrial corridors.',
+      'Certified SS304L Fabrication: Built to withstand treated industrial and municipal water without corrosion.',
+      'Turnkey Delivery: Hydraulic civil schematics, filtration, DMX512 programming, and lifetime AMC support.'
+    ],
+    faqs: [
+      { question: 'Where is Fludio manufacturing factory located in Pune?', answer: 'Our registered manufacturing facility is located at Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road, Pune 411041. Clients and architects are welcome to schedule factory tours and inspect live water nozzle and light demonstrations.' },
+      { question: 'Do you execute residential bungalow and commercial IT park fountains in Pune?', answer: 'Yes. Fludio engineers fountains for private bungalows in Kothrud, Koregaon Park, and Prabhat Road, as well as large-scale musical fountains for IT parks in Hinjawadi and Kharadi.' }
+    ]
+  },
+  {
+    path: 'fountain-manufacturer-mumbai',
+    city: 'Mumbai, Thane & Navi Mumbai',
+    title: 'Musical Fountain Manufacturer in Mumbai & Thane | Commercial Solutions | Fludio',
+    desc: 'Leading musical fountain manufacturer and contractor in Mumbai, BKC, Thane & Navi Mumbai. Marine-grade 316L underwater lights, dancing fountains, and digital water curtains.',
+    h1: 'Turnkey Musical Fountain Engineering in Mumbai, BKC & Thane',
+    sub: 'Delivering coastal-resilient architectural water features for BKC corporate headquarters, luxury residential high-rises in South Mumbai, and municipal lake revitalizations in Thane and Navi Mumbai.',
+    highlights: [
+      'Marine-Grade 316L Stainless Steel: Engineered specifically for high-salinity coastal Mumbai humidity to eliminate pitting and staining.',
+      'Expressway Dispatch: Seamless 3-hour mobilization from our Pune manufacturing facility to any Mumbai site via the Mumbai-Pune Expressway.',
+      'Wind-Deflection Baffles: Specialized hydraulic nozzle configurations for high-altitude rooftop terraces and coastal seaside breezes.',
+      'DMX 512 Indoor Water Walls: Silent, zero-splash indoor sheetfalls and digital water curtains for corporate lobbies in BKC and Lower Parel.'
+    ],
+    faqs: [
+      { question: 'How do you prevent salt-air corrosion in Mumbai coastal fountains?', answer: 'For installations in Mumbai, Navi Mumbai, and Thane, Fludio utilizes marine-grade 316L stainless steel (containing 2-3% molybdenum) and specialized passivation treatments that guarantee lifetime protection against coastal atmospheric salinity.' },
+      { question: 'Can Fludio handle high-rise rooftop water fountain installations in Mumbai?', answer: 'Yes. We engineer ultra-low weight stainless steel water manifolds, vibration-dampened submersible pumps, and acoustic baffles designed specifically for penthouses and luxury rooftop amenity decks.' }
+    ]
+  },
+  {
+    path: 'fountain-manufacturer-bengaluru',
+    city: 'Bengaluru',
+    title: 'Water Fountain Manufacturer & Contractor in Bengaluru | Fludio India',
+    desc: 'Turnkey commercial fountain engineering in Bengaluru. Interactive dry deck fountains, corporate reflection pools, and DMX musical water shows across Electronic City and Whitefield.',
+    h1: 'Commercial Water Fountain Engineering in Bengaluru',
+    sub: 'Partnering with leading tech parks, corporate campuses, and luxury developers across Electronic City, Whitefield, Outer Ring Road, and North Bengaluru.',
+    highlights: [
+      'Water Conservation & Zero Waste: Advanced multi-stage sand, carbon, and cartridge filtration with 98%+ closed-loop water recirculation.',
+      'Interactive Dry Deck Plazas: Flush-to-ground pedestrian interactive fountains with heel-safe SS304L grates for software tech parks.',
+      'Smart Automation: Cloud-connected IoT fountain control panels compatible with Building Management Systems (BMS).',
+      'LEED Green Building Compliance: Low-wattage 24V LED lighting and high-efficiency IE4 pumps to maximize building sustainability credits.'
+    ],
+    faqs: [
+      { question: 'Do Fludio fountains integrate with Building Management Systems (BMS) in Bengaluru tech parks?', answer: 'Yes. Our DMX 512 and PLC control panels support Modbus, BACnet, and dry contact relays for seamless two-way integration with centralized corporate Building Management Systems.' },
+      { question: 'What is the lead time for equipment delivery to Bengaluru?', answer: 'Standard catalog items like IP68 lights, nozzles, and dry deck solenoids are dispatched within 24 to 48 hours from our Pune works directly to Bengaluru sites.' }
+    ]
+  },
+  {
+    path: 'fountain-manufacturer-delhi-ncr',
+    city: 'Delhi NCR, Gurgaon & Noida',
+    title: 'Fountain Manufacturer & Contractor in Delhi NCR, Gurgaon & Noida | Fludio',
+    desc: 'Turnkey musical fountain manufacturer serving Delhi NCR, Gurugram, Noida, and Faridabad. Municipal landmark fountains, smart city plazas, and lake aeration systems.',
+    h1: 'Turnkey Musical Fountain Engineering in Delhi NCR',
+    sub: 'Executing monumental municipal fountains, public square dry decks, and luxury farmhouse water features across New Delhi, Gurugram, Noida, and Greater Noida.',
+    highlights: [
+      'Hard Water Scale Resistance: Anti-scaling electromagnetic descalers and easy-access nozzle cleaning unions tailored for Northern Indian groundwater.',
+      'Thermal Freeze Protection: Automated freeze-prevention cycles and low-temperature neoprene submersible cables rated to -10°C.',
+      'Municipal & CPWD Standards: Complete compliance with Central Public Works Department electrical and hydraulic safety codes.',
+      'Mega Show Choreography: Capable of synchronizing 100+ water jets with multi-color laser projections and spatial audio systems.'
+    ],
+    faqs: [
+      { question: 'Do Fludio water fountains comply with CPWD and smart city tender standards?', answer: 'Yes. All Fludio hydraulic manifolds, IP68 underwater luminaires, and DMX control panels meet and exceed CPWD specifications, featuring certified 304L steel, SELV extra-low voltage, and 30mA RCD protection.' },
+      { question: 'How do Fludio fountains handle high mineral content / hard water in Delhi NCR?', answer: 'We incorporate automated anti-scaling filtration and provide specialized ultrasonic descaling systems that prevent calcium carbonate buildup on precision nozzle orifices and LED glass lenses.' }
+    ]
+  },
+  {
+    path: 'fountain-manufacturer-hyderabad',
+    city: 'Hyderabad & Telangana',
+    title: 'Musical Fountain Manufacturer in Hyderabad | Commercial Water Features | Fludio',
+    desc: 'Leading musical fountain manufacturer and contractor in Hyderabad. Gated community water features, HITEC City plaza fountains, and large lake aerators.',
+    h1: 'Turnkey Architectural Fountain Solutions in Hyderabad',
+    sub: 'Designing iconic water features for premium gated villa communities, HITEC City commercial towers, Financial District plazas, and public lake aerations in Hyderabad.',
+    highlights: [
+      'Gated Community Specialists: Tranquil cascading sheetfalls and low-maintenance entry fountains for residential township projects.',
+      '2D Robotic Dancing Nozzles: 360-degree motorized jets dancing in sub-millisecond precision with classical and contemporary music.',
+      'Ecological Lake Aeration: High-volume 5 HP to 15 HP floating fountains to maintain dissolved oxygen levels and eliminate lake algae.',
+      'Complete On-Site Commissioning: Dedicated Fludio field engineers handle installation, piping pressure tests, and sound programming on-site.'
+    ],
+    faqs: [
+      { question: 'Can Fludio assist with lake restoration and aeration in Hyderabad townships?', answer: 'Yes. Our floating lake aerators circulate up to 3,000,000 liters of water per day, increasing dissolved oxygen to 6+ ppm, suppressing anaerobic odor, and clarifying residential township lakes.' },
+      { question: 'Do you offer Annual Maintenance Contracts (AMC) in Hyderabad?', answer: 'Yes, Fludio provides full-year comprehensive AMCs including quarterly preventive pump inspections, lighting photometric tests, water chemistry checks, and DMX show reprogramming.' }
+    ]
+  },
+  {
+    path: 'fountain-manufacturer-resorts-hotels',
+    city: 'Goa & Luxury Resorts',
+    title: 'Luxury Hotel & Resort Fountain Solutions India | Goa, Jaipur, Udaipur | Fludio',
+    desc: 'Turnkey luxury fountain design and engineering for destination hotels and resorts in Goa, Udaipur, Jaipur, and Kerala. Acoustic water walls, arrival lagoons & reflection pools.',
+    h1: 'Turnkey Water Feature Engineering for Luxury Hotels & Resorts',
+    sub: 'Crafting unforgettable guest arrival experiences, acoustic waterfall walls, and nocturnal illuminated water features for 5-star hotels and heritage palaces across Goa, Rajasthan, and Kerala.',
+    highlights: [
+      'Acoustic Decibel Tuning: Precision-engineered weir edges deliver soothing, low-decibel ambient water sounds that enhance guest relaxation.',
+      'Zero-Splash Spillover Technology: Safe for high-traffic hotel lobbies, poolside decks, and fine dining alfresco patios.',
+      'Heritage & Palace Aesthetics: Seamless integration of classic stone craftsmanship with concealed cutting-edge DMX 512 automation.',
+      'Low-Maintenance Operation: Automated water-level sensing and multi-cyclone sediment filtration minimize daily hotel engineering upkeep.'
+    ],
+    faqs: [
+      { question: 'How do you ensure quiet fountain operation near luxury resort guest suites?', answer: 'We calculate water impact velocity and use custom curved sheetfall weir geometries with submerged acoustic absorption baffles, keeping sound levels below 45 dB for tranquil nocturnal guest comfort.' },
+      { question: 'Do you execute projects in remote resort locations in Rajasthan or Goa?', answer: 'Yes. Fludio delivers turnkey pre-fabricated skid-mounted pump and control modules that simplify on-site civil connections and reduce remote installation timelines by over 50%.' }
+    ]
+  }
+];
+
+regionalHubs.forEach(hub => {
+  const targetDir = path.join(__dirname, hub.path);
+  ensureDirSync(targetDir);
+
+  const canonicalUrl = `https://www.fludio.in/${hub.path}`;
+  const breadcrumbsSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fludio.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Regional Engineering Hubs", "item": "https://www.fludio.in/fountain-design-installation-services" },
+      { "@type": "ListItem", "position": 3, "name": hub.h1, "item": canonicalUrl }
+    ]
+  };
+
+  const localHubSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${canonicalUrl}#service`,
+    "name": hub.h1,
+    "serviceType": "Musical Fountain Manufacturing & Installation",
+    "provider": { "@id": "https://www.fludio.in/#organization" },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": hub.city
+    },
+    "description": hub.desc,
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": hub.faqs.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+    }))
+  };
+
+  const schemas = [SHARED_ORG_SCHEMA, SHARED_LOCAL_SCHEMA, breadcrumbsSchema, localHubSchema, faqSchema];
+
+  const fullHtml = `<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>${escapeHtml(hub.title)}</title>
+    <meta name="description" content="${escapeHtml(hub.desc)}" />
+    <link rel="canonical" href="${canonicalUrl}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="${canonicalUrl}" />
+    <meta property="og:site_name" content="Fludio Water Solutions" />
+    <meta property="og:title" content="${escapeHtml(hub.title)}" />
+    <meta property="og:description" content="${escapeHtml(hub.desc)}" />
+    <meta property="og:image" content="https://www.fludio.in/images/Fludio-Logo-Color.webp" />
+    <meta property="og:locale" content="en_IN" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${escapeHtml(hub.title)}" />
+    <meta name="twitter:description" content="${escapeHtml(hub.desc)}" />
+    <meta name="twitter:image" content="https://www.fludio.in/images/Fludio-Logo-Color.webp" />
+
+    ${COMMON_HEAD_SCRIPTS}
+
+    <script type="application/ld+json">
+${JSON.stringify(schemas, null, 2)}
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV4WMJGG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="root">
+      ${renderNav()}
+
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-6 flex items-center gap-2">
+          <a href="/" class="hover:text-cyan-600">Home</a>
+          <span>/</span>
+          <a href="/fountain-design-installation-services" class="hover:text-cyan-600">Services</a>
+          <span>/</span>
+          <span class="text-slate-800 font-semibold">${escapeHtml(hub.city)} Hub</span>
+        </nav>
+
+        <header class="max-w-3xl mb-12">
+          <span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Regional Engineering Hub &bull; ${escapeHtml(hub.city)}
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 leading-tight">
+            ${escapeHtml(hub.h1)}
+          </h1>
+          <p class="text-base sm:text-lg text-slate-700 mt-4 leading-relaxed">
+            ${escapeHtml(hub.sub)}
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a href="https://wa.me/918530753091?text=Hi%20Fludio,%20I%20am%20inquiring%20about%20fountain%20engineering%20in%20${encodeURIComponent(hub.city)}" target="_blank" rel="noopener noreferrer" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition-all flex items-center gap-2">
+              <span>💬</span> WhatsApp Engineering Team
+            </a>
+            <a href="tel:+918530753091" class="border border-slate-300 hover:border-cyan-600 hover:text-cyan-600 text-slate-700 font-semibold px-6 py-3 rounded-lg transition-all flex items-center gap-2">
+              <span>📞</span> +91 85307 53091
+            </a>
+          </div>
+        </header>
+
+        <!-- Regional Highlights Grid -->
+        <section class="mt-8 mb-14">
+          <h2 class="text-2xl font-bold text-slate-900 mb-6">Regional Engineering &amp; Contracting Advantages</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            ${hub.highlights.map(hl => `
+              <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm flex items-start gap-4">
+                <span class="text-cyan-600 text-xl font-bold mt-0.5">✔</span>
+                <p class="text-sm sm:text-base text-slate-800 font-medium leading-relaxed">${escapeHtml(hl)}</p>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <!-- Product Solutions Grid -->
+        <section class="mt-12 mb-16">
+          <h2 class="text-2xl font-bold text-slate-900 mb-3">Certified Hardware &amp; Fountain Systems Available</h2>
+          <p class="text-sm text-slate-600 mb-8">Manufactured at our Pune works with direct logistics to ${escapeHtml(hub.city)} sites.</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            ${products.slice(0, 6).map(p => {
+              const s = Fh[p.id] || p.id;
+              return `
+                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                  <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-44 object-cover" />
+                  <div class="p-5">
+                    <span class="text-xs font-bold text-cyan-600 uppercase">${escapeHtml(p.category)}</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">
+                      <a href="/water-fountain-products/${s}" class="hover:text-cyan-600">${escapeHtml(p.title)}</a>
+                    </h3>
+                    <p class="text-xs text-slate-600 line-clamp-2 mb-3">${escapeHtml(p.description)}</p>
+                    <a href="/water-fountain-products/${s}" class="text-xs font-semibold text-cyan-600 hover:text-cyan-700">View Technical Specs &rarr;</a>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </section>
+
+        ${renderComparisonTable(hub.city + ' Commercial Fountains')}
+
+        <!-- Regional FAQs -->
+        <section class="mt-14 mb-16">
+          <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions: ${escapeHtml(hub.city)} Projects</h2>
+          <div class="space-y-4">
+            ${hub.faqs.map(f => `
+              <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+                <h3 class="text-base font-bold text-slate-900 mb-2">${escapeHtml(f.question)}</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">${escapeHtml(f.answer)}</p>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <!-- CTA Box -->
+        <section class="bg-slate-900 text-white rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto shadow-xl">
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">Schedule an Engineering Consultation for ${escapeHtml(hub.city)}</h2>
+          <p class="text-slate-400 text-sm max-w-xl mx-auto mb-6">
+            We provide free initial hydraulic feasibility reviews, preliminary civil drawings, and budget BOQs for architects and developers.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="tel:+918530753091" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-lg shadow">
+              Direct Phone: +91 85307 53091
+            </a>
+            <a href="mailto:info@fludio.in?subject=Project%20Inquiry%20-%20${encodeURIComponent(hub.city)}" class="border border-slate-700 hover:border-slate-500 text-white font-semibold px-6 py-3 rounded-lg">
+              Email Tender Documents
+            </a>
+          </div>
+        </section>
+      </main>
+
+      ${renderFooter()}
+    </div>
+  </body>
+</html>`;
+
+  fs.writeFileSync(path.join(targetDir, 'index.html'), fullHtml, 'utf8');
+  console.log(`Generated Regional Hub: /${hub.path}/index.html`);
+});
+
+// --------------------------------------------------------------------------
+// 4. GENERATE CORE HUB PAGES
 // --------------------------------------------------------------------------
 const coreHubs = [
   {
@@ -800,7 +1171,6 @@ ${JSON.stringify(schemas, null, 2)}
           <p class="text-base sm:text-lg text-slate-600 leading-relaxed">${escapeHtml(hub.sub)}</p>
         </header>
 
-        <!-- Quick Links Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           ${products.map(p => {
             const s = Fh[p.id] || p.id;
@@ -822,7 +1192,6 @@ ${JSON.stringify(schemas, null, 2)}
           }).join('')}
         </div>
 
-        <!-- Direct Contact Banner -->
         <div class="bg-slate-900 text-white rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto">
           <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">Consult Fludio Technical Engineering Works</h2>
           <p class="text-slate-400 text-sm max-w-xl mx-auto mb-6">
@@ -848,7 +1217,7 @@ ${JSON.stringify(schemas, null, 2)}
 });
 
 // --------------------------------------------------------------------------
-// 4. OVERHAUL XML SITEMAP WITH IMAGE EXTENSIONS
+// 5. OVERHAUL XML SITEMAP INCLUDING REGIONAL HUBS & IMAGES
 // --------------------------------------------------------------------------
 const today = '2026-11-09';
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -924,7 +1293,23 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
 `;
 
-// Add products with images to sitemap
+// Regional Hubs
+regionalHubs.forEach(hub => {
+  sitemapXml += `
+  <url>
+    <loc>https://www.fludio.in/${hub.path}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/Fludio-Logo-Color.webp</image:loc>
+      <image:title>${escapeHtml(hub.h1)}</image:title>
+      <image:caption>${escapeHtml(hub.desc)}</image:caption>
+    </image:image>
+  </url>`;
+});
+
+// Products with images
 products.forEach(p => {
   const slug = Fh[p.id] || p.id;
   sitemapXml += `
@@ -941,7 +1326,7 @@ products.forEach(p => {
   </url>`;
 });
 
-// Add blogs with images to sitemap
+// Blogs with images
 blogs.forEach(b => {
   sitemapXml += `
   <url>
@@ -960,5 +1345,4 @@ blogs.forEach(b => {
 sitemapXml += `\n</urlset>\n`;
 
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemapXml, 'utf8');
-console.log('Overhauled sitemap.xml with image metadata!');
-console.log('=== All static pages and sitemap generated successfully! ===');
+console.log('=== All static pages, regional hubs, comparison tables, and sitemaps generated successfully! ===');
