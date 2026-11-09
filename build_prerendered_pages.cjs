@@ -2,6 +2,114 @@ const fs = require('fs');
 const path = require('path');
 
 const products = JSON.parse(fs.readFileSync('extracted_products.json', 'utf8'));
+
+const reviews = [
+  {
+    id: "gmb-1",
+    author: "Prajakta Bharne",
+    role: "Commercial Infrastructure Partner",
+    location: "Pune, Maharashtra",
+    avatarText: "PB",
+    rating: 5,
+    date: "9 months ago",
+    text: "They handled our lake aerator and fountain system project very efficiently. Site inspection, planning, installation, and commissioning were done professionally. After installation, they also provided good after-sales support. Reliable company for large water projects.",
+    projectTag: "Lake Aerator & Fountain System",
+    source: "google",
+    reviewImage: "/images/floating_lake_aerator.jpg"
+  },
+  {
+    id: "gmb-2",
+    author: "Mule Snehal Dnyaneshwar",
+    role: "Architecture & Landscape Consultant",
+    location: "Pune, Maharashtra",
+    avatarText: "MS",
+    rating: 5,
+    date: "9 months ago",
+    text: "I collaborated with them for a luxury home project including sheetfall fountain and landscape lighting. Their technical knowledge and practical suggestions helped improve the final output. They maintained proper timelines and delivered premium quality work. Client was extremely happy. Strongly recommended.",
+    projectTag: "Sheetfall Fountain & Lighting",
+    source: "google",
+    reviewImage: "/images/sheetfall_wall_waterfall.jpg"
+  },
+  {
+    id: "gmb-3",
+    author: "Rohit Patil",
+    role: "Private Residence Client",
+    location: "Pune, Maharashtra",
+    avatarText: "RP",
+    rating: 5,
+    date: "9 months ago",
+    text: "Very good service and quality work. They installed sheetfall water fountain at my home perfectly. Team was supportive till completion. Highly recommended.",
+    projectTag: "Sheetfall Water Fountain",
+    source: "google",
+    reviewImage: "/images/sheetfall_wall_waterfall.jpg"
+  },
+  {
+    id: "gmb-4",
+    author: "Yash Chavan",
+    role: "Corporate Project Lead",
+    location: "Pune, Maharashtra",
+    avatarText: "YC",
+    rating: 5,
+    date: "9 months ago",
+    text: "Our company assigned them for a musical fountain installation. From design discussion to final testing, their team supported us at every stage. They used high-quality waterproof LED lights and durable fountain equipment. Project was completed on time without any issues. Very trustworthy and professional service.",
+    projectTag: "Musical Fountain Installation",
+    source: "google",
+    reviewImage: "/images/musical_fountain_hero.jpg"
+  },
+  {
+    id: "gmb-5",
+    author: "Siddhant Dombe",
+    role: "Engineering Infrastructure Coordinator",
+    location: "Pune / Mumbai, Maharashtra",
+    avatarText: "SD",
+    rating: 5,
+    date: "9 months ago",
+    text: "We hired them for complete water feature solutions including musical fountain, LED lighting, and control systems. Their team worked closely with our engineers and contractors. Materials used were high quality and installation was neat. They also provided proper training and maintenance guidance. Overall, excellent experience and long-term partner.",
+    projectTag: "Turnkey Water Features",
+    source: "google",
+    reviewImage: "/images/dmx_control_panel.jpg"
+  },
+  {
+    id: "gmb-6",
+    author: "Ganesh Kadam",
+    role: "Municipal Works Contractor",
+    location: "Pune Metropolitan Area",
+    avatarText: "GK",
+    rating: 5,
+    date: "Verified Google Review",
+    text: "Procured stainless steel 304L fountain equipment, precision nozzles, and IP68 submersible LED spotlights directly from their Narhe industrial workshop. Exceptional fabrication standards, zero leakage issues, and smooth coordination.",
+    projectTag: "Fountain Hardware & IP68 LEDs",
+    source: "google",
+    reviewImage: "/images/fountain_underwater_light.jpg"
+  },
+  {
+    id: "gmb-7",
+    author: "Vikas Shinde",
+    role: "Resort Infrastructure Manager",
+    location: "Maharashtra",
+    avatarText: "VS",
+    rating: 5,
+    date: "Verified Google Review",
+    text: "Fludio provided turnkey installation of interactive water features and decorative fountain nozzles for our hospitality campus. Clean hydraulic engineering, reliable automation, and prompt support.",
+    projectTag: "Resort Interactive Features",
+    source: "google",
+    reviewImage: "/images/project_udaipur_resort.jpg"
+  },
+  {
+    id: "gmb-8",
+    author: "Mahesh Deshmukh",
+    role: "Township Plaza Project Engineer",
+    location: "Pune, Maharashtra",
+    avatarText: "MD",
+    rating: 5,
+    date: "Verified Google Review",
+    text: "Great experience working with Fludio Water Solutions for our township dry deck plaza fountain. Fast delivery, professional on-site hydraulic testing, and top-tier customer guidance.",
+    projectTag: "Dry Deck Plaza Fountain",
+    source: "google",
+    reviewImage: "/images/project_pune_drydeck_plaza.jpg"
+  }
+];
+
 const blogs = JSON.parse(fs.readFileSync('extracted_blogs.json', 'utf8'));
 
 const Fh = {
@@ -1233,6 +1341,36 @@ ${JSON.stringify(schemas, null, 2)}
         </div>
         ` : ''}
 
+        ${hub.path === 'client-reviews-testimonials' ? `
+        <!-- Google Reviews Official Header Badge -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 mb-12 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
+              <svg class="w-8 h-8" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            </div>
+            <div>
+              <h2 class="font-headline text-lg font-bold text-slate-900">Fludio Water Solutions, Pune</h2>
+              <p class="text-xs text-slate-500">Official Google My Business Profile &bull; Narhe Dhayari Industrial Estate, Pune</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:items-end gap-1.5">
+            <div class="flex items-center gap-1.5">
+              <span class="text-amber-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="font-headline text-xl font-extrabold text-slate-900">5.0 / 5.0</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium">Verified by 24 client reviews on Google</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs px-5 py-3 rounded-xl shadow-sm transition-all flex items-center gap-2">
+              <span>View on Google Maps</span> &rarr;
+            </a>
+            <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-xs px-4 py-3 rounded-xl shadow-xs transition-all flex items-center gap-1.5">
+              <span>Write a Review</span>
+            </a>
+          </div>
+        </div>
+        ` : ''}
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           ${hub.path === 'fountain-engineering-blog' ? blogs.map(b => `
             <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
@@ -1252,6 +1390,48 @@ ${JSON.stringify(schemas, null, 2)}
               <div class="px-6 pb-6 pt-0">
                 <a href="/fountain-engineering-blog/${b.id}" class="text-sm font-semibold text-cyan-600 hover:text-cyan-700 flex items-center gap-1">
                   Read Technical Guide &rarr;
+                </a>
+              </div>
+            </div>
+          `).join('') : hub.path === 'client-reviews-testimonials' ? reviews.map(r => `
+            <div class="bg-white border border-slate-200 rounded-2xl p-7 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-4">
+                  <div class="flex items-center gap-2">
+                    <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-xs font-bold text-slate-800">5.0</span>
+                  </div>
+                  <span class="text-[11px] text-slate-400 font-mono font-medium">${escapeHtml(r.date)}</span>
+                </div>
+                <div class="mb-3.5">
+                  <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-1 rounded-md">
+                    ${escapeHtml(r.projectTag)}
+                  </span>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                  &ldquo;${escapeHtml(r.text)}&rdquo;
+                </p>
+                ${r.reviewImage ? `
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-36">
+                    <img src="${r.reviewImage}" alt="Verified Project by Fludio - ${escapeHtml(r.projectTag)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                ` : ''}
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                    ${escapeHtml(r.avatarText)}
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                      ${escapeHtml(r.author)}
+                      <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                    </h4>
+                    <p class="text-[11px] text-slate-500">${escapeHtml(r.role)}</p>
+                  </div>
+                </div>
+                <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1">
+                  Google &rarr;
                 </a>
               </div>
             </div>

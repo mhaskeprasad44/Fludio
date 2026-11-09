@@ -384,6 +384,500 @@
           </div>
         </div>
       </section>
+      <!-- Verified Google Customer Reviews Carousel Section -->
+      <section id="google-reviews-section" class="py-14 md:py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+          <!-- Google Badge & Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div>
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-300 text-xs font-bold text-slate-800 shadow-2xs hover:shadow-xs transition-all group cursor-pointer">
+                  <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                  <span>Google My Business</span>
+                  <div class="flex items-center gap-0.5">
+                    <span class="text-amber-400 text-xs">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  </div>
+                  <span class="text-cyan-700 font-extrabold">5.0 / 5.0</span>
+                </a>
+                <span class="text-xs text-slate-500 font-medium">&bull; 24 Verified Client Reviews</span>
+              </div>
+              <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Google Customer Reviews &amp; Client Endorsements
+              </h2>
+              <p class="text-slate-600 text-sm md:text-base mt-2 max-w-2xl">
+                Authentic feedback from municipal corporations, resort developers, landscape architects, and private estates across India.
+              </p>
+            </div>
+            <!-- Carousel Controls -->
+            <div class="flex items-center gap-3 shrink-0">
+              <button id="review-carousel-prev" aria-label="Previous review" class="w-10 h-10 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 flex items-center justify-center transition-all shadow-xs cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button id="review-carousel-next" aria-label="Next review" class="w-10 h-10 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 flex items-center justify-center transition-all shadow-xs cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-xs transition-all">
+                <span>Review Us on Google</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Carousel Window & Track -->
+          <div id="review-carousel-container" class="relative overflow-hidden">
+            <div id="review-carousel-track" class="flex gap-6 transition-transform duration-500 ease-out">
+              
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">9 months ago</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Lake Aerator & Fountain System
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;They handled our lake aerator and fountain system project very efficiently. Site inspection, planning, installation, and commissioning were done professionally. After installation, they also provided good after-sales support. Reliable company for large water projects.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/floating_lake_aerator.jpg" alt="Verified Project - Lake Aerator & Fountain System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      PB
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Prajakta Bharne
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Commercial Infrastructure Partner</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">9 months ago</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Sheetfall Fountain & Landscape Lighting
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;I collaborated with them for a luxury home project including sheetfall fountain and landscape lighting. Their technical knowledge and practical suggestions helped improve the final output. They maintained proper timelines and delivered premium quality work. Client was extremely happy. Strongly recommended.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/sheetfall_wall_waterfall.jpg" alt="Verified Project - Sheetfall Fountain & Landscape Lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      MS
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Mule Snehal Dnyaneshwar
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Landscape Architecture Consultant</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">9 months ago</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Sheetfall Water Fountain
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;Very good service and quality work. They installed sheetfall water fountain at my home perfectly. Team was supportive till completion. Highly recommended.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/sheetfall_wall_waterfall.jpg" alt="Verified Project - Sheetfall Water Fountain" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      RP
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Rohit Patil
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Private Villa Owner</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">9 months ago</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Musical Dancing Fountain Installation
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;Our company assigned them for a musical fountain installation. From design discussion to final testing, their team supported us at every stage. They used high-quality waterproof LED lights and durable fountain equipment. Project was completed on time without any issues. Very trustworthy and professional service.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/musical_fountain_hero.jpg" alt="Verified Project - Musical Dancing Fountain Installation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      YC
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Yash Chavan
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Corporate Campus Facility Lead</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">9 months ago</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Water Feature Solutions & DMX Control
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;We hired them for complete water feature solutions including musical fountain, LED lighting, and control systems. Their team worked closely with our engineers and contractors. Materials used were high quality and installation was neat. They also provided proper training and maintenance guidance. Overall, excellent experience and long-term partner.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/dmx_control_panel.jpg" alt="Verified Project - Water Feature Solutions & DMX Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      SD
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Siddhant Dombe
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Commercial Plaza Project Engineer</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">Verified Google Review</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Precision SS304 Nozzles & Submersible LED Lights
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;Procured stainless steel 304L fountain equipment, precision nozzles, and IP68 submersible LED spotlights directly from their Narhe industrial workshop. Exceptional fabrication standards, zero leakage issues, and smooth coordination.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/fountain_underwater_light.jpg" alt="Verified Project - Precision SS304 Nozzles & Submersible LED Lights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      GK
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Ganesh Kadam
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Mechanical Contractor</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">Verified Google Review</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Interactive Water Features & Spray Rings
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;Fludio provided turnkey installation of interactive water features and decorative fountain nozzles for our hospitality campus. Clean hydraulic engineering, reliable automation, and prompt support.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/project_udaipur_resort.jpg" alt="Verified Project - Interactive Water Features & Spray Rings" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      VS
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Vikas Shinde
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Resort Infrastructure Manager</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-slide shrink-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                <div>
+                  <div class="flex items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="text-xs font-bold text-slate-800">5.0</span>
+                    </div>
+                    <span class="text-[11px] text-slate-400 font-mono font-medium">Verified Google Review</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">
+                      Dry Deck Plaza Fountain
+                    </span>
+                  </div>
+                  <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                    &ldquo;Great experience working with Fludio Water Solutions for our township dry deck plaza fountain. Fast delivery, professional on-site hydraulic testing, and top-tier customer guidance.&rdquo;
+                  </p>
+                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-32">
+                    <img src="/images/project_pune_drydeck_plaza.jpg" alt="Verified Project - Dry Deck Plaza Fountain" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                  </div>
+                </div>
+                <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      MD
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                        Mahesh Deshmukh
+                        <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                      </h4>
+                      <p class="text-[10px] text-slate-500">Township Plaza Project Engineer</p>
+                    </div>
+                  </div>
+                  <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View review on Google Maps">
+                    Google &rarr;
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Carousel Dots Indicator -->
+          <div id="review-carousel-dots" class="flex justify-center items-center gap-2 mt-8">
+            <!-- Generated dynamically by JS -->
+          </div>
+        </div>
+
+        <script>
+        (function() {
+          const track = document.getElementById('review-carousel-track');
+          const prevBtn = document.getElementById('review-carousel-prev');
+          const nextBtn = document.getElementById('review-carousel-next');
+          const dotsContainer = document.getElementById('review-carousel-dots');
+          const container = document.getElementById('review-carousel-container');
+          if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+          const slides = track.querySelectorAll('.carousel-slide');
+          const totalSlides = slides.length;
+          let currentIndex = 0;
+          let isHovered = false;
+          let autoSlideTimer = null;
+
+          function getVisibleCount() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 640) return 2;
+            return 1;
+          }
+
+          function getMaxIndex() {
+            return Math.max(0, totalSlides - getVisibleCount());
+          }
+
+          function updateCarousel() {
+            const maxIdx = getMaxIndex();
+            if (currentIndex > maxIdx) currentIndex = maxIdx;
+            
+            const firstSlide = slides[0];
+            if (!firstSlide) return;
+            const slideWidth = firstSlide.getBoundingClientRect().width;
+            const gap = 24; // 1.5rem gap-6
+            const offset = currentIndex * (slideWidth + gap);
+            track.style.transform = 'translateX(-' + offset + 'px)';
+
+            renderDots(maxIdx);
+          }
+
+          function renderDots(maxIdx) {
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i <= maxIdx; i++) {
+              const dot = document.createElement('button');
+              dot.setAttribute('aria-label', 'Go to review slide ' + (i + 1));
+              dot.className = 'h-2.5 rounded-full transition-all duration-300 ' + 
+                (i === currentIndex ? 'bg-cyan-600 w-7' : 'bg-slate-300 hover:bg-slate-400 w-2.5');
+              dot.addEventListener('click', function() {
+                currentIndex = i;
+                updateCarousel();
+                resetTimer();
+              });
+              dotsContainer.appendChild(dot);
+            }
+          }
+
+          function nextSlide() {
+            const maxIdx = getMaxIndex();
+            currentIndex = (currentIndex >= maxIdx) ? 0 : currentIndex + 1;
+            updateCarousel();
+          }
+
+          function prevSlide() {
+            const maxIdx = getMaxIndex();
+            currentIndex = (currentIndex <= 0) ? maxIdx : currentIndex - 1;
+            updateCarousel();
+          }
+
+          function startTimer() {
+            if (autoSlideTimer) clearInterval(autoSlideTimer);
+            autoSlideTimer = setInterval(function() {
+              if (!isHovered) {
+                nextSlide();
+              }
+            }, 5500);
+          }
+
+          function resetTimer() {
+            startTimer();
+          }
+
+          prevBtn.addEventListener('click', function() {
+            prevSlide();
+            resetTimer();
+          });
+
+          nextBtn.addEventListener('click', function() {
+            nextSlide();
+            resetTimer();
+          });
+
+          if (container) {
+            container.addEventListener('mouseenter', function() { isHovered = true; });
+            container.addEventListener('mouseleave', function() { isHovered = false; });
+          }
+
+          window.addEventListener('resize', function() {
+            updateCarousel();
+          });
+
+          // Touch swiping
+          let touchStartX = 0;
+          let touchEndX = 0;
+          track.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+          }, { passive: true });
+          track.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) {
+              nextSlide();
+              resetTimer();
+            } else if (touchEndX - touchStartX > 50) {
+              prevSlide();
+              resetTimer();
+            }
+          }, { passive: true });
+
+          updateCarousel();
+          startTimer();
+        })();
+        </script>
+      </section>
+
 </div>
   </body>
 </html>
