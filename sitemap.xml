@@ -400,4 +400,224 @@
       <image:caption>Technical guide to 2D and 3D CNC multidirectional dancing fountain nozzles. Learn dual-axis stepper motor mechanics, IP68 underwater sealing, DMX512-A</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/iot-scada-fountain-predictive-maintenance</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
+      <image:title>IoT SCADA &amp; Predictive Maintenance for Commercial Fountains: Cloud Telemetry, Vibration Analysis &amp; Automated Chemical Dosing</image:title>
+      <image:caption>Learn how IoT SCADA systems, cloud telemetry, vibration sensors, and automated chemical dosing eliminate downtime and optimize energy in commercial an</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/urban-heat-island-high-pressure-mist-cooling</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_metropol_mumbai.jpg</image:loc>
+      <image:title>High-Pressure Fog &amp; Misting Systems for Urban Heat Island Mitigation: 70-Bar Thermodynamics, Micro-Droplet Flash Evaporation &amp; Plaza Cooling</image:title>
+      <image:caption>Discover how 70-bar high-pressure misting systems and micro-droplet flash evaporation reduce urban plaza temperatures by 4–8°C without wetting pedestr</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/solar-powered-floating-aeration-smart-townships</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/floating_lake_aerator.jpg</image:loc>
+      <image:title>Solar-Powered Floating Lake Aerator Fountains: Off-Grid Photovoltaics, MPPT Inverters &amp; Dissolved Oxygen Engineering for Smart Townships</image:title>
+      <image:caption>Engineering guide to off-grid solar floating lake aerators, MPPT motor drives, battery storage, and dissolved oxygen transfer in urban retention ponds</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/zero-water-loss-closed-loop-fountain-filtration</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/blueprint_engineering.jpg</image:loc>
+      <image:title>Zero-Water-Loss Closed-Loop Fountain Filtration: Dual-Bed Multi-Grade Sand Filters, Ozone Disinfection &amp; IGBC/LEED Water Credits</image:title>
+      <image:caption>Explore zero-water-loss closed-loop fountain filtration with multi-grade sand filters, ozone generators, UV-C sterilizers, and IGBC/LEED water conserv</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/biophilic-indoor-waterfall-acoustics-corporate-hqs</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</image:loc>
+      <image:title>Biophilic Indoor Water Wall Design &amp; Acoustic Decibel Tuning: Textured Granite Cascades, Anti-Splash Weirs &amp; Corporate Sound Masking</image:title>
+      <image:caption>Design guide for corporate indoor waterfalls, textured granite sheetfalls, zero-splash weir geometry, and acoustic decibel tuning (45–52 dBA pink nois</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/hydro-pyro-fire-on-water-fountain-systems</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/musical_fountain_hero.jpg</image:loc>
+      <image:title>Fire-on-Water (Hydro-Pyro) Fountain Engineering: Pressurized Gas Flame Nozzles, Optical Safety Sensors &amp; DMX Pyro-Sequencing</image:title>
+      <image:caption>Discover fire-on-water (hydro-pyro) fountain engineering: pressurized gas flame nozzles, pilot ignition, optical UV flame scanners, and DMX show autom</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/holographic-3d-water-screen-multimedia-shows</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</image:loc>
+      <image:title>Holographic 3D Water Screen Projection: Semi-Circular Water Shields, High-Lumen Laser Mapping &amp; Multi-Sensory Tourism Shows</image:title>
+      <image:caption>Complete engineering guide to holographic water screen projection shows, semi-circular laminar nozzles, 30,000+ lumen 4K laser mapping, and audio sync</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/smart-city-lidar-interactive-splash-pads</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/interactive_splash_pad_chicago.jpg</image:loc>
+      <image:title>Smart City Interactive Splash Pads: LiDAR Motion Tracking, Computer Vision Jet Triggers &amp; Zero-Depth Public Water Play</image:title>
+      <image:caption>Discover how smart city splash pads use LiDAR motion tracking, AI computer vision, and high-speed fast solenoids for interactive zero-depth water play</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/vfd-pump-energy-optimization-musical-fountains</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_installation.jpg</image:loc>
+      <image:title>VFD Pump Energy Optimization in Musical Fountains: Eliminating Water Hammer, Reducing Power Consumption by 50% &amp; Rapid Dynamic Response</image:title>
+      <image:caption>Learn how Variable Frequency Drives (VFDs) eliminate hydraulic water hammer, cut electrical consumption by up to 52%, and deliver millisecond music sy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/submersible-pump-metallurgy-high-tds-water</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/expert_engineer.jpg</image:loc>
+      <image:title>Submersible Fountain Pump Metallurgy: Cast Iron vs SS304 vs SS316 for High-TDS Hard Water &amp; Coastal Saline Applications</image:title>
+      <image:caption>Compare cast iron, SS304L, and SS316L submersible fountain pumps. Learn how to prevent cavitation, chloride pitting, and seal wear in high-TDS Indian </image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/luxury-resort-hydrotherapy-vitality-pool-engineering</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/resort_guide.jpg</image:loc>
+      <image:title>Luxury Resort Hydrotherapy &amp; Vitality Pool Design: Stainless Steel Air Loungers, Counter-Current Swim Jets &amp; Reflexology Nozzles</image:title>
+      <image:caption>Architectural guide to luxury resort vitality pools: ergonomic SS316L air loungers, high-velocity counter-current swim jets, and hydrotherapy reflexol</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/3d-digital-twin-choreography-simulation-fountains</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/blueprint_engineering.jpg</image:loc>
+      <image:title>3D Digital Twin Simulation &amp; Musical Fountain Choreography: Real-Time Fluid Physics, Visualizer CAD &amp; SMPTE Audio Mapping</image:title>
+      <image:caption>How Fludio uses 3D digital twins, fluid dynamics physics simulation, CAD visualizers, and SMPTE audio timeline mapping to program musical fountains of</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/infinity-pool-vanishing-edge-weir-hydraulics</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_udaipur_resort.jpg</image:loc>
+      <image:title>Infinity Edge &amp; Vanishing Spillway Hydraulic Engineering: Weir Flow Rates, Balancing Tank Sizing &amp; Perimeter Slot Drains</image:title>
+      <image:caption>Complete engineering guide to infinity pool hydraulics, Francis weir discharge equations, balancing surge tank volume calculations, and slot drain det</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/air-induction-cascade-geyser-foam-jet-mechanics</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_nozzle.jpg</image:loc>
+      <image:title>Cascade &amp; Geyser Foam Jet Mechanics: Venturi Air-Water Induction, Wind Stability &amp; Water-Level Dependence in High-Volume Fountains</image:title>
+      <image:caption>Engineering guide to cascade and geyser foam jet nozzles: venturi air induction, aeration ratios, wind shear resistance, and water level sensitivity.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/public-plaza-splash-pad-safety-ada-microbiology</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dry_deck_solenoid_jet.jpg</image:loc>
+      <image:title>Public Plaza Splash Pad Safety &amp; Accessibility: Heel-Safe Slip Ratings, Universal ADA Design &amp; Pathogen Control Standards</image:title>
+      <image:caption>Design safe public plaza splash pads: heel-safe SS304L drainage grates, DIN 51097 Class C slip resistance, ADA accessibility, and UV-C disinfection.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/monumental-lake-floating-fountain-anchoring-wave-dynamics</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/floating_lake_aerator.jpg</image:loc>
+      <image:title>Monumental Lake Floating Fountains: HDPE Modular Barges, Deadweight Anchor Catenary &amp; Monsoon Water-Level Fluctuation Engineering</image:title>
+      <image:caption>How to engineer monumental floating fountains on deep lakes: UV-stabilized HDPE barges, catenary deadweight anchor calculations, and monsoon water lev</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/contemplative-water-bell-mushroom-nozzle-acoustics</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/static_tiered_fountain.jpg</image:loc>
+      <image:title>Water Bell &amp; Mushroom Display Nozzles: Ultra-Thin Laminar Film Mechanics &amp; Whisper-Quiet Acoustics for Zen Courtyards</image:title>
+      <image:caption>Explore water bell and mushroom display nozzles: laminar surface-tension sheet flow, whisper-quiet sound profiles (&lt;35 dBA), and courtyard integration</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/pneumatic-air-cannon-super-shooter-fountain-jets</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dancing_nozzle_motorized.jpg</image:loc>
+      <image:title>Pneumatic Air Cannon &amp; Super Shooter Water Jets: High-Pressure Accumulator Tanks, Fast Valve Release &amp; 60-Meter Landmark Bursts</image:title>
+      <image:caption>Engineering guide to pneumatic air cannon super shooter water jets: 8–10 bar pressure accumulators, millisecond dump valves, and 60-meter water explos</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/musical-fountain-cost-in-india-capex-opex-breakdown</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/business_deal_handshake.jpg</image:loc>
+      <image:title>Cost of Building a Musical Fountain in India: 2026-2027 Budget Breakdown, Civil MEP Expenses &amp; Commercial ROI Guide</image:title>
+      <image:caption>Comprehensive 2026-2027 budget guide for musical fountains in India: civil basin, SS304L hardware, pumps, DMX controls, IP68 LEDs, CAPEX, and annual O</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/retrofitting-legacy-fountains-smart-dmx-automation</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_underwater_light.jpg</image:loc>
+      <image:title>Retrofitting Legacy Fountains with Smart DMX Automation &amp; Energy-Efficient IP68 LEDs: Modernization Guide for Municipal Plazas</image:title>
+      <image:caption>Upgrade 10–20 year old static municipal fountains: replace high-wattage halogens with IP68 RGBW LEDs, add VFDs, and deploy DMX512 controllers.</image:caption>
+    </image:image>
+  </url>
 </urlset>

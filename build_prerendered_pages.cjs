@@ -653,7 +653,7 @@ blogs.forEach(b => {
 
   const sectionsHtml = b.sections ? b.sections.map(s => `
     <section class="mt-8">
-      <h2 class="text-2xl font-bold text-slate-900 mb-3">${escapeHtml(s.heading)}</h2>
+      <h2 class="text-2xl font-bold text-slate-900 mb-3">${escapeHtml(s.heading || s.title || '')}</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">${escapeHtml(s.content)}</p>
       ${s.takeaway ? `
         <div class="p-4 bg-cyan-50 border-l-4 border-cyan-600 rounded-r-lg text-sm text-cyan-950 font-medium">
