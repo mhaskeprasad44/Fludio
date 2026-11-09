@@ -94,7 +94,7 @@ const COMMON_HEAD_SCRIPTS = `
       gtag('js', new Date());
       gtag('config', 'G-9MLEYXELL7', { send_page_view: true });
     </script>
-    <script type="module" crossorigin src="/assets/index-CuwLdb-4.js"></script>
+    <script type="module" crossorigin src="/assets/index-D7xK9mP2.js?v=20261109"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CCiPlLJO.css">
 `;
 
@@ -1218,6 +1218,20 @@ ${JSON.stringify(schemas, null, 2)}
           <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">${escapeHtml(hub.h1)}</h1>
           <p class="text-base sm:text-lg text-slate-600 leading-relaxed">${escapeHtml(hub.sub)}</p>
         </header>
+
+        ${hub.path === 'fountain-engineering-blog' ? `
+        <div class="flex items-center justify-center flex-wrap gap-2 mb-12">
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-slate-900 text-white shadow-sm">All (${blogs.length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Hydraulic Engineering (${blogs.filter(b=>b.category==='Hydraulic Engineering').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Public Plazas & Commercial (${blogs.filter(b=>b.category==='Public Plazas & Commercial').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Automation & Controls (${blogs.filter(b=>b.category==='Automation & Controls').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Sustainable Water Systems (${blogs.filter(b=>b.category==='Sustainable Water Systems').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Architectural Design (${blogs.filter(b=>b.category==='Architectural Design').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Municipal Infrastructure (${blogs.filter(b=>b.category==='Municipal Infrastructure').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Luxury Hospitality (${blogs.filter(b=>b.category==='Luxury Hospitality').length})</span>
+          <span class="px-4.5 py-2 rounded-full font-headline text-xs font-bold bg-white border border-slate-200 text-slate-600">Lighting & Electrical Guides (${blogs.filter(b=>b.category==='Lighting & Electrical Guides').length})</span>
+        </div>
+        ` : ''}
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           ${hub.path === 'fountain-engineering-blog' ? blogs.map(b => `

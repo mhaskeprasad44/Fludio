@@ -258,6 +258,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
+      <image:title>DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync</image:title>
+      <image:caption>Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.fludio.in/fountain-engineering-blog/ip68-explained</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -266,6 +277,50 @@
       <image:loc>https://www.fludio.in/images/fountain_underwater_light.jpg</image:loc>
       <image:title>IP68 Underwater LED Lighting Standards: 304L vs 316 Stainless Steel &amp; Ingress Protection Guide</image:title>
       <image:caption>Discover why high-grade 304L stainless steel and IP68 certification are the industry gold standards for underwater durability. We break down the techn</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/musical-fountain-cost-in-india-capex-opex-breakdown</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/business_deal_handshake.jpg</image:loc>
+      <image:title>Cost of Building a Musical Fountain in India: 2026-2027 Budget Breakdown, Civil MEP Expenses &amp; Commercial ROI Guide</image:title>
+      <image:caption>Comprehensive 2026-2027 budget guide for musical fountains in India: civil basin, SS304L hardware, pumps, DMX controls, IP68 LEDs, CAPEX, and annual O</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-engineering</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_pune_drydeck_plaza.jpg</image:loc>
+      <image:title>Dry Deck Interactive Plaza Fountains: Drainage Grates, Subterranean Reservoirs &amp; Hydraulic Design</image:title>
+      <image:caption>Discover the architectural engineering principles behind kid-friendly, walkable dry deck plaza fountains: hidden balance tanks, anti-slip stainless gr</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/urban-heat-island-high-pressure-mist-cooling</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_metropol_mumbai.jpg</image:loc>
+      <image:title>High-Pressure Fog &amp; Misting Systems for Urban Heat Island Mitigation: 70-Bar Thermodynamics, Micro-Droplet Flash Evaporation &amp; Plaza Cooling</image:title>
+      <image:caption>Discover how 70-bar high-pressure misting systems and micro-droplet flash evaporation reduce urban plaza temperatures by 4–8°C without wetting pedestr</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-nozzles-selection-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_nozzle.jpg</image:loc>
+      <image:title>Commercial Fountain Nozzle Selection Guide: Geyser, Cascade, Foam Jet, Fan &amp; Jumping Jets</image:title>
+      <image:caption>A comprehensive hydraulic engineering manual detailing spray geometries, wind resistance, water level dependencies, and flow rate equations for archit</image:caption>
     </image:image>
   </url>
   <url>
@@ -288,39 +343,6 @@
       <image:loc>https://www.fludio.in/images/project_udaipur_resort.jpg</image:loc>
       <image:title>Luxury Hotel &amp; Resort Water Feature Design: Acoustic Tuning, Spillover Pools &amp; Visual Focal Points</image:title>
       <image:caption>How high-end synchronized water features and decorative landscape fountains elevate brand prestige, guests&#39; arrivals, and entertainment value in premi</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
-      <image:title>DMX 512 Musical Fountain Programming: PLC Architecture, Fast Solenoids &amp; Audio Sync</image:title>
-      <image:caption>Explore the technical protocol mechanics, PLC automation frameworks, and sub-millisecond 24V DC solenoid valve configurations behind precision musical</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-engineering</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.fludio.in/images/project_pune_drydeck_plaza.jpg</image:loc>
-      <image:title>Dry Deck Interactive Plaza Fountains: Drainage Grates, Subterranean Reservoirs &amp; Hydraulic Design</image:title>
-      <image:caption>Discover the architectural engineering principles behind kid-friendly, walkable dry deck plaza fountains: hidden balance tanks, anti-slip stainless gr</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-nozzles-selection-guide</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.fludio.in/images/fountain_nozzle.jpg</image:loc>
-      <image:title>Commercial Fountain Nozzle Selection Guide: Geyser, Cascade, Foam Jet, Fan &amp; Jumping Jets</image:title>
-      <image:caption>A comprehensive hydraulic engineering manual detailing spray geometries, wind resistance, water level dependencies, and flow rate equations for archit</image:caption>
     </image:image>
   </url>
   <url>
@@ -409,17 +431,6 @@
       <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
       <image:title>IoT SCADA &amp; Predictive Maintenance for Commercial Fountains: Cloud Telemetry, Vibration Analysis &amp; Automated Chemical Dosing</image:title>
       <image:caption>Learn how IoT SCADA systems, cloud telemetry, vibration sensors, and automated chemical dosing eliminate downtime and optimize energy in commercial an</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/urban-heat-island-high-pressure-mist-cooling</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.fludio.in/images/project_metropol_mumbai.jpg</image:loc>
-      <image:title>High-Pressure Fog &amp; Misting Systems for Urban Heat Island Mitigation: 70-Bar Thermodynamics, Micro-Droplet Flash Evaporation &amp; Plaza Cooling</image:title>
-      <image:caption>Discover how 70-bar high-pressure misting systems and micro-droplet flash evaporation reduce urban plaza temperatures by 4–8°C without wetting pedestr</image:caption>
     </image:image>
   </url>
   <url>
@@ -596,17 +607,6 @@
       <image:loc>https://www.fludio.in/images/dancing_nozzle_motorized.jpg</image:loc>
       <image:title>Pneumatic Air Cannon &amp; Super Shooter Water Jets: High-Pressure Accumulator Tanks, Fast Valve Release &amp; 60-Meter Landmark Bursts</image:title>
       <image:caption>Engineering guide to pneumatic air cannon super shooter water jets: 8–10 bar pressure accumulators, millisecond dump valves, and 60-meter water explos</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.fludio.in/fountain-engineering-blog/musical-fountain-cost-in-india-capex-opex-breakdown</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.fludio.in/images/business_deal_handshake.jpg</image:loc>
-      <image:title>Cost of Building a Musical Fountain in India: 2026-2027 Budget Breakdown, Civil MEP Expenses &amp; Commercial ROI Guide</image:title>
-      <image:caption>Comprehensive 2026-2027 budget guide for musical fountains in India: civil basin, SS304L hardware, pumps, DMX controls, IP68 LEDs, CAPEX, and annual O</image:caption>
     </image:image>
   </url>
   <url>
