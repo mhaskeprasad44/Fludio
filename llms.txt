@@ -62,6 +62,11 @@
 - [IP68 Underwater LED Lighting Standards](https://www.fludio.in/fountain-engineering-blog/ip68-explained): 304L vs 316 stainless steel metallurgy, potting resins, and low-voltage 24V safety standards.
 - [Automated vs Static Fountains Comparison](https://www.fludio.in/fountain-engineering-blog/diff-automation-static): ROI, maintenance, and power consumption comparisons for commercial developers.
 - [Hotel & Resort Fountain Architecture](https://www.fludio.in/fountain-engineering-blog/hotel-resort-solutions): Luxury hospitality installations, arrival fountains, silent nocturnal acoustics, and low-mist designs.
+- [Laminar Jet vs Jumping Jet Fountains](https://www.fludio.in/fountain-engineering-blog/laminar-jet-vs-jumping-jet-differences): Fluid dynamics (Re < 2000), internal honeycomb turbulence damping, 15 cuts/sec pneumatic water cutters, and total internal reflection RGBW optics.
+- [Digital Water Curtains (DWC) Engineering & Cost Guide](https://www.fludio.in/fountain-engineering-blog/digital-water-curtain-engineering-cost-guide): 64 micro-valves/meter, sub-5ms droplet ballistics, interactive LiDAR portals, and Indian domestic manufacturing vs 40%+ European import duties.
+- [Water Screen Projection Systems Guide](https://www.fludio.in/fountain-engineering-blog/water-screen-projection-systems-guide): Semi-circular hydro-shield fan nozzles (15m to 40m), 20,000-60,000 ANSI lumen rear projection, laser graphics, and SMPTE timecode sync.
+- [Walkable Dry Deck Plaza Fountains Engineering](https://www.fludio.in/fountain-engineering-blog/walkable-dry-deck-plaza-fountain-engineering): Heel-safe (<8mm) SS304L grates, subterranean balance tanks, low-voltage 24V DC safety, and dual UV water treatment.
+- [2D & 3D CNC Dancing Fountain Nozzles Guide](https://www.fludio.in/fountain-engineering-blog/multidirectional-cnc-dancing-fountain-nozzles-guide): Dual-axis stepper motors, IP68 silicon-carbide mechanical seals, 16-bit DMX512-A resolution, and dynamic musical choreography.
 
 ## Full Knowledge Base
 

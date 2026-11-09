@@ -345,4 +345,59 @@
       <image:caption>Design manual for laminar sheetfalls and digital graphic water curtains: splash containment calculations, internal baffle physics, and binary solenoid</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/laminar-jet-vs-jumping-jet-differences</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/laminar_jumping_jet.jpg</image:loc>
+      <image:title>Laminar Jet vs Jumping Jet Fountains: Fluid Dynamics, High-Speed Cutters &amp; Engineering Differences</image:title>
+      <image:caption>Comprehensive engineering analysis comparing continuous laminar flow jets with high-speed jumping jets. Learn Reynolds number physics, internal honeyc</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/digital-water-curtain-engineering-cost-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/digital_water_curtain.jpg</image:loc>
+      <image:title>Interactive Digital Water Curtains (DWC): Solenoid Mechanics, Water Printing Resolution &amp; India Manufacturing vs Import Costs</image:title>
+      <image:caption>Complete technical and cost guide for Interactive Digital Water Curtains (DWC). Learn 64 micro-valve resolution, graphical waterfall printing, softwar</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/water-screen-projection-systems-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/musical_fountain_hero.jpg</image:loc>
+      <image:title>Water Screen Projection Systems: Semi-Circular Water Fan Nozzles, Laser Graphics &amp; Turnkey Multimedia Shows in India</image:title>
+      <image:caption>Engineering guide to water screen projection systems for outdoor lakes and musical fountains. Learn semi-circular hydro-shield nozzle physics, project</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/walkable-dry-deck-plaza-fountain-engineering</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dry_deck_solenoid_jet.jpg</image:loc>
+      <image:title>Walkable Dry Deck Plaza Fountains: Heel-Safe SS304L Grates, Subterranean Drainage &amp; Public Safety Standards</image:title>
+      <image:caption>Engineering guide to walkable dry deck plaza fountains for smart cities, shopping malls, and public parks. Learn ADA heel-safe grates, subterranean dr</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/multidirectional-cnc-dancing-fountain-nozzles-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dancing_nozzle_motorized.jpg</image:loc>
+      <image:title>2D &amp; 3D CNC Dancing Fountain Nozzles: Dual-Axis Stepper Motors, DMX Precision &amp; Dynamic Water Choreography</image:title>
+      <image:caption>Technical guide to 2D and 3D CNC multidirectional dancing fountain nozzles. Learn dual-axis stepper motor mechanics, IP68 underwater sealing, DMX512-A</image:caption>
+    </image:image>
+  </url>
 </urlset>

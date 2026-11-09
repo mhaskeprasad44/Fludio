@@ -644,6 +644,13 @@ blogs.forEach(b => {
   const schemas = [SHARED_ORG_SCHEMA, SHARED_LOCAL_SCHEMA, breadcrumbsSchema, articleSchema];
   if (faqSchema) schemas.push(faqSchema);
 
+  const introHtml = b.intro ? `
+    <div class="p-5 my-6 bg-slate-100 border-l-4 border-cyan-600 rounded-r-lg text-slate-800 text-sm leading-relaxed">
+      <strong class="text-slate-900 block mb-1">Engineering Definition &amp; Core Takeaway:</strong>
+      ${escapeHtml(b.intro)}
+    </div>
+  ` : '';
+
   const sectionsHtml = b.sections ? b.sections.map(s => `
     <section class="mt-8">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">${escapeHtml(s.heading)}</h2>
@@ -655,6 +662,40 @@ blogs.forEach(b => {
       ` : ''}
     </section>
   `).join('') : '';
+
+  const tableHtml = b.tableData ? `
+    <section class="mt-10 mb-8 overflow-x-auto">
+      <h3 class="text-xl font-bold text-slate-900 mb-4">${escapeHtml(b.tableData.title || b.tableData.caption || 'Engineering Specification Matrix')}</h3>
+      <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
+        <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
+          <tr>
+            ${b.tableData.headers.map(h => `<th class="p-3.5 font-semibold border-r border-slate-200 last:border-0">${escapeHtml(h)}</th>`).join('')}
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          ${b.tableData.rows.map(row => `
+            <tr class="hover:bg-slate-50 transition-colors">
+              ${row.map(cell => `<td class="p-3.5 border-r border-slate-200 last:border-0 text-slate-700">${escapeHtml(cell)}</td>`).join('')}
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </section>
+  ` : '';
+
+  const commercialHtml = b.targetCommercialUrl ? `
+    <div class="mt-8 p-5 bg-cyan-50 border border-cyan-200 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <span class="text-xs font-bold text-cyan-800 uppercase tracking-wider block">Commercial Engineering Reference</span>
+        <a href="${b.targetCommercialUrl}" class="text-base font-bold text-cyan-950 hover:underline">
+          ${escapeHtml(b.targetCommercialAnchor || b.title)} &rarr;
+        </a>
+      </div>
+      <a href="${b.targetCommercialUrl}" class="bg-cyan-600 hover:bg-cyan-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all whitespace-nowrap">
+        Explore Hardware
+      </a>
+    </div>
+  ` : '';
 
   const faqsHtml = b.faqs && b.faqs.length > 0 ? `
     <section class="mt-12 pt-8 border-t border-slate-200">
@@ -731,7 +772,10 @@ ${JSON.stringify(schemas, null, 2)}
         </div>
 
         <div class="prose prose-slate max-w-none">
+          ${introHtml}
           ${sectionsHtml}
+          ${tableHtml}
+          ${commercialHtml}
           ${faqsHtml}
         </div>
 
@@ -1176,7 +1220,28 @@ ${JSON.stringify(schemas, null, 2)}
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          ${products.map(p => {
+          ${hub.path === 'fountain-engineering-blog' ? blogs.map(b => `
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div>
+                <img src="${b.imageUrl}" alt="${escapeHtml(b.title)}" class="w-full h-48 object-cover" width="400" height="192" loading="lazy" />
+                <div class="p-6">
+                  <div class="flex items-center justify-between text-xs font-bold text-cyan-600 uppercase tracking-wider mb-2">
+                    <span>${escapeHtml(b.category)}</span>
+                    <span class="text-slate-400 font-normal">${escapeHtml(b.readTime)}</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900 mb-2">
+                    <a href="/fountain-engineering-blog/${b.id}" class="hover:text-cyan-600 transition-colors">${escapeHtml(b.title)}</a>
+                  </h3>
+                  <p class="text-sm text-slate-600 line-clamp-3 mb-4">${escapeHtml(b.description)}</p>
+                </div>
+              </div>
+              <div class="px-6 pb-6 pt-0">
+                <a href="/fountain-engineering-blog/${b.id}" class="text-sm font-semibold text-cyan-600 hover:text-cyan-700 flex items-center gap-1">
+                  Read Technical Guide &rarr;
+                </a>
+              </div>
+            </div>
+          `).join('') : products.map(p => {
             const s = Fh[p.id] || p.id;
             return `
               <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
