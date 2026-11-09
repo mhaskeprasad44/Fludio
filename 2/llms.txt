@@ -1,0 +1,52 @@
+# Fludio Water Solutions
+
+> Fludio Water Solutions (https://www.fludio.in) is India's leading fountain contractor, manufacturer, and hydraulic engineering consultancy. Headquartered in Pune, Maharashtra, Fludio designs, fabricates, and commissions automated musical dancing fountains, static architectural water features, and certified IP68 304L stainless steel underwater lighting systems across Pune, Mumbai, and all Indian states.
+
+## Core Engineering Standards (Fixed Terms)
+
+- **DMX 512 Protocol**: Industrial digital communication standard operating at 250 kbps used to choreograph water pumps, high-speed solenoid valves, and RGBW LED lighting in millisecond synchrony with musical audio tracks.
+- **IP68 Ingress Protection**: Certified submersible standard ensuring zero water penetration under continuous immersion up to 10 meters depth for all electrical junction enclosures and underwater lighting fixtures.
+- **304L Stainless Steel**: Low-carbon austenitic stainless steel alloy (carbon < 0.03%) engineered for zero intergranular corrosion and lifetime oxidation resistance in chlorinated, treated, and fresh aquatic environments.
+
+## Manufacturing & Geographic Scope
+
+- **Registered Office & Manufacturing**: Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road, Pune 411041, Maharashtra, India.
+- **Primary Regional Hubs**: Pune (PCMC, Hinjawadi, Baner, Kothrud), Mumbai (Bandra Kurla Complex, South Mumbai, Navi Mumbai, Thane).
+- **PAN India Contracting**: Turnkey municipal, commercial, and resort installations across Delhi NCR, Bengaluru, Hyderabad, Jaipur, Udaipur, Kolkata, and Goa.
+- **Contact & RFQ**: Telephone: +91 85307 53091 | Email: info@fludio.in | Hours: Mon-Sat 09:00 AM - 06:00 PM IST.
+
+## Product Catalog (Dedicated Pages & Specifications)
+
+- [IP68 304L Stainless Steel LED Spotlight](https://www.fludio.in/water-fountain-products/ip68-underwater-led-spotlight): Submersible spotlight available in 9W, 18W, 27W, and 36W RGBW with DMX 512 control for columns up to 10m.
+- [IP68 Donut Nozzle Submersible Ring Light](https://www.fludio.in/water-fountain-products/donut-nozzle-submersible-ring-light): Circular center-hole LED fixture (1", 1.5", 2", 2.5" apertures) providing 360-degree concentric illumination over nozzle pipes.
+- [All Types of Fountain Nozzles](https://www.fludio.in/water-fountain-products/architectural-fountain-nozzles): CNC machined in 304L stainless steel and CW617N brass. Geyser foam jets, Cascade cedar jets, fan jets, bell nozzles, and rotating spiral jets.
+- [Floating Lake Aerators Series](https://www.fludio.in/water-fountain-products/floating-lake-aerator-series): High-oxygenation ecological lake aerators (2 HP, 5 HP, 10 HP) with IP68 continuous-duty motors and UV-stabilized HDPE floats.
+- [Multidirection Dancing Nozzles](https://www.fludio.in/water-fountain-products/multidirectional-dancing-fountain-nozzles): Motorized 1D pendulum and 2D 360-degree robotic dancing nozzles driven by IP68 brushless DC servos and DMX 512 choreography.
+- [DMX 512 Dancing Fountain Control Panels](https://www.fludio.in/water-fountain-products/dmx512-musical-fountain-control-panel): Industrial automation cabinets integrating Siemens/Schneider PLCs, variable frequency drives (VFDs), and SMPTE audio sync.
+- [Architectural Wall Sheetfall Fountain](https://www.fludio.in/water-fountain-products/architectural-waterfall-sheetfall-cascade): Precision 304L stainless steel water blade spillways (300mm to 2000mm) delivering a continuous glass-like sheetfall veil.
+- [Laminar Flow Jumping Jet](https://www.fludio.in/water-fountain-products/laminar-flow-jumping-jets): Splash-free non-turbulent glass-rod illuminated water jets with pneumatic high-speed water cutters (up to 15 cuts/sec).
+- [Interactive Dry Deck Solenoid Jet](https://www.fludio.in/water-fountain-products/interactive-dry-deck-solenoid-jet): Flush-to-grade plaza fountains with slip-resistant SS304L grates, 24V millisecond solenoid valves, and integrated RGBW LED rings.
+- [Classic Tiered Static Architectural Fountain](https://www.fludio.in/water-fountain-products/classic-tiered-architectural-fountain): Multi-tier cascading fountains built with 304L distribution manifolds, foaming geyser plumes, and continuous filtration.
+- [Digital Water Curtain Modular Unit](https://www.fludio.in/water-fountain-products/interactive-digital-water-curtain): Interactive computerized graphic waterfalls releasing water droplets via 64 micro-solenoids/meter to print text, logos, and geometric patterns in mid-air.
+
+## Core Turnkey Services
+
+- [Turnkey Fountain Projects](https://www.fludio.in/fountain-design-installation-services): End-to-end design, civil-hydraulic drafting, 304L fabrication, PLC programming, and on-site commissioning.
+- [Material Supply & Installation](https://www.fludio.in/fountain-design-installation-services): Direct supply of certified IP68 304L underwater hardware, nozzles, and cables across India.
+- [Government & Private Consultancy](https://www.fludio.in/fountain-design-installation-services): Technical RFP schematics, DMX 512 layouts, and municipal compliance advisory.
+
+## Technical Blog & Engineering Publications (Dedicated Articles)
+
+- [Fountain Engineering Technical Blog](https://www.fludio.in/fountain-engineering-blog): Main technical publication hub with categories in lighting, hydraulics, automation, and project planning.
+- [DMX 512 Musical Fountain Programming](https://www.fludio.in/fountain-engineering-blog/dmx512-fountain-choreography): Comprehensive choreography guide covering PLC architectures, frame rates, and millisecond pump sync.
+- [Interactive Dry Deck Fountain Engineering](https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-engineering): Flush-to-grade public plaza fountain engineering, high-speed solenoid sequencing, and safety compliance.
+- [Fountain Nozzles Selection Guide](https://www.fludio.in/fountain-engineering-blog/fountain-nozzles-selection-guide): Comparative technical evaluation of geysers, cascade jets, laminar jumping jets, and frothy foam nozzles.
+- [Lake Aeration & Ecological Water Quality](https://www.fludio.in/fountain-engineering-blog/lake-aeration-eco-water-quality): Dissolved oxygen saturation, BOD reduction, and subsurface diffusion vs surface aeration.
+- [Architectural Sheetfall & Water Curtains](https://www.fludio.in/fountain-engineering-blog/architectural-sheetfall-water-curtains): Modern glass-like sheetfall spillway hydraulics, anti-splashing weirs, and acoustic dampening.
+- [IP68 Underwater LED Lighting Standards](https://www.fludio.in/fountain-engineering-blog/ip68-explained): 304L vs 316 stainless steel metallurgy, potting resins, and low-voltage 24V safety standards.
+- [Automated vs Static Fountains Comparison](https://www.fludio.in/fountain-engineering-blog/diff-automation-static): ROI, maintenance, and power consumption comparisons for commercial developers.
+- [Hotel & Resort Fountain Architecture](https://www.fludio.in/fountain-engineering-blog/hotel-resort-solutions): Luxury hospitality installations, arrival fountains, silent nocturnal acoustics, and low-mist designs.
+
+## Full Knowledge Base
+
+For the complete, unedited technical documentation and specifications, refer to [llms-full.txt](https://www.fludio.in/llms-full.txt).

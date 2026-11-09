@@ -1,0 +1,154 @@
+# Fludio Water Solutions - Full Knowledge Base & Technical Documentation
+
+## 1. Executive Summary & Corporate Identity
+Fludio Water Solutions (https://www.fludio.in) is an India-based engineering firm and manufacturing contractor specializing in high-performance dynamic and architectural water features. Our core competencies encompass automated musical dancing fountains, interactive flush-to-grade dry deck installations, certified IP68 underwater illumination systems, precision 304L stainless steel nozzles, floating lake aerators, and digital graphic water curtains.
+
+- Organization Legal Name: Fludio Water Solutions
+- Operational Territory: Headquarters in Pune, Maharashtra; Dedicated operations in Mumbai; Turnkey project execution across PAN India.
+- Registered Address: Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road, Pune 411041, Maharashtra, India.
+- Contact Details: Phone: +91 85307 53091 | Email: info@fludio.in | Web: https://www.fludio.in
+
+---
+
+## 2. Core Technological & Engineering Standards
+
+### DMX 512 Automation Protocol
+Fludio utilizes the international USITT DMX512-A standard for dynamic fountain choreography. Operating via RS-485 differential signaling at 250 kbps, DMX 512 enables:
+- Millisecond-level synchronization between acoustic tracks and mechanical water discharge.
+- Direct control over Variable Frequency Drive (VFD) pump speeds to modulate water column height dynamically.
+- Individual addressability of high-speed 24V DC solenoid valves (switching response under 20 milliseconds).
+- 8-bit and 16-bit dimming of 4-channel RGBW underwater LED lights across 256 to 65,536 brightness increments.
+- Optically isolated multi-universe architectures (1024 to 4096 channels) isolating control logic from power harmonics.
+
+### IP68 Ingress Protection Certification
+All underwater electrical assemblies manufactured or deployed by Fludio are certified IP68:
+- Hermetically sealed against continuous submersion up to 10 meters depth under 1.0 Bar hydrostatic pressure.
+- Utilizing double EPDM/silicone O-ring seals, pressure-rated cable glands, and high-impact tempered glass lenses.
+- Compliant with IEC 60598-2-18 safety standards for aquatic and swimming pool luminaires.
+
+### 304L Austenitic Stainless Steel Grade
+Fludio uses ultra-low carbon 304L stainless steel (carbon content <= 0.03%) across all fabricated manifolds, nozzle bodies, light housings, and dry deck plates:
+- Eliminates carbide precipitation during laser and TIG welding.
+- Provides total resistance to intergranular corrosion and pitting in chlorinated water, ozone-treated pools, and saline coastal environments (such as Mumbai waterfronts).
+- Eliminates ferric oxide surface rust, ensuring lifetime aesthetic clarity without chemical leeching.
+
+---
+
+## 3. Product Catalog & Technical Specifications
+
+### Product 1: IP68 304L Stainless Steel LED Spotlight
+- Canonical URL: https://www.fludio.in/#products/underwater-light
+- Description: Certified IP68 underwater spotlight precision-machined from 304L stainless steel for maximum corrosion resistance in treated water.
+- Models:
+  * FL-UL-09W: 9W, 950 Lumens, 12V/24V DC, Warm White/Cool White, 15°-45° optics.
+  * FL-UL-18W: 18W, 1800 Lumens, 24V DC, DMX 512 RGBW, 4-in-1 CREE LEDs.
+  * FL-UL-27W: 27W, 2800 Lumens, 24V DC, High-Lux Optical Column dispersion.
+  * FL-UL-36W: 36W, 3900 Lumens, 24V DC, Heavy-Duty Deep Submersion Monument Light.
+- Specifications: 304L stainless steel, IP68 rated, 12V/24V DC safe low voltage, DMX 512 / PWM control, 8mm tempered glass.
+
+### Product 2: IP68 Donut Nozzle Submersible Ring Light
+- Canonical URL: https://www.fludio.in/#products/ring-light
+- Description: Circular center-hole donut LED fixture engineered to mount directly over nozzle supply pipes for 360-degree illuminated water columns.
+- Models:
+  * FL-RL-12W: 12W, 32mm (1") center hole.
+  * FL-RL-18W: 18W, 48mm (1.5") center hole, DMX 512 addressable.
+  * FL-RL-24W: 24W, 60mm (2") center hole, high-flow heavy plume light.
+  * FL-RL-36W: 36W, 76mm/90mm (2.5"-3") center hole for monumental geyser jets.
+- Specifications: SS304L unibody, IP68 rated, 24V DC, 360° concentric optical beam.
+
+### Product 3: All Types of Fountain Nozzles
+- Canonical URL: https://www.fludio.in/#products/nozzles
+- Description: Complete range of precision-engineered fountain nozzles CNC machined in 304L stainless steel and CW617N brass.
+- Subproduct Types:
+  * Cascade & Cedar Jet: Water-level dependent aerated massive frothy white columns.
+  * Geyser Foam Jet: Water-level independent aerated foam pillars.
+  * Multi-Directional Fan & Finger Jets: Precision flat water films and curved sprays.
+  * Morning Glory / Bell Nozzles: Silent, transparent laminar water bells.
+  * Rotating Spiral Windmill Nozzles: Rotary spinning water spirals powered by water pressure.
+- Specifications: Inflow 1/2" to 4" BSP/NPT, operating pressure 0.5 - 3.5 Bar, swivel alignment +/-15°.
+
+### Product 4: Floating Aerators Series
+- Canonical URL: https://www.fludio.in/#products/aerators
+- Description: High-efficiency floating lake aerators for dissolved oxygen transfer, ecological balance, and majestic visual displays.
+- Models:
+  * FL-AER-2HP: 1.5 kW (2 HP), 45,000 L/hr circulation, 1.8 kg O2/hr, for up to 1.5 acres.
+  * FL-AER-5HP: 3.7 kW (5 HP), 95,000 L/hr circulation, 2.5 kg O2/hr, combined display & aeration.
+  * FL-AER-10HP: 7.5 kW (10 HP), 160,000 L/hr, municipal civic lake management.
+- Specifications: Continuous duty IP68 submersible motor (230V/415V), SS304L intake screen, UV-stabilized HDPE float, optional DMX 512 LED package.
+
+### Product 5: Multidirection Dancing Nozzles
+- Canonical URL: https://www.fludio.in/#products/multi-nozzles
+- Description: Robotic motorized fountain nozzles driven by IP68 brushless DC servos for complex synchronized musical patterns.
+- Models:
+  * FL-DN-1D: 1-Axis Single-Plane swing jet (+/-90° pendulum, 50ms response).
+  * FL-DN-2D: 2-Axis 360° spherical dancing jet (continuous azimuth, +/-60° tilt).
+  * FL-DN-3D-FAST: High-speed dynamic nozzle with integrated IP68 304L RGBW light ring.
+- Specifications: Brushless DC servo drives, absolute encoders, DMX 512 / RDM protocol, SS304L body, IP68 sealed.
+
+### Product 6: DMX 512 Dancing Fountain Control Panels
+- Canonical URL: https://www.fludio.in/#products/panels
+- Description: Industrial electrical automation panels integrated with customized DMX 512 controllers, VFDs, and real-time audio sync logic.
+- Modules:
+  * FL-CP-DMX-PRO: Master PLC & DMX 512 show controller cabinet with touchscreen HMI.
+  * FL-CP-VFD-ARRAY: Multi-channel variable frequency drive pump speed modulation rack.
+  * FL-CP-VALVE-SUB: Submersible 24V solenoid driver enclosure.
+- Specifications: IP65 weatherproof enclosure, Siemens/Schneider PLC, SMPTE timecode sync, surge suppression, 415V 3-phase.
+
+### Product 7: Architectural Wall Sheetfall Fountain
+- Canonical URL: https://www.fludio.in/#products/sheetfall
+- Description: Precision-engineered linear waterfall spillways creating smooth, glass-like sheets of descending water.
+- Sizes: 300mm, 600mm, 900mm, 1200mm, 1500mm, 2000mm.
+- Specifications: 1.5mm heavy-gauge 304L stainless steel, internal flow-smoothing baffles, 50mm/100mm/150mm lip projections, flow rate 60-90 LPM per linear meter.
+
+### Product 8: Laminar Flow Jumping Jet
+- Canonical URL: https://www.fludio.in/#products/laminar-jet
+- Description: Non-turbulent, crystal-clear illuminated glass-rod water jets with fast-action pneumatic water cutters.
+- Models:
+  * FL-LJ-STATIC: Static laminar glass rod arc with internal RGBW LED emitter.
+  * FL-LJ-JUMP: Pneumatic jumping jet with micro-cutter solenoid (up to 15 cuts/sec).
+  * FL-LJ-DUAL: Interactive dual-arc leaping jet assembly.
+- Specifications: Zero-turbulence laminar stream (up to 5m throw, 2.5m height), SS304L cylinder, IP68 rated, 24V DC trigger, 50-micron filtration.
+
+### Product 9: Interactive Dry Deck Solenoid Jet
+- Canonical URL: https://www.fludio.in/#products/dry-deck-jet
+- Description: Flush-to-grade dry deck fountain system featuring non-slip SS304L cover plates and instant-shutoff solenoid valves.
+- Models:
+  * FL-DD-SOL-01: Standard flush-floor nozzle with 24V millisecond solenoid.
+  * FL-DD-RING-02: Integrated LED ring dry deck module with concentric 360° light.
+  * FL-DD-MATRIX: Smart city interactive plaza array with pressure sensors.
+- Specifications: 5mm SS304L non-slip heel-proof plate (2,000 kg load rating), IP68 24V DC solenoid valve (<20ms response), integrated drainage return.
+
+### Product 10: Classic Tiered Static Architectural Fountain
+- Canonical URL: https://www.fludio.in/#products/static-tiered
+- Description: Multi-tier architectural static water fountain featuring central foaming geyser plumes and concentric cascading overflow rings.
+- Assemblies:
+  * FL-TF-2TIER: 2-Tier residential villa cascade assembly.
+  * FL-TF-3TIER: 3-Tier luxury hotel centerpiece with foaming plume.
+  * FL-TF-CUSTOM: Heritage monumental civic fountain array.
+- Specifications: SS304L welded ring manifold, aerated geyser nozzle, laser-cut scuppers, continuous multi-stage filtration loop.
+
+### Product 11: Digital Water Curtain Modular Unit
+- Canonical URL: https://www.fludio.in/#products/digital-water-curtain
+- Description: Computer-controlled graphic waterfalls that print text, logos, and geometric patterns through falling water droplets.
+- Models:
+  * FL-DWC-MOD100: 1-meter modular section (64 micro-valves per meter).
+  * FL-DWC-CURVE: Curved and circular graphic waterfall enclosure.
+  * FL-DWC-PRO-INTERACTIVE: Motion-sensor interactive water curtain.
+- Specifications: 64 valves/meter, valve response < 8ms, SS304L and marine alloy frame, Fludio Graphic Studio software, integrated IP68 RGBW downlight bar.
+
+---
+
+## 4. Geographic Service Areas & Logistics
+
+- Pune Facility (Manufacturing & Engineering):
+  Location: Narhe Dhayari Road, Pune 411041.
+  Key Local Coverage: Pune Municipal Corporation (PMC), Pimpri Chinchwad (PCMC), Hinjawadi Rajiv Gandhi Infotech Park, Baner, Balewadi, Kothrud, Hadapsar, Viman Nagar, Magarpatta City.
+  Dispatch Capability: Same-day site delivery and immediate technical support across the Pune metropolitan region.
+
+- Mumbai Operations (Commercial & Luxury Projects):
+  Key Project Hubs: Bandra Kurla Complex (BKC), South Mumbai (Nariman Point, Worli, Lower Parel), Powai, Andheri, Navi Mumbai (Vashi, Belapur), Thane.
+  Dispatch Capability: 24-hour delivery via Mumbai-Pune Expressway; on-site commissioning engineers stationed in Mumbai.
+
+- Pan-India Turnkey Contracting:
+  Active Installations: New Delhi (Government Heritage Lake projects), Bengaluru (Tech Park waterfront promenades), Udaipur (Luxury 5-star resort garden cascades), Jaipur, Hyderabad, Chennai, Kolkata, Ahmedabad, and Goa.
+  Compliance: Registered government fountain contractor and technical consultant for municipal corporations, smart cities, and landscape architecture firms across India.
