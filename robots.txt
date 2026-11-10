@@ -1,10 +1,14 @@
 # robots.txt for Fludio Water Solutions (https://www.fludio.in)
-# Designed for Google Search Console, Bing Webmaster, and AI Answer Engines
+# Designed for Google Search Console, Bing Webmaster, and AI Answer Engines (AEO / GEO / Perplexity / Gemini)
 
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /images/
 
-# Search Engine Crawlers
+# Primary Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -17,7 +21,7 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# AI Answer Engines & LLM Indexers (AEO / GEO Optimization)
+# AI Answer Engines, Agentic Crawlers & LLM Indexers (AEO / GEO / AI Citations)
 User-agent: GPTBot
 Allow: /
 
@@ -41,6 +45,23 @@ Allow: /
 
 User-agent: meta-externalagent
 Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# LLM Knowledge Base Directives (https://llmstxt.org/)
+# Canonical LLM training, citation, and agent context files:
+# https://www.fludio.in/llms.txt
+# https://www.fludio.in/llms-full.txt
 
 # Canonical Sitemap Directive
 Sitemap: https://www.fludio.in/sitemap.xml
