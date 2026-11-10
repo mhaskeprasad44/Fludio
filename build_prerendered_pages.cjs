@@ -14,8 +14,7 @@ const reviews = [
     date: "9 months ago",
     text: "They handled our lake aerator and fountain system project very efficiently. Site inspection, planning, installation, and commissioning were done professionally. After installation, they also provided good after-sales support. Reliable company for large water projects.",
     projectTag: "Lake Aerator & Fountain System",
-    source: "google",
-    reviewImage: "/images/floating_lake_aerator.jpg"
+    source: "google"
   },
   {
     id: "gmb-2",
@@ -27,8 +26,7 @@ const reviews = [
     date: "9 months ago",
     text: "I collaborated with them for a luxury home project including sheetfall fountain and landscape lighting. Their technical knowledge and practical suggestions helped improve the final output. They maintained proper timelines and delivered premium quality work. Client was extremely happy. Strongly recommended.",
     projectTag: "Sheetfall Fountain & Lighting",
-    source: "google",
-    reviewImage: "/images/sheetfall_wall_waterfall.jpg"
+    source: "google"
   },
   {
     id: "gmb-3",
@@ -40,8 +38,7 @@ const reviews = [
     date: "9 months ago",
     text: "Very good service and quality work. They installed sheetfall water fountain at my home perfectly. Team was supportive till completion. Highly recommended.",
     projectTag: "Sheetfall Water Fountain",
-    source: "google",
-    reviewImage: "/images/sheetfall_wall_waterfall.jpg"
+    source: "google"
   },
   {
     id: "gmb-4",
@@ -53,8 +50,7 @@ const reviews = [
     date: "9 months ago",
     text: "Our company assigned them for a musical fountain installation. From design discussion to final testing, their team supported us at every stage. They used high-quality waterproof LED lights and durable fountain equipment. Project was completed on time without any issues. Very trustworthy and professional service.",
     projectTag: "Musical Fountain Installation",
-    source: "google",
-    reviewImage: "/images/musical_fountain_hero.jpg"
+    source: "google"
   },
   {
     id: "gmb-5",
@@ -66,8 +62,7 @@ const reviews = [
     date: "9 months ago",
     text: "We hired them for complete water feature solutions including musical fountain, LED lighting, and control systems. Their team worked closely with our engineers and contractors. Materials used were high quality and installation was neat. They also provided proper training and maintenance guidance. Overall, excellent experience and long-term partner.",
     projectTag: "Turnkey Water Features",
-    source: "google",
-    reviewImage: "/images/dmx_control_panel.jpg"
+    source: "google"
   },
   {
     id: "gmb-6",
@@ -79,8 +74,7 @@ const reviews = [
     date: "Verified Google Review",
     text: "Procured stainless steel 304L fountain equipment, precision nozzles, and IP68 submersible LED spotlights directly from their Narhe industrial workshop. Exceptional fabrication standards, zero leakage issues, and smooth coordination.",
     projectTag: "Fountain Hardware & IP68 LEDs",
-    source: "google",
-    reviewImage: "/images/fountain_underwater_light.jpg"
+    source: "google"
   },
   {
     id: "gmb-7",
@@ -92,8 +86,7 @@ const reviews = [
     date: "Verified Google Review",
     text: "Fludio provided turnkey installation of interactive water features and decorative fountain nozzles for our hospitality campus. Clean hydraulic engineering, reliable automation, and prompt support.",
     projectTag: "Resort Interactive Features",
-    source: "google",
-    reviewImage: "/images/project_udaipur_resort.jpg"
+    source: "google"
   },
   {
     id: "gmb-8",
@@ -105,8 +98,7 @@ const reviews = [
     date: "Verified Google Review",
     text: "Great experience working with Fludio Water Solutions for our township dry deck plaza fountain. Fast delivery, professional on-site hydraulic testing, and top-tier customer guidance.",
     projectTag: "Dry Deck Plaza Fountain",
-    source: "google",
-    reviewImage: "/images/project_pune_drydeck_plaza.jpg"
+    source: "google"
   }
 ];
 
@@ -1342,8 +1334,9 @@ ${JSON.stringify(schemas, null, 2)}
         ` : ''}
 
         ${hub.path === 'client-reviews-testimonials' ? `
-        <!-- Google Reviews Official Header Badge -->
-        <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 mb-12 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <!-- Google Reviews Official Header Badge & Interactive Carousel Section -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 mb-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-4">
             <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
               <svg class="w-8 h-8" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
@@ -1369,7 +1362,164 @@ ${JSON.stringify(schemas, null, 2)}
             </a>
           </div>
         </div>
-        ` : ''}
+
+        <!-- Interactive Scrolling Carousel Section (Zero Images, Text Reviews Only) -->
+        <div class="mb-14 bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-800">Live Client Feedback</span>
+              </div>
+              <h3 class="text-xl font-extrabold text-slate-900">Google Reviews Scrolling Showcase</h3>
+              <p class="text-xs text-slate-500 mt-1">Hover over any card to pause auto-scrolling and read full review.</p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <button id="hub-carousel-prev" aria-label="Previous review" class="w-9 h-9 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center transition-all shadow-xs cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button id="hub-carousel-next" aria-label="Next review" class="w-9 h-9 rounded-full border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center transition-all shadow-xs cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Track Container -->
+          <div id="hub-carousel-container" class="overflow-hidden">
+            <div id="hub-carousel-track" class="flex gap-5 transition-transform duration-500 ease-out">
+              ${reviews.map(r => `
+                <div class="hub-carousel-slide shrink-0 w-full sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.833rem)] bg-white border border-slate-200 rounded-xl p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                      <div class="flex items-center gap-1">
+                        <span class="text-amber-400 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="text-xs font-bold text-slate-800">5.0</span>
+                      </div>
+                      <span class="text-[11px] text-slate-400 font-mono">${escapeHtml(r.date)}</span>
+                    </div>
+                    <div class="mb-3">
+                      <span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-cyan-800 bg-cyan-50 border border-cyan-200 px-2 py-0.5 rounded">
+                        ${escapeHtml(r.projectTag)}
+                      </span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                      &ldquo;${escapeHtml(r.text)}&rdquo;
+                    </p>
+                  </div>
+                  <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <div class="flex items-center gap-2.5">
+                      <div class="w-9 h-9 rounded-full bg-cyan-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                        ${escapeHtml(r.avatarText)}
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-1">
+                          ${escapeHtml(r.author)}
+                          <span class="text-emerald-500 font-bold" title="Verified Google Review">&#10003;</span>
+                        </h4>
+                        <p class="text-[10px] text-slate-500">${escapeHtml(r.role)}</p>
+                      </div>
+                    </div>
+                    <a href="https://share.google/dA2tME9tn7KujiqkO" target="_blank" rel="noopener noreferrer" class="text-cyan-600 hover:text-cyan-700 text-xs font-bold flex items-center gap-1" title="View on Google Maps">
+                      Google &rarr;
+                    </a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Carousel Dots -->
+          <div id="hub-carousel-dots" class="flex justify-center items-center gap-2 mt-6"></div>
+        </div>
+
+        <script>
+        (function() {
+          const track = document.getElementById('hub-carousel-track');
+          const prevBtn = document.getElementById('hub-carousel-prev');
+          const nextBtn = document.getElementById('hub-carousel-next');
+          const dotsContainer = document.getElementById('hub-carousel-dots');
+          const container = document.getElementById('hub-carousel-container');
+          if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+          const slides = track.querySelectorAll('.hub-carousel-slide');
+          const totalSlides = slides.length;
+          let currentIndex = 0;
+          let isHovered = false;
+          let autoSlideTimer = null;
+
+          function getVisibleCount() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 640) return 2;
+            return 1;
+          }
+
+          function getMaxIndex() {
+            return Math.max(0, totalSlides - getVisibleCount());
+          }
+
+          function updateCarousel() {
+            const maxIdx = getMaxIndex();
+            if (currentIndex > maxIdx) currentIndex = maxIdx;
+            const firstSlide = slides[0];
+            if (!firstSlide) return;
+            const slideWidth = firstSlide.getBoundingClientRect().width;
+            const gap = 20;
+            const offset = currentIndex * (slideWidth + gap);
+            track.style.transform = 'translateX(-' + offset + 'px)';
+
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i <= maxIdx; i++) {
+              const dot = document.createElement('button');
+              dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+              dot.className = 'h-2 rounded-full transition-all duration-300 ' + (i === currentIndex ? 'bg-cyan-600 w-6' : 'bg-slate-300 hover:bg-slate-400 w-2');
+              dot.addEventListener('click', function() {
+                currentIndex = i;
+                updateCarousel();
+                resetTimer();
+              });
+              dotsContainer.appendChild(dot);
+            }
+          }
+
+          function nextSlide() {
+            const maxIdx = getMaxIndex();
+            currentIndex = (currentIndex >= maxIdx) ? 0 : currentIndex + 1;
+            updateCarousel();
+          }
+
+          function prevSlide() {
+            const maxIdx = getMaxIndex();
+            currentIndex = (currentIndex <= 0) ? maxIdx : currentIndex - 1;
+            updateCarousel();
+          }
+
+          function startTimer() {
+            if (autoSlideTimer) clearInterval(autoSlideTimer);
+            autoSlideTimer = setInterval(function() {
+              if (!isHovered) {
+                nextSlide();
+              }
+            }, 5000);
+          }
+
+          function resetTimer() {
+            startTimer();
+          }
+
+          prevBtn.addEventListener('click', function() { prevSlide(); resetTimer(); });
+          nextBtn.addEventListener('click', function() { nextSlide(); resetTimer(); });
+
+          if (container) {
+            container.addEventListener('mouseenter', function() { isHovered = true; });
+            container.addEventListener('mouseleave', function() { isHovered = false; });
+          }
+
+          window.addEventListener('resize', updateCarousel);
+          updateCarousel();
+          startTimer();
+        })();
+        </script>
+` : ''}
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           ${hub.path === 'fountain-engineering-blog' ? blogs.map(b => `
@@ -1411,11 +1561,7 @@ ${JSON.stringify(schemas, null, 2)}
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
                   &ldquo;${escapeHtml(r.text)}&rdquo;
                 </p>
-                ${r.reviewImage ? `
-                  <div class="mb-4 rounded-xl overflow-hidden border border-slate-200 h-36">
-                    <img src="${r.reviewImage}" alt="Verified Project by Fludio - ${escapeHtml(r.projectTag)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                  </div>
-                ` : ''}
+
               </div>
               <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div class="flex items-center gap-3">
