@@ -194,7 +194,7 @@ const COMMON_HEAD_SCRIPTS = `
       gtag('js', new Date());
       gtag('config', 'G-9MLEYXELL7', { send_page_view: true });
     </script>
-    <script type="module" crossorigin src="/assets/index-D7xK9mP2.js?v=20261109"></script>
+    <script type="module" crossorigin src="/assets/index-D7xK9mP2.js?v=20261111-v2"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CCiPlLJO.css">
 `;
 

@@ -620,4 +620,224 @@
       <image:caption>Upgrade 10–20 year old static municipal fountains: replace high-wattage halogens with IP68 RGBW LEDs, add VFDs, and deploy DMX512 controllers.</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/ip68-donut-nozzle-ring-lights-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/underwater_ring_light.jpg</image:loc>
+      <image:title>IP68 Donut Nozzle Ring Lights: 2027 Guide to 360° Concentric Fountain Illumination</image:title>
+      <image:caption>Master IP68 donut nozzle ring lights: 304L/316L stainless housings, center aperture sizing, 24V DC DMX512 controls, and concentric beam optics.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/sheetfall-waterfall-spillways-design-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</image:loc>
+      <image:title>Sheetfall Waterfall Spillways: 2027 Precision SS316L Hydraulic Weir Design Guide</image:title>
+      <image:caption>Learn how to design laminar sheetfall waterfall spillways: internal baffle mechanics, weir lip geometry, flow rate calculations, and acoustic tuning.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/floating-lake-aerator-sizing-calculations-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/floating_lake_aerator.jpg</image:loc>
+      <image:title>Floating Lake Aerator Sizing: 2027 Guide to Dissolved Oxygen &amp; Algae Eradication</image:title>
+      <image:caption>Calculate lake aeration requirements: SOTR formulas, dissolved oxygen targets (&gt;6 mg/L), thermal destratification, and continuous-duty IP68 motor sizi</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-balance-tank-calculations</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dry_deck_solenoid_jet.jpg</image:loc>
+      <image:title>Dry Deck Fountain Balance Tank Calculations: 2027 Subterranean Surge Sizing Guide</image:title>
+      <image:caption>Step-by-step balance tank sizing formulas for interactive dry deck fountains: subterranean reservoir capacity, drainage slope dynamics, and safety sta</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-plc-automation-panels-dmx-wiring-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dmx_control_panel.jpg</image:loc>
+      <image:title>Fountain PLC Automation Panels: 2027 Guide to DMX 512 &amp; VFD Panel Wiring Schematics</image:title>
+      <image:caption>Design industrial fountain PLC automation panels: Siemens S7-1200 architecture, VFD modbus control, DMX optocoupled splitters, and surge protection.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/3d-robotic-fountain-nozzles-motion-kinematics-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/dancing_nozzle_motorized.jpg</image:loc>
+      <image:title>3D Robotic Fountain Nozzles: 2027 Motion Kinematics &amp; Dual-Axis Servo Guide</image:title>
+      <image:caption>Explore 3D robotic dancing fountain nozzles: dual-axis gimbal kinematics, IP68 brushless DC servos, DMX512-A 16-bit positioning, and dynamic choreogra</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/laminar-flow-jumping-jet-installation-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/laminar_jumping_jet.jpg</image:loc>
+      <image:title>Laminar Flow Jumping Jet Installation: 2027 Engineering Guide to Total Internal Reflection</image:title>
+      <image:caption>Install laminar flow jumping jets: internal honeycomb baffles, high-speed pneumatic cutters, RGBW fiber optic illumination, and filtration standards.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/digital-water-curtain-atrium-design-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/digital_water_curtain.jpg</image:loc>
+      <image:title>Digital Water Curtain Atrium Design: 2027 Solenoid Water Printing &amp; Catch Basin Guide</image:title>
+      <image:caption>Design interactive digital water curtains for commercial atriums: 64-valve/m resolution, high-speed solenoid ballistics, and zero-splash catch basin d</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/submersible-fountain-led-beam-angle-calculations</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_underwater_light.jpg</image:loc>
+      <image:title>Submersible Fountain LED Beam Angle Calculations: 2027 Optical Lux &amp; Throw Distance Guide</image:title>
+      <image:caption>Calculate optical beam angles for underwater fountain lighting: inverse-square law in water, lux targets, Cree RGBW emitters, and photometrics.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/water-screen-laser-projection-sizing-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</image:loc>
+      <image:title>Water Screen Laser Projection Sizing: 2027 Guide to Hydro-Shield Lumens &amp; Throw Ratios</image:title>
+      <image:caption>Size commercial water screen laser projection systems: hydro-shield nozzle mechanics, ANSI lumen requirements, laser graphics, and SMPTE sync.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/ai-driven-musical-fountain-choreography-2027</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/musical_fountain_hero.jpg</image:loc>
+      <image:title>AI-Driven Musical Fountain Choreography: 2027 Neural Audio-to-Water Automation Guide</image:title>
+      <image:caption>Explore AI-driven musical fountain choreography: real-time neural audio feature extraction, automated DMX512 keyframing, and 3D physics engines.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/multi-tier-architectural-fountain-hydraulics</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/static_tiered_fountain.jpg</image:loc>
+      <image:title>Multi-Tier Architectural Fountain Hydraulics: 2027 Manifold Pressure Balancing Guide</image:title>
+      <image:caption>Master multi-tier architectural fountain hydraulics: gravity cascade weir formulas, ring manifold pressure balancing, and perimeter overflow sizing.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/rainwater-harvesting-commercial-fountains-net-zero</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/blueprint_engineering.jpg</image:loc>
+      <image:title>Rainwater Harvesting for Commercial Fountains: 2027 Net-Zero IGBC Water Credit Guide</image:title>
+      <image:caption>Design net-zero water commercial fountains: rainwater harvesting integration, stormwater surge balance tanks, and IGBC/LEED Green Building credits.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/outdoor-plaza-misting-nozzle-hydraulics-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_installation.jpg</image:loc>
+      <image:title>Outdoor Plaza Misting Nozzle Hydraulics: 2027 Guide to 70-Bar Anti-Drip Flash Evaporation</image:title>
+      <image:caption>Design high-pressure outdoor plaza misting systems: 70-bar ceramic nozzles, micro-droplet flash evaporation, anti-drip valves, and urban cooling.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/magnetic-drive-submersible-fountain-pumps</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_metropol_mumbai.jpg</image:loc>
+      <image:title>Magnetic Drive Submersible Fountain Pumps: 2027 Seal-Less 100,000-Hour Reliability Guide</image:title>
+      <image:caption>Compare magnetic drive submersible fountain pumps vs direct-drive mechanical seals: zero-leakage, 100,000-hour MTBF, energy efficiency, and dry-run sa</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-tender-boq-drafting-architects-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/expert_engineer.jpg</image:loc>
+      <image:title>Fountain Tender BOQ Drafting for Architects: 2027 Complete CPWD &amp; MEP Specification Guide</image:title>
+      <image:caption>Draft flawless commercial fountain tenders: CPWD specifications, line-item Bill of Quantities (BOQ), MEP schematics, and vendor qualification clauses.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/wind-resistant-fountain-nozzle-engineering-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/fountain_nozzle.jpg</image:loc>
+      <image:title>Wind-Resistant Fountain Nozzle Engineering: 2027 Aerated Geyser vs Foam Jet Stability Guide</image:title>
+      <image:caption>Engineer wind-resistant fountain nozzles: Venturi air induction, droplet mass momentum, anemometer auto-throttling, and splash drift mitigation.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-acoustic-noise-decibel-tuning-guide</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_udaipur_resort.jpg</image:loc>
+      <image:title>Fountain Acoustic Noise Decibel Tuning: 2027 Interior Sound Masking &amp; dB Dampening Guide</image:title>
+      <image:caption>Tune architectural fountain acoustics: decibel dampening, pink noise masking of traffic, water impact ramp geometry, and indoor soundscapes.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/commercial-fountain-winterization-protocols</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_bengaluru_techpark.jpg</image:loc>
+      <image:title>Commercial Fountain Winterization Protocols: 2027 Freeze-Protection &amp; Seasonal Shutdown Guide</image:title>
+      <image:caption>Winterize commercial fountains in cold climates: freeze-protection recirculation, pneumatic pipe blowout, submersible pump storage, and spring restart</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/fountain-engineering-blog/fountain-preventive-maintenance-checklists-sop</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/project_pune_drydeck_plaza.jpg</image:loc>
+      <image:title>Fountain Preventive Maintenance Checklists: 2027 SOP for Commercial Pumps, Valves &amp; Filtration</image:title>
+      <image:caption>Standard operating procedures for commercial fountain maintenance: daily, weekly, and quarterly checklists for pumps, DMX panels, and water treatment.</image:caption>
+    </image:image>
+  </url>
 </urlset>
