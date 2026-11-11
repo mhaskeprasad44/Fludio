@@ -727,9 +727,24 @@ blogs.forEach(b => {
     "author": { "@id": "https://www.fludio.in/#organization" },
     "publisher": { "@id": "https://www.fludio.in/#organization" },
     "datePublished": "2026-09-17",
-    "dateModified": "2026-11-09",
+    "dateModified": "2026-11-11",
     "mainEntityOfPage": canonicalUrl
   };
+
+  if (b.targetCommercialUrl) {
+    articleSchema.about = {
+      "@type": "Product",
+      "name": b.targetCommercialAnchor || b.title,
+      "url": `https://www.fludio.in${b.targetCommercialUrl}`
+    };
+    articleSchema.mentions = [
+      {
+        "@type": "Thing",
+        "name": b.targetCommercialAnchor || b.title,
+        "url": `https://www.fludio.in${b.targetCommercialUrl}`
+      }
+    ];
+  }
 
   const faqSchema = b.faqs && b.faqs.length > 0 ? {
     "@context": "https://schema.org",
@@ -751,8 +766,23 @@ blogs.forEach(b => {
     </div>
   ` : '';
 
-  const sectionsHtml = b.sections ? b.sections.map(s => `
-    <section class="mt-8">
+  const tocHtml = b.sections && b.sections.length > 0 ? `
+    <nav class="my-6 p-5 bg-slate-100/90 border border-slate-200 rounded-xl" aria-label="Table of Contents">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block mb-3">Table of Contents</span>
+      <ul class="space-y-2 text-sm">
+        ${b.sections.map((s, idx) => {
+          const headingText = s.heading || s.title || `Section ${idx + 1}`;
+          const anchorId = `section-${idx + 1}`;
+          return `<li><a href="#${anchorId}" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">${idx + 1}.</span> ${escapeHtml(headingText)}</a></li>`;
+        }).join('')}
+        ${b.tableData ? `<li><a href="#spec-matrix" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> ${escapeHtml(b.tableData.title || b.tableData.caption || 'Engineering Specification Matrix')}</a></li>` : ''}
+        ${b.faqs && b.faqs.length > 0 ? `<li><a href="#technical-faqs" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Technical FAQs</a></li>` : ''}
+      </ul>
+    </nav>
+  ` : '';
+
+  const sectionsHtml = b.sections ? b.sections.map((s, idx) => `
+    <section id="section-${idx + 1}" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">${escapeHtml(s.heading || s.title || '')}</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">${escapeHtml(s.content)}</p>
       ${s.takeaway ? `
@@ -764,7 +794,7 @@ blogs.forEach(b => {
   `).join('') : '';
 
   const tableHtml = b.tableData ? `
-    <section class="mt-10 mb-8 overflow-x-auto">
+    <section id="spec-matrix" class="mt-10 mb-8 overflow-x-auto scroll-mt-20">
       <h3 class="text-xl font-bold text-slate-900 mb-4">${escapeHtml(b.tableData.title || b.tableData.caption || 'Engineering Specification Matrix')}</h3>
       <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
         <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
@@ -798,7 +828,7 @@ blogs.forEach(b => {
   ` : '';
 
   const faqsHtml = b.faqs && b.faqs.length > 0 ? `
-    <section class="mt-12 pt-8 border-t border-slate-200">
+    <section id="technical-faqs" class="mt-12 pt-8 border-t border-slate-200 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
       <div class="space-y-4">
         ${b.faqs.map(f => `
@@ -873,6 +903,7 @@ ${JSON.stringify(schemas, null, 2)}
 
         <div class="prose prose-slate max-w-none">
           ${introHtml}
+          ${tocHtml}
           ${sectionsHtml}
           ${tableHtml}
           ${commercialHtml}
@@ -1628,7 +1659,7 @@ ${JSON.stringify(schemas, null, 2)}
 // --------------------------------------------------------------------------
 // 5. OVERHAUL XML SITEMAP INCLUDING REGIONAL HUBS & IMAGES
 // --------------------------------------------------------------------------
-const today = '2026-11-09';
+const today = '2026-11-11';
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">

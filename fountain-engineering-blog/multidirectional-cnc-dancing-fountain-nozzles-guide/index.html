@@ -189,8 +189,20 @@
       "@id": "https://www.fludio.in/#organization"
     },
     "datePublished": "2026-09-17",
-    "dateModified": "2026-11-09",
-    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/multidirectional-cnc-dancing-fountain-nozzles-guide"
+    "dateModified": "2026-11-11",
+    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/multidirectional-cnc-dancing-fountain-nozzles-guide",
+    "about": {
+      "@type": "Product",
+      "name": "Fludio 2D & 3D CNC Multidirectional Dancing Nozzles",
+      "url": "https://www.fludio.in/water-fountain-products/multidirectional-dancing-fountain-nozzles"
+    },
+    "mentions": [
+      {
+        "@type": "Thing",
+        "name": "Fludio 2D & 3D CNC Multidirectional Dancing Nozzles",
+        "url": "https://www.fludio.in/water-fountain-products/multidirectional-dancing-fountain-nozzles"
+      }
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -312,7 +324,17 @@
     </div>
   
           
-    <section class="mt-8">
+    <nav class="my-6 p-5 bg-slate-100/90 border border-slate-200 rounded-xl" aria-label="Table of Contents">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block mb-3">Table of Contents</span>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#section-1" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">1.</span> 1. Kinematics of 1D, 2D &amp; 3D Articulation: Swivel Range, Angular Velocity &amp; Repeatability</a></li><li><a href="#section-2" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">2.</span> 2. Submersible Motor Technology: IP68 Hermetic Sealing &amp; Pressure Compensation</a></li><li><a href="#section-3" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">3.</span> 3. DMX512-A &amp; RDM Motion Control Protocol: 16-Bit High-Resolution Positioning</a></li><li><a href="#section-4" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">4.</span> 4. Metallurgy &amp; Cavitation Resistance: AISI 304L vs. 316L Precision Castings</a></li><li><a href="#section-5" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">5.</span> 5. Fludio Domestic Pune Manufacturing vs. Symphony &amp; Chinese Unbranded Mechanisms</a></li>
+        <li><a href="#spec-matrix" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Multidirectional CNC Dancing Nozzle Kinematic Matrix</a></li>
+        <li><a href="#technical-faqs" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Technical FAQs</a></li>
+      </ul>
+    </nav>
+  
+          
+    <section id="section-1" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">1. Kinematics of 1D, 2D &amp; 3D Articulation: Swivel Range, Angular Velocity &amp; Repeatability</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">The visual impact of a musical fountain relies on fluid mechanical articulation. In a 1D dancing nozzle, a single submersible motor rocks the water column across a single plane (±45° from vertical). In 2D multidirectional systems, dual orthogonal axes drive independent pitch and roll motions (±60° on both axes), enabling water jets to create helical cones, circular sweeps, and crossing water fans. In flagship 3D systems, continuous 360° pan rotation combines with 120° tilt articulation. Fludio gimbals utilize zero-backlash planetary reduction gearboxes machined from hardened stainless steel, delivering angular positioning accuracy within 0.1° and high slew rates up to 180° per second to keep pace with rapid musical tempos.</p>
       
@@ -322,7 +344,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-2" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">2. Submersible Motor Technology: IP68 Hermetic Sealing &amp; Pressure Compensation</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Articulating mechanisms in chlorinated water face extreme mechanical wear and moisture ingress risks. Fludio&#39;s multidirectional nozzles house low-voltage 24V/48V DC brushless servomotors inside pressure-compensated, oil-filled stainless steel enclosures certified to IP68 standards (tested to 5 bar continuous submersion). Rotating gimbal shafts are protected by dual silicon-carbide mechanical face seals with Viton elastomeric bellows. An internal spring-loaded diaphragm expands and contracts with ambient water temperature fluctuations, equalizing internal and external pressures to prevent seal blowout or water aspiration.</p>
       
@@ -332,7 +354,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-3" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">3. DMX512-A &amp; RDM Motion Control Protocol: 16-Bit High-Resolution Positioning</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Smooth, lifelike fountain choreography requires high-speed digital motion control. Fludio multidirectional nozzles integrate 16-bit DMX512-A decoders supporting RDM (Remote Device Management). Standard 8-bit DMX provides only 256 angular steps across a 120° arc, resulting in visible stepping and shuddering during slow, graceful water sweeps. Fludio&#39;s 16-bit positioning divides the movement arc into 65,536 micro-steps, while onboard DSP motion processors execute S-curve acceleration filtering to smoothly ramp start and stop velocities, preventing mechanical jerking and pipe water hammer.</p>
       
@@ -342,7 +364,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-4" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">4. Metallurgy &amp; Cavitation Resistance: AISI 304L vs. 316L Precision Castings</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Moving nozzle mechanisms operate under intense hydraulic cavitation and mechanical shear forces. Fludio precision-casts all structural gimbal arms, swivel knuckles, and discharge nozzles from low-carbon AISI 304L stainless steel (or optional marine-grade 316L for coastal Mumbai and saline applications). Every component undergoes chemical passivation and electropolishing to create an impervious chromium-oxide surface layer that resists pitting, crevice corrosion, and biocide chemical attack in treated water basins.</p>
       
@@ -352,7 +374,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-5" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">5. Fludio Domestic Pune Manufacturing vs. Symphony &amp; Chinese Unbranded Mechanisms</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Many fountain contractors in India resell unbranded Chinese motorized nozzles that suffer from plastic internal gears, low-torque stepper motors that stall under water pressure, and unserviceable crimped seals. When these fail, the entire fountain must be drained and the nozzle scrapped. Fludio manufactures fully modular, serviceable 1D, 2D, and 3D dancing nozzles at our Pune works. Every gear, seal, motor, and DMX driver is individually replaceable, backed by domestic warranty, direct factory spares, and nationwide field service teams.</p>
       
@@ -363,7 +385,7 @@
     </section>
   
           
-    <section class="mt-10 mb-8 overflow-x-auto">
+    <section id="spec-matrix" class="mt-10 mb-8 overflow-x-auto scroll-mt-20">
       <h3 class="text-xl font-bold text-slate-900 mb-4">Multidirectional CNC Dancing Nozzle Kinematic Matrix</h3>
       <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
         <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
@@ -427,7 +449,7 @@
     </div>
   
           
-    <section class="mt-12 pt-8 border-t border-slate-200">
+    <section id="technical-faqs" class="mt-12 pt-8 border-t border-slate-200 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
       <div class="space-y-4">
         

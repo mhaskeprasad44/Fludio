@@ -189,8 +189,20 @@
       "@id": "https://www.fludio.in/#organization"
     },
     "datePublished": "2026-09-17",
-    "dateModified": "2026-11-09",
-    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/fountain-plc-automation-panels-dmx-wiring-guide"
+    "dateModified": "2026-11-11",
+    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/fountain-plc-automation-panels-dmx-wiring-guide",
+    "about": {
+      "@type": "Product",
+      "name": "Fludio DMX 512 musical dancing fountain control panels",
+      "url": "https://www.fludio.in/water-fountain-products/dmx512-musical-fountain-control-panel"
+    },
+    "mentions": [
+      {
+        "@type": "Thing",
+        "name": "Fludio DMX 512 musical dancing fountain control panels",
+        "url": "https://www.fludio.in/water-fountain-products/dmx512-musical-fountain-control-panel"
+      }
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -304,32 +316,42 @@
     </div>
   
           
-    <section class="mt-8">
+    <nav class="my-6 p-5 bg-slate-100/90 border border-slate-200 rounded-xl" aria-label="Table of Contents">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block mb-3">Table of Contents</span>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#section-1" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">1.</span> PLC Architecture: Siemens S7-1200 &amp; Schneider Modicon Integration</a></li><li><a href="#section-2" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">2.</span> VFD Modulation Over Modbus TCP/RTU &amp; Harmonic Suppression</a></li><li><a href="#section-3" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">3.</span> DMX 512 Protocol Optical Isolation &amp; Transient Surge Protection</a></li><li><a href="#section-4" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">4.</span> Thermal Dissipation &amp; Climate Control in IP66 Enclosures</a></li>
+        <li><a href="#spec-matrix" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Fludio Automation Panel Specifications by Project Scale</a></li>
+        <li><a href="#technical-faqs" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Technical FAQs</a></li>
+      </ul>
+    </nav>
+  
+          
+    <section id="section-1" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">PLC Architecture: Siemens S7-1200 &amp; Schneider Modicon Integration</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">At the core of Fludio control panels is an industrial PLC (such as the Siemens S7-1200 CPU 1214C or Schneider Modicon M241). The PLC manages master sequence scheduling, astronomical sunrise/sunset clocks, multi-stage water level sensors, emergency e-stops, and hydraulic interlocks. Unlike domestic smart relays, industrial PLCs operate with microsecond cycle scans and 24V DC sink/source digital I/O, guaranteeing immunity to electrical noise.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-2" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">VFD Modulation Over Modbus TCP/RTU &amp; Harmonic Suppression</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Centrifugal pumps driving dynamic fountain jets are modulated via variable frequency drives (ABB ACS580 or Schneider Altivar). Controlled via RS-485 Modbus RTU or Profinet, the VFDs sweep pump motor speeds from 20 Hz to 60 Hz in rapid 200-millisecond acceleration bursts. Because fast-pulsing motor leads create severe electromagnetic interference (EMI), Fludio installs line reactors, dV/dt output filters, and shielded copper-braided VFD cables.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-3" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">DMX 512 Protocol Optical Isolation &amp; Transient Surge Protection</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Musical fountains interface audio timecode with water mechanics via DMX 512-A. Because submersible lights and solenoid valves are immersed in conductive water basins hundreds of meters from the control room, ground potential differentials can instantly incinerate microcontroller ICs. Fludio designs all panel outputs with optogalvanic 2,500V isolation barrier splitters and Type 2 surge protective devices (SPDs) rated for 40 kA.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-4" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Thermal Dissipation &amp; Climate Control in IP66 Enclosures</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">In Indian summer conditions where outdoor ambient temperatures exceed 45°C, VFD heat dissipation inside sealed IP66 panel cabinets can exceed 2,000 Watts. Fludio manufactures enclosures in 2mm powder-coated CRCA steel or AISI 304 stainless steel equipped with closed-loop thermoelectrical air conditioning units, vortex cabinet coolers, and automated temperature cutouts that prevent thermal shutdown.</p>
       
     </section>
   
           
-    <section class="mt-10 mb-8 overflow-x-auto">
+    <section id="spec-matrix" class="mt-10 mb-8 overflow-x-auto scroll-mt-20">
       <h3 class="text-xl font-bold text-slate-900 mb-4">Fludio Automation Panel Specifications by Project Scale</h3>
       <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
         <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
@@ -373,7 +395,7 @@
     </div>
   
           
-    <section class="mt-12 pt-8 border-t border-slate-200">
+    <section id="technical-faqs" class="mt-12 pt-8 border-t border-slate-200 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
       <div class="space-y-4">
         

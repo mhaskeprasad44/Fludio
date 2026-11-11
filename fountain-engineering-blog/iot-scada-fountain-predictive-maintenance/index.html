@@ -189,8 +189,20 @@
       "@id": "https://www.fludio.in/#organization"
     },
     "datePublished": "2026-09-17",
-    "dateModified": "2026-11-09",
-    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/iot-scada-fountain-predictive-maintenance"
+    "dateModified": "2026-11-11",
+    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/iot-scada-fountain-predictive-maintenance",
+    "about": {
+      "@type": "Product",
+      "name": "Fludio DMX 512 & IoT Smart Fountain Control Panels",
+      "url": "https://www.fludio.in/water-fountain-products/dmx512-musical-fountain-control-panel"
+    },
+    "mentions": [
+      {
+        "@type": "Thing",
+        "name": "Fludio DMX 512 & IoT Smart Fountain Control Panels",
+        "url": "https://www.fludio.in/water-fountain-products/dmx512-musical-fountain-control-panel"
+      }
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -312,7 +324,17 @@
     </div>
   
           
-    <section class="mt-8">
+    <nav class="my-6 p-5 bg-slate-100/90 border border-slate-200 rounded-xl" aria-label="Table of Contents">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block mb-3">Table of Contents</span>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#section-1" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">1.</span> Edge PLC Architecture &amp; Cloud Telemetry Protocols in 2027</a></li><li><a href="#section-2" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">2.</span> Submersible Pump Vibration Analysis &amp; Cavitation Diagnostics</a></li><li><a href="#section-3" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">3.</span> Automated Closed-Loop Chemical Dosing: pH, ORP &amp; TDS Management</a></li><li><a href="#section-4" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">4.</span> Predictive Analytics, Energy Auditing &amp; Asset Longevity</a></li>
+        <li><a href="#spec-matrix" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Conventional Manual Fountain Maintenance vs. IoT SCADA Predictive Monitoring</a></li>
+        <li><a href="#technical-faqs" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Technical FAQs</a></li>
+      </ul>
+    </nav>
+  
+          
+    <section id="section-1" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Edge PLC Architecture &amp; Cloud Telemetry Protocols in 2027</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Modern municipal and commercial fountain infrastructure has migrated from isolated local push-button cabinets to interconnected Cyber-Physical Systems (CPS). Fludio&#39;s industrial edge automation panels utilize Siemens S7-1200 or Schneider Modicon M241 PLCs coupled to cellular MQTT and OPC-UA edge gateways. Every 250 milliseconds, operational metrics—including line voltages, power factors, manifold hydrostatic pressure (bar), basin water levels, and ambient wind speed anemometer data—are transmitted via TLS 1.3 encrypted streams to cloud monitoring dashboards. Facility managers can monitor system health, override operating schedules, and inspect live operational alarms from any smartphone or central Integrated Command &amp; Control Centre (ICCC).</p>
       
@@ -322,7 +344,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-2" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Submersible Pump Vibration Analysis &amp; Cavitation Diagnostics</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Submersible pumps represent 45% of total fountain electro-mechanical capital cost and 80% of catastrophic field failures. Conventional thermal overloads only trip after windings melt or motor bearings seize. Fludio integrates tri-axial piezoelectric vibration accelerometers and non-intrusive current signature analysis (MCSA) into the pump stator heads. High-frequency FFT (Fast Fourier Transform) spectrum analysis identifies 1X, 2X, and sub-synchronous vibration peaks indicative of bearing cage spalling, dynamic unbalance, or net positive suction head (NPSH) cavitation bubbles imploding against the impeller. By detecting cavitation 500 operating hours prior to physical damage, automated throttling prevents impellers from pitting.</p>
       
@@ -332,7 +354,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-3" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Automated Closed-Loop Chemical Dosing: pH, ORP &amp; TDS Management</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Public water features with stagnant or improperly sanitized water breed biofilm, algae, and dangerous waterborne pathogens like Legionella pneumophila. Manual testing with chemical drops is obsolete. Fludio&#39;s automated water chemistry modules deploy self-cleaning amperometric probes measuring Oxidation-Reduction Potential (ORP) in millivolts and pH levels continuously. When ORP drops below 650 mV (the international threshold for instantaneous pathogen deactivation) or pH deviates beyond 7.2–7.6, the SCADA controller pulses micro-metering peristaltic dosing pumps to inject sodium hypochlorite and pH-down bisulfate. Concurrently, automated blowdown valves purge concentrated brine when TDS sensors cross 1,800 ppm, automatically replenishing treated freshwater.</p>
       
@@ -342,7 +364,7 @@
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-4" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Predictive Analytics, Energy Auditing &amp; Asset Longevity</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Predictive maintenance algorithms aggregate historical telemetry to compute real-time Equipment Health Indices (EHI). By correlating water nozzle output heights with pump kW consumption, the system flags flow restrictions caused by clogged basket strainers or calcified nozzle orifices before pump motors overheat. Automated weekly backwash routines are dynamically scheduled during off-peak night hours only when pressure differential across media sand filters exceeds 0.5 bar (7.2 psi), preventing unnecessary water wastage while optimizing pump hydraulic efficiency.</p>
       
@@ -353,7 +375,7 @@
     </section>
   
           
-    <section class="mt-10 mb-8 overflow-x-auto">
+    <section id="spec-matrix" class="mt-10 mb-8 overflow-x-auto scroll-mt-20">
       <h3 class="text-xl font-bold text-slate-900 mb-4">Conventional Manual Fountain Maintenance vs. IoT SCADA Predictive Monitoring</h3>
       <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
         <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
@@ -401,7 +423,7 @@
     </div>
   
           
-    <section class="mt-12 pt-8 border-t border-slate-200">
+    <section id="technical-faqs" class="mt-12 pt-8 border-t border-slate-200 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
       <div class="space-y-4">
         

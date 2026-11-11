@@ -189,8 +189,20 @@
       "@id": "https://www.fludio.in/#organization"
     },
     "datePublished": "2026-09-17",
-    "dateModified": "2026-11-09",
-    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-balance-tank-calculations"
+    "dateModified": "2026-11-11",
+    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/dry-deck-fountain-balance-tank-calculations",
+    "about": {
+      "@type": "Product",
+      "name": "Fludio high-speed interactive dry deck solenoid jets",
+      "url": "https://www.fludio.in/water-fountain-products/interactive-dry-deck-solenoid-jet"
+    },
+    "mentions": [
+      {
+        "@type": "Thing",
+        "name": "Fludio high-speed interactive dry deck solenoid jets",
+        "url": "https://www.fludio.in/water-fountain-products/interactive-dry-deck-solenoid-jet"
+      }
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -304,32 +316,42 @@
     </div>
   
           
-    <section class="mt-8">
+    <nav class="my-6 p-5 bg-slate-100/90 border border-slate-200 rounded-xl" aria-label="Table of Contents">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block mb-3">Table of Contents</span>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#section-1" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">1.</span> The Four Core Volume Components of Balance Tank Calculations</a></li><li><a href="#section-2" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">2.</span> Mathematical Formulas for Water in Transit (V_transit)</a></li><li><a href="#section-3" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">3.</span> Perimeter Drainage Slopes &amp; High-Flow SS304L Grates</a></li><li><a href="#section-4" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">4.</span> Dual-Chamber Sedimentation &amp; Cryptosporidium Filtration</a></li>
+        <li><a href="#spec-matrix" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Balance Tank Sizing Guidelines Based on Jet Count and Maximum Jet Height</a></li>
+        <li><a href="#technical-faqs" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Technical FAQs</a></li>
+      </ul>
+    </nav>
+  
+          
+    <section id="section-1" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">The Four Core Volume Components of Balance Tank Calculations</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">A dry deck balance tank is not simply a static storage tank; it is a dynamic hydraulic surge buffer. The total required tank volume (V_total) is calculated as: V_total = V_active + V_transit + V_filter + V_safety. V_active is the volume required to feed all operational pump heads simultaneously for minimum suction submergence. V_transit is the volume of water traveling in mid-air and sheet-flowing across the plaza before draining back. V_filter represents the backwash volume needed for multi-grade sand filter cleansing. V_safety is the buffer preventing air vortexing into pump intakes.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-2" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Mathematical Formulas for Water in Transit (V_transit)</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">When 50 interactive dry deck jets fire simultaneously to a height of 3 meters, hundreds of liters of water are suspended in the air. Furthermore, water returning across the plaza pavers takes between 15 to 45 seconds to gravity-drain through stainless perimeter trenches. V_transit is calculated as: V_transit = Sum(Q_jet * t_air) + (Area_plaza * d_film), where Q_jet is nozzle discharge, t_air is airborne flight time (approx. 2 * sqrt(2h/g)), and d_film is the average water film thickness (1.5mm to 3mm) moving across pavers.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-3" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Perimeter Drainage Slopes &amp; High-Flow SS304L Grates</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Improper plaza floor grading causes water to pool on walkways, creating pedestrian slip hazards and delaying water return to the balance tank. Plazas must be paved with a minimum 1.5% to 2.0% continuous radial slope pitching inward toward subterranean drainage troughs. Fludio manufactures custom heel-safe AISI 304L stainless steel drainage grates with laser-cut openings strictly under 8mm, ensuring ADA compliance and zero high-heel entrapment.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-4" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Dual-Chamber Sedimentation &amp; Cryptosporidium Filtration</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Because pedestrians walk across the dry deck with shoes, dirt, sand, and organic contaminants are washed into the drainage system. Fludio designs all balance tanks as dual-compartment structures: a primary sedimentation chamber with baffle weirs that catches heavy solids, followed by a secondary clean suction chamber. Water passes through high-rate automated glass media filters, inline UV-C sanitizers (40 mJ/cm² dose), and automatic pH/chlorine dosing to eliminate waterborne pathogens.</p>
       
     </section>
   
           
-    <section class="mt-10 mb-8 overflow-x-auto">
+    <section id="spec-matrix" class="mt-10 mb-8 overflow-x-auto scroll-mt-20">
       <h3 class="text-xl font-bold text-slate-900 mb-4">Balance Tank Sizing Guidelines Based on Jet Count and Maximum Jet Height</h3>
       <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
         <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
@@ -377,7 +399,7 @@
     </div>
   
           
-    <section class="mt-12 pt-8 border-t border-slate-200">
+    <section id="technical-faqs" class="mt-12 pt-8 border-t border-slate-200 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
       <div class="space-y-4">
         

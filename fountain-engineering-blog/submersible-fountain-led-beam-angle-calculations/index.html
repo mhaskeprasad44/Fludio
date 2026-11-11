@@ -189,8 +189,20 @@
       "@id": "https://www.fludio.in/#organization"
     },
     "datePublished": "2026-09-17",
-    "dateModified": "2026-11-09",
-    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/submersible-fountain-led-beam-angle-calculations"
+    "dateModified": "2026-11-11",
+    "mainEntityOfPage": "https://www.fludio.in/fountain-engineering-blog/submersible-fountain-led-beam-angle-calculations",
+    "about": {
+      "@type": "Product",
+      "name": "Fludio certified IP68 304L/316L stainless submersible LED spotlights",
+      "url": "https://www.fludio.in/water-fountain-products/ip68-underwater-led-spotlight"
+    },
+    "mentions": [
+      {
+        "@type": "Thing",
+        "name": "Fludio certified IP68 304L/316L stainless submersible LED spotlights",
+        "url": "https://www.fludio.in/water-fountain-products/ip68-underwater-led-spotlight"
+      }
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -304,32 +316,42 @@
     </div>
   
           
-    <section class="mt-8">
+    <nav class="my-6 p-5 bg-slate-100/90 border border-slate-200 rounded-xl" aria-label="Table of Contents">
+      <span class="text-xs font-bold uppercase tracking-wider text-slate-700 block mb-3">Table of Contents</span>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#section-1" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">1.</span> Optical Physics: Water Attenuation Coefficient &amp; The Beer-Lambert Law</a></li><li><a href="#section-2" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">2.</span> Beam Angle Formulas for Parabolic Water Jet Geometry</a></li><li><a href="#section-3" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">3.</span> Lux Level Benchmarks: Ambient Light Competition &amp; CRI Standards</a></li><li><a href="#section-4" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">4.</span> DMX 512 Multi-Channel Color Tuning &amp; RDM Diagnostics</a></li>
+        <li><a href="#spec-matrix" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Fludio Photometric Beam Angle Selection Matrix by Nozzle Type &amp; Throw Height</a></li>
+        <li><a href="#technical-faqs" class="text-cyan-700 hover:text-cyan-900 hover:underline flex items-center gap-2"><span class="text-cyan-600 font-mono text-xs font-semibold">&bull;</span> Technical FAQs</a></li>
+      </ul>
+    </nav>
+  
+          
+    <section id="section-1" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Optical Physics: Water Attenuation Coefficient &amp; The Beer-Lambert Law</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Light intensity underwater diminishes according to the Beer-Lambert law: I(d) = I_0 * e^(-alpha * d), where alpha is the spectral attenuation coefficient of water. Red wavelengths (620–750 nm) attenuate 10 times faster than blue wavelengths (450–495 nm) in deep water. In fountain applications where light must penetrate 300mm of basin water before illuminating a 10-meter aerated water column, Fludio engineers optical lenses with customized color-boost ratios to maintain true white balance.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-2" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Beam Angle Formulas for Parabolic Water Jet Geometry</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">To illuminate a parabolic water jet without wasting light into the sky, the optical beam spread must match the spray trajectory. The half-angle formula is: tan(theta/2) = (W_plume / 2) / H_throw. For narrow geyser jets reaching 8 to 15 meters, narrow collimated 10° to 15° PMMA total internal reflection (TIR) lenses are mandatory. For foaming cascade cones or wide fan jets, medium 30° to 45° lenses ensure continuous illumination across the expanding water envelope.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-3" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">Lux Level Benchmarks: Ambient Light Competition &amp; CRI Standards</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Fountain illumination must compete with ambient urban lighting, high-mast plaza poles, and retail signage. While a dark park pond requires only 150 to 250 Lux at the plume apex, a commercial shopping mall plaza or smart city roundabout requires 500 to 1,200 Lux. Fludio utilizes high-output Cree and Osram OSTAR RGBW multi-chip diodes delivering up to 3,600 lumens per 36W luminaire with a Color Rendering Index CRI &gt; 85.</p>
       
     </section>
   
-    <section class="mt-8">
+    <section id="section-4" class="mt-8 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-3">DMX 512 Multi-Channel Color Tuning &amp; RDM Diagnostics</h2>
       <p class="text-base text-slate-700 leading-relaxed mb-4">Modern architectural water illumination requires precise color temperature tuning (from warm 2700K hospitality white to crisp 6500K civic daylight). Fludio IP68 luminaires feature onboard DMX512-A controllers with RDM (Remote Device Management) two-way telemetry. RDM reports internal diode temperature, operating hours, and driver voltage back to the central plant room, enabling predictive maintenance before fixture failure occurs.</p>
       
     </section>
   
           
-    <section class="mt-10 mb-8 overflow-x-auto">
+    <section id="spec-matrix" class="mt-10 mb-8 overflow-x-auto scroll-mt-20">
       <h3 class="text-xl font-bold text-slate-900 mb-4">Fludio Photometric Beam Angle Selection Matrix by Nozzle Type &amp; Throw Height</h3>
       <table class="w-full text-left text-sm border-collapse border border-slate-200 bg-white rounded-lg shadow-sm">
         <thead class="bg-slate-100 text-slate-900 border-b border-slate-200">
@@ -377,7 +399,7 @@
     </div>
   
           
-    <section class="mt-12 pt-8 border-t border-slate-200">
+    <section id="technical-faqs" class="mt-12 pt-8 border-t border-slate-200 scroll-mt-20">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical FAQs</h2>
       <div class="space-y-4">
         

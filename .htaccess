@@ -1,4 +1,6 @@
 # Apache / LiteSpeed configuration for Hostinger (https://fludio.in)
+Options -Indexes
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -6,6 +8,11 @@
   # Force HTTPS
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Clean URL handling: serve directory index.html directly without 301 trailing slash redirect
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*[^/])$ $1/index.html [L]
 
   # Don't rewrite files or directories that exist
   RewriteCond %{REQUEST_FILENAME} -f [OR]
