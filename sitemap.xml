@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   
   <!-- Primary Landing Page -->
   <url>
@@ -18,6 +19,32 @@
       <image:title>Turnkey Musical Fountain Engineering</image:title>
       <image:caption>Automated Musical Fountain Show with DMX 512 Lighting and Audio Sync</image:caption>
     </image:image>
+      <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/musical_fountain_hero.jpg</video:thumbnail_loc>
+      <video:title>Fludio Turnkey Musical Dancing Fountain DMX 512 Show</video:title>
+      <video:description>Authentic turnkey musical dancing fountain engineered with DMX 512 automation, fast-action solenoids, and RGBW underwater LED illumination by Fludio Water Solutions India.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-musical-dancing-fountain-choreography-show-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/dry_deck_solenoid_jet.jpg</video:thumbnail_loc>
+      <video:title>Interactive Dry Deck Plaza Fountain Project in Action</video:title>
+      <video:description>Walkable flush-to-grade dry deck plaza fountain with slip-resistant SS304 grates, fast-response solenoid valves, and illuminated LED jets for commercial plazas and smart cities.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-interactive-dry-deck-plaza-fountain-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-amenora-township-pune-water-fountain-project-01.jpeg</image:loc>
+      <image:title>Amenora Township Pune Water Fountain Project Execution</image:title>
+      <image:caption>Turnkey commercial architectural and musical water fountain engineered by Fludio for Amenora Township, Hadapsar, Pune.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-fountain-engineering-on-site-installation-pune-01.jpeg</image:loc>
+      <image:title>Fludio Fountain Engineers On-Site Installation and Plumbing</image:title>
+      <image:caption>Fludio on-site field engineers assembling stainless steel manifolds and pump room infrastructure.</image:caption>
+    </image:image>
   </url>
 
   <!-- Core Hub Pages -->
@@ -26,6 +53,42 @@
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+      <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/dmx_control_panel.jpg</video:thumbnail_loc>
+      <video:title>Fludio Fountain PLC Automation Control Panel Testing</video:title>
+      <video:description>Live testing of custom electrical control panels with Schneider PLCs and VFDs at Narhe works.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-fountain-electrical-automation-panel-testing-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</video:thumbnail_loc>
+      <video:title>Fludio Stainless Steel Waterfall Weir Trough Testing</video:title>
+      <video:description>Spillway flow testing of custom linear stainless steel waterfall troughs.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-stainless-steel-waterfall-weir-trough-testing-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-ip68-304l-submersible-underwater-led-fountain-light-01.jpeg</image:loc>
+      <image:title>IP68 304L Stainless Steel Submersible LED Spotlight</image:title>
+      <image:caption>High-lux underwater fountain spotlight manufactured by Fludio in Pune.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-01.jpeg</image:loc>
+      <image:title>Custom DMX512 PLC Automation Control Panel</image:title>
+      <image:caption>Turnkey electric control panel for musical dancing fountains.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-comet-single-jet-precision-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>Precision CNC Machined Comet Fountain Nozzle</image:title>
+      <image:caption>Adjustable single-jet brass and stainless steel fountain nozzle.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-high-volume-aerator-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>High Volume Aerator Fountain Nozzle</image:title>
+      <image:caption>Frothy geyser water column nozzle precision turned in Pune works.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.fludio.in/fountain-design-installation-services</loc>
@@ -44,6 +107,71 @@
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+      <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/musical_fountain_hero.jpg</video:thumbnail_loc>
+      <video:title>Fludio Turnkey Musical Dancing Fountain Choreography Video</video:title>
+      <video:description>Choreographed dancing water jets synchronized with DMX 512 automation and RGBW illumination.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-musical-dancing-fountain-choreography-show-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/dry_deck_solenoid_jet.jpg</video:thumbnail_loc>
+      <video:title>Interactive Dry Deck Plaza Fountain System Video</video:title>
+      <video:description>Walkable flush-to-grade dry deck fountain with slip-resistant SS304 grates and fast solenoid valves.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-interactive-dry-deck-plaza-fountain-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</video:thumbnail_loc>
+      <video:title>Water Screen 3D Multimedia Video Projection Show</video:title>
+      <video:description>High-pressure arc water screen projection surface for laser and 3D video projection mapping.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-water-screen-multimedia-video-projection-show-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</video:thumbnail_loc>
+      <video:title>Architectural Sheetfall Waterfall Cascade Video</video:title>
+      <video:description>Precision-engineered linear waterfall spillway trough descending in glass-like water sheet.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-architectural-sheetfall-waterfall-cascade-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/floating_lake_aerator.jpg</video:thumbnail_loc>
+      <video:title>Solar Powered Floating Lake Aerator System Video</video:title>
+      <video:description>Eco-friendly autonomous solar floating lake aerator revitalizing water quality and dissolved oxygen.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-solar-floating-lake-aerator-water-quality-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-27T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-amenora-township-pune-water-fountain-project-01.jpeg</image:loc>
+      <image:title>Amenora Township Pune Water Fountain Landmark</image:title>
+      <image:caption>Commercial architectural fountain installation by Fludio at Amenora, Pune.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-amenora-township-pune-water-fountain-project-02.jpeg</image:loc>
+      <image:title>Amenora Multi-tier Symmetrical Fountain Jets</image:title>
+      <image:caption>Water columns and circular manifold display in Hadapsar, Pune.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-fountain-engineering-on-site-installation-pune-01.jpeg</image:loc>
+      <image:title>Fludio Turnkey Site Installation and Rigging</image:title>
+      <image:caption>Fludio engineers executing pump room and manifold installation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-architectural-sheetfall-waterfall-wall-cascade-01.jpeg</image:loc>
+      <image:title>Architectural Sheetfall Waterfall Wall Cascade</image:title>
+      <image:caption>Luxury hospitality waterfall installation with warm illumination.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-digital-water-curtain-programmable-display-01.jpeg</image:loc>
+      <image:title>Interactive Digital Water Curtain Display</image:title>
+      <image:caption>High-speed solenoid falling water curtain writing dynamic text patterns.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.fludio.in/fountain-engineering-blog</loc>
@@ -839,5 +967,273 @@
       <image:title>Fountain Preventive Maintenance Checklists: 2027 SOP for Commercial Pumps, Valves &amp; Filtration</image:title>
       <image:caption>Standard operating procedures for commercial fountain maintenance: daily, weekly, and quarterly checklists for pumps, DMX panels, and water treatment.</image:caption>
     </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/precision-comet-fountain-nozzles</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-comet-single-jet-precision-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>Precision Comet Adjustable Single Jet Fountain Nozzles</image:title>
+      <image:caption>Precision Comet Adjustable Single Jet Fountain Nozzles manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/frothy-foam-geyser-fountain-jets</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-foam-geyser-frothy-column-fountain-01.jpeg</image:loc>
+      <image:title>High-Aeration Frothy Foam Geyser Fountain Nozzles</image:title>
+      <image:caption>High-Aeration Frothy Foam Geyser Fountain Nozzles manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/fountain_nozzle.jpg</video:thumbnail_loc>
+      <video:title>High-Aeration Frothy Foam Geyser Fountain Nozzles</video:title>
+      <video:description>Factory testing and product demonstration of High-Aeration Frothy Foam Geyser Fountain Nozzles by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-foam-geyser-column-fountain-display-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/stainless-steel-ring-fountain-manifolds</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-stainless-steel-ring-fountain-manifold-01.jpeg</image:loc>
+      <image:title>Stainless Steel 304L Multi-Ring Fountain Manifolds</image:title>
+      <image:caption>Stainless Steel 304L Multi-Ring Fountain Manifolds manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/static_tiered_fountain.jpg</video:thumbnail_loc>
+      <video:title>Stainless Steel 304L Multi-Ring Fountain Manifolds</video:title>
+      <video:description>Factory testing and product demonstration of Stainless Steel 304L Multi-Ring Fountain Manifolds by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-stainless-steel-ring-fountain-water-display-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/mushroom-bell-dome-water-fountain</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-mushroom-bell-dome-laminar-fountain-01.jpeg</image:loc>
+      <image:title>Mushroom Bell Dome Laminar Water Fountains</image:title>
+      <image:caption>Mushroom Bell Dome Laminar Water Fountains manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/static_tiered_fountain.jpg</video:thumbnail_loc>
+      <video:title>Mushroom Bell Dome Laminar Water Fountains</video:title>
+      <video:description>Factory testing and product demonstration of Mushroom Bell Dome Laminar Water Fountains by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-mushroom-bell-dome-fountain-water-display-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/center-shooter-high-thrust-fountain-jet</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-center-shooter-high-thrust-fountain-jet-01.jpeg</image:loc>
+      <image:title>High-Thrust Center Shooter Monumental Fountain Jets</image:title>
+      <image:caption>High-Thrust Center Shooter Monumental Fountain Jets manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/fan-jet-wide-angle-fountain-nozzle</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-fan-jet-wide-angle-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>Fan Jet Wide-Angle Architectural Water Nozzles</image:title>
+      <image:caption>Fan Jet Wide-Angle Architectural Water Nozzles manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/cascade-frothy-column-fountain-nozzle</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-cascade-frothy-column-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>Cascade Conical Frothy Column Fountain Nozzles</image:title>
+      <image:caption>Cascade Conical Frothy Column Fountain Nozzles manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/butterfly-pattern-architectural-nozzle</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-butterfly-pattern-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>Butterfly Pattern Architectural Fountain Nozzles</image:title>
+      <image:caption>Butterfly Pattern Architectural Fountain Nozzles manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/flower-blossom-multi-tier-fountain-nozzle</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-flower-tiered-pattern-fountain-nozzle-01.jpeg</image:loc>
+      <image:title>Multi-Tier Blossom Flower Fountain Nozzles</image:title>
+      <image:caption>Multi-Tier Blossom Flower Fountain Nozzles manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/high-pressure-cooling-mist-fog-fountain</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-high-pressure-cooling-mist-fog-fountain-01.jpeg</image:loc>
+      <image:title>High-Pressure Cooling Mist & Fog Fountain Systems</image:title>
+      <image:caption>High-Pressure Cooling Mist & Fog Fountain Systems manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/high-pressure-arc-water-screen-system</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</image:loc>
+      <image:title>High-Pressure Arc Water Screen Projection Systems</image:title>
+      <image:caption>High-Pressure Arc Water Screen Projection Systems manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</video:thumbnail_loc>
+      <video:title>High-Pressure Arc Water Screen Projection Systems</video:title>
+      <video:description>Factory testing and product demonstration of High-Pressure Arc Water Screen Projection Systems by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-high-pressure-water-screen-projection-surface-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/water-screen-multimedia-video-projection</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</image:loc>
+      <image:title>Turnkey Water Screen 3D Video Projection Mapping Systems</image:title>
+      <image:caption>Turnkey Water Screen 3D Video Projection Mapping Systems manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/water_laser_multimedia_show.jpg</video:thumbnail_loc>
+      <video:title>Turnkey Water Screen 3D Video Projection Mapping Systems</video:title>
+      <video:description>Factory testing and product demonstration of Turnkey Water Screen 3D Video Projection Mapping Systems by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-water-screen-multimedia-video-projection-show-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/solar-powered-floating-lake-aerator</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-projects/fludio-solar-floating-lake-aerator-system-01.jpeg</image:loc>
+      <image:title>Solar-Powered Floating Lake Aerator Systems</image:title>
+      <image:caption>Solar-Powered Floating Lake Aerator Systems manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/floating_lake_aerator.jpg</video:thumbnail_loc>
+      <video:title>Solar-Powered Floating Lake Aerator Systems</video:title>
+      <video:description>Factory testing and product demonstration of Solar-Powered Floating Lake Aerator Systems by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-solar-floating-lake-aerator-water-quality-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/stainless-steel-waterfall-weir-trough</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-stainless-steel-waterfall-weir-trough-01.jpeg</image:loc>
+      <image:title>Stainless Steel 304L Waterfall Weir Troughs & Spillways</image:title>
+      <image:caption>Stainless Steel 304L Waterfall Weir Troughs & Spillways manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/sheetfall_wall_waterfall.jpg</video:thumbnail_loc>
+      <video:title>Stainless Steel 304L Waterfall Weir Troughs & Spillways</video:title>
+      <video:description>Factory testing and product demonstration of Stainless Steel 304L Waterfall Weir Troughs & Spillways by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-stainless-steel-waterfall-weir-trough-testing-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/fiber-frp-decorative-tiered-fountain</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-fiber-frp-decorative-garden-fountain-01.jpeg</image:loc>
+      <image:title>Fiberglass FRP Decorative Tiered & Garden Fountains</image:title>
+      <image:caption>Fiberglass FRP Decorative Tiered & Garden Fountains manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/static_tiered_fountain.jpg</video:thumbnail_loc>
+      <video:title>Fiberglass FRP Decorative Tiered & Garden Fountains</video:title>
+      <video:description>Factory testing and product demonstration of Fiberglass FRP Decorative Tiered & Garden Fountains by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-fiber-frp-decorative-garden-fountain-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/decorative-landscape-ambient-lighting</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/realtime-products/fludio-decorative-fountain-landscape-ambient-led-lighting-01.jpeg</image:loc>
+      <image:title>Decorative Landscape & Ambient Water Feature Lighting</image:title>
+      <image:caption>Decorative Landscape & Ambient Water Feature Lighting manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/fountain_underwater_light.jpg</video:thumbnail_loc>
+      <video:title>Decorative Landscape & Ambient Water Feature Lighting</video:title>
+      <video:description>Factory testing and product demonstration of Decorative Landscape & Ambient Water Feature Lighting by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-decorative-fountain-ambient-lighting-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.fludio.in/water-fountain-products/sequencing-wave-chaser-fountain-system</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.fludio.in/images/laminar_jumping_jet.jpg</image:loc>
+      <image:title>Sequencing Wave Chaser Water Fountain Systems</image:title>
+      <image:caption>Sequencing Wave Chaser Water Fountain Systems manufactured by Fludio Water Solutions India</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.fludio.in/images/laminar_jumping_jet.jpg</video:thumbnail_loc>
+      <video:title>Sequencing Wave Chaser Water Fountain Systems</video:title>
+      <video:description>Factory testing and product demonstration of Sequencing Wave Chaser Water Fountain Systems by Fludio Water Solutions.</video:description>
+      <video:content_loc>https://www.fludio.in/videos/fludio-sequencing-wave-chaser-fountain-video-01.mp4</video:content_loc>
+      <video:publication_date>2026-08-03T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
 </urlset>

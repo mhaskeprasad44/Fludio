@@ -7,6 +7,8 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /sitemap.xml
 Allow: /images/
+Allow: /videos/
+Allow: /media/
 
 # Primary Search Engine Crawlers
 User-agent: Googlebot
@@ -14,6 +16,11 @@ Allow: /
 
 User-agent: Googlebot-Image
 Allow: /images/
+Allow: /media/
+
+User-agent: Googlebot-Video
+Allow: /videos/
+Allow: /
 
 User-agent: Bingbot
 Allow: /

@@ -25,7 +25,14 @@ Fludio Water Solutions (https://www.fludio.in) is an India-based engineering fir
 
 ### Water Fountain Projects Portfolio & Case Studies
 - **Canonical URL**: https://www.fludio.in/water-fountain-projects-portfolio
-- **Project Demonstrations**: Public municipal interactive dry deck fountains, luxury hospitality infinity reflection pools, corporate tech park water walls, and multi-tier floating lake aerators across Pune, Mumbai, Bengaluru, Hyderabad, and Delhi NCR.
+- **Project Demonstrations**: Authentic verified real-time client installations with 1080p video footage and photography:
+  1. **Amenora Township Iconic Plaza Fountain (Pune, Maharashtra)**: Turnkey multi-ring architectural fountain featuring concentric SS304L manifolds, aerator geysers, and certified IP68 RGBW underwater lighting in Hadapsar, Pune.
+  2. **Commercial DMX 512 Musical Dancing Fountain Shows**: Real-time video footage demonstrating high-speed 24V solenoids (<15ms response), Schneider/Siemens VFD pressure modulation, and millisecond audio-synchronized dancing jets.
+  3. **Interactive Dry Deck Plaza Fountain Systems**: Flush-mounted walkable dry deck plazas engineered for smart city promenades and shopping malls with slip-resistant SS304L cover plates and touch-safe 24V DC hydraulics.
+  4. **Water Screen 3D Multimedia Video Projection Mapping**: Semicircular high-pressure water screen optical canvas for laser and 4K video projection shows at municipal lakes and heritage riverfronts.
+  5. **Architectural Sheetfall Cascades & Weir Waterfalls**: Precision laser-cut stainless steel weir troughs producing unbroken, glass-like sheets of descending water for luxury resorts and corporate atriums.
+  6. **Solar-Powered Floating Lake Aerator Systems**: Eco-restoration floating aerators infusing 1.8+ kg dissolved oxygen per hour into lake hypolimnion layers using standalone solar PV arrays.
+  7. **Behind the Scenes On-Site Installation Gallery**: Complete visual verification of Fludio engineers TIG welding manifolds, rigging heavy-duty submersible pumps, potting IP68 cables, and wiring PLC panels.
 
 ### Water Fountain Engineering Technical FAQs
 - **Canonical URL**: https://www.fludio.in/water-fountain-faqs
