@@ -133,6 +133,16 @@ const PRODUCT_PRICES = {
   "digital-water-curtain": { low: "350000", high: "1850000" }
 };
 
+
+function getNormalizedCategory(p) {
+  const c = (p.category || '').toLowerCase();
+  const id = p.id;
+  if (id === 'panels' || id.includes('controller') || id.includes('trough') || id.includes('pump') || c === 'accessories') return 'accessories';
+  if (c === 'lights' || id.includes('light') || id.includes('spot')) return 'lights';
+  if (c === 'nozzles' || id.includes('nozzle') || (id.includes('jet') && !id.includes('laminar') && !id.includes('dry')) || id.includes('manifold')) return 'nozzles';
+  return 'fountain';
+}
+
 function ensureDirSync(dirPath) {
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
@@ -1853,6 +1863,27 @@ ${JSON.stringify(schemas, null, 2)}
         </script>
 ` : ''}
 
+        
+        ${hub.path === 'water-fountain-products' ? `
+        <div id="product-filter-bar" class="flex items-center justify-center flex-wrap gap-2.5 mb-10">
+          <button type="button" data-filter="all" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-slate-900 text-white shadow-sm cursor-pointer">
+            All Products (${products.length})
+          </button>
+          <button type="button" data-filter="fountain" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
+            Water Fountains (${products.filter(p=>getNormalizedCategory(p)==='fountain').length})
+          </button>
+          <button type="button" data-filter="nozzles" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
+            Fountain Nozzles &amp; Jets (${products.filter(p=>getNormalizedCategory(p)==='nozzles').length})
+          </button>
+          <button type="button" data-filter="lights" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
+            Underwater &amp; Landscape Lights (${products.filter(p=>getNormalizedCategory(p)==='lights').length})
+          </button>
+          <button type="button" data-filter="accessories" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
+            Hardware &amp; Control Accessories (${products.filter(p=>getNormalizedCategory(p)==='accessories').length})
+          </button>
+        </div>
+        ` : ''}
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           ${hub.path === 'fountain-engineering-blog' ? blogs.map(b => `
             <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
@@ -1915,23 +1946,66 @@ ${JSON.stringify(schemas, null, 2)}
             </div>
           `).join('') : products.map(p => {
             const s = Fh[p.id] || p.id;
+            const normCat = getNormalizedCategory(p);
+            const badgeLabel = normCat === 'fountain' ? 'Water Fountain' : normCat === 'nozzles' ? 'Nozzle & Jet' : normCat === 'lights' ? 'IP68 Lighting' : 'Hardware & Controls';
             return `
-              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-48 object-cover" width="400" height="192" loading="lazy" />
-                <div class="p-6">
-                  <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">${escapeHtml(p.category)}</span>
-                  <h3 class="text-lg font-bold text-slate-900 mt-2 mb-2">
-                    <a href="/water-fountain-products/${s}" class="hover:text-cyan-600 transition-colors">${escapeHtml(p.title)}</a>
-                  </h3>
-                  <p class="text-sm text-slate-600 line-clamp-2 mb-4">${escapeHtml(p.description)}</p>
-                  <a href="/water-fountain-products/${s}" class="text-sm font-semibold text-cyan-600 hover:text-cyan-700 flex items-center gap-1">
-                    Explore Specifications &rarr;
+              <div data-prod-cat="${normCat}" class="prod-catalog-card bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                  <div class="relative h-48 overflow-hidden bg-slate-900">
+                    <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" width="400" height="192" loading="lazy" />
+                    <span class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider border border-white/10 shadow-xs">
+                      ${badgeLabel}
+                    </span>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
+                      <a href="/water-fountain-products/${s}" class="hover:text-cyan-600 transition-colors">${escapeHtml(p.title)}</a>
+                    </h3>
+                    <p class="text-sm text-slate-600 line-clamp-2 mb-4 leading-relaxed">${escapeHtml(p.description)}</p>
+                  </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                  <a href="/water-fountain-products/${s}" class="w-full bg-slate-50 hover:bg-cyan-600 hover:text-white text-slate-800 text-xs font-bold py-2.5 px-4 rounded-lg border border-slate-200 hover:border-cyan-600 transition-all flex items-center justify-center gap-1.5 shadow-2xs">
+                    <span>Explore Specifications &amp; Media</span> &rarr;
                   </a>
                 </div>
               </div>
             `;
           }).join('')}
         </div>
+
+        
+        ${hub.path === 'water-fountain-products' ? `
+        <script>
+        (function() {
+          const filterBtns = document.querySelectorAll('.prod-filter-btn');
+          const cards = document.querySelectorAll('.prod-catalog-card');
+          if (!filterBtns.length || !cards.length) return;
+
+          filterBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              const target = btn.getAttribute('data-filter');
+
+              filterBtns.forEach(function(b) {
+                b.classList.remove('bg-slate-900', 'text-white', 'shadow-sm');
+                b.classList.add('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+              });
+              btn.classList.add('bg-slate-900', 'text-white', 'shadow-sm');
+              btn.classList.remove('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+
+              cards.forEach(function(card) {
+                const cat = card.getAttribute('data-prod-cat');
+                if (target === 'all' || cat === target) {
+                  card.style.display = '';
+                } else {
+                  card.style.display = 'none';
+                }
+              });
+            });
+          });
+        })();
+        </script>
+        ` : ''}
 
         <div class="bg-slate-900 text-white rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto">
           <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">Consult Fludio Technical Engineering Works</h2>
