@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const products = JSON.parse(fs.readFileSync('extracted_products.json', 'utf8'));
+const PRODUCT_MEDIA = JSON.parse(fs.readFileSync(path.join(__dirname, 'product_media_data.json'), 'utf8'));
 
 const reviews = [
   {
@@ -557,6 +558,175 @@ function renderComparisonTable(productTitle) {
 }
 
 // --------------------------------------------------------------------------
+
+function renderProductMediaGallery(p) {
+  const mediaList = PRODUCT_MEDIA[p.id] || [{ type: 'image', src: p.imageUrl, title: p.title }];
+  const firstMedia = mediaList[0];
+  const photoCount = mediaList.filter(m => m.type === 'image').length;
+  const videoCount = mediaList.filter(m => m.type === 'video').length;
+  const safeId = p.id.replace(/[^a-zA-Z0-9_-]/g, '-');
+
+  return `
+    <div class="space-y-4">
+      <!-- Main Product Media Slider -->
+      <div id="product-slider-${safeId}" class="relative rounded-2xl overflow-hidden border border-slate-200/90 shadow-xl bg-slate-950 aspect-4/3 sm:aspect-16/10 flex items-center justify-center group select-none">
+        <!-- Media Stage -->
+        <div class="w-full h-full flex items-center justify-center relative bg-black/40">
+          <img id="active-gallery-img-${safeId}" src="${firstMedia.src}" alt="${escapeHtml(p.title)} - Factory Production &amp; Installation Media" class="w-full h-full object-cover transition-opacity duration-300" width="600" height="400" fetchpriority="high" />
+          <video id="active-gallery-video-${safeId}" src="" controls playsinline preload="metadata" class="hidden w-full h-full object-contain bg-black"></video>
+        </div>
+
+        <!-- Top Floating Badges -->
+        <div class="absolute top-3 inset-x-3 flex items-center justify-between pointer-events-none z-10">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="bg-slate-900/85 backdrop-blur-md text-cyan-300 border border-cyan-500/30 text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Factory Verified Media
+            </span>
+            <span id="active-media-type-${safeId}" class="bg-cyan-700/90 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+              ${firstMedia.type === 'video' ? 'HD Video' : 'Photo'}
+            </span>
+          </div>
+          <span id="active-media-counter-${safeId}" class="bg-slate-900/85 backdrop-blur-md text-white text-xs font-mono font-bold px-2.5 py-1 rounded-full border border-white/10 shadow-sm">
+            1 / ${mediaList.length}
+          </span>
+        </div>
+
+        <!-- Left / Right Slider Navigation Controls -->
+        ${mediaList.length > 1 ? `
+        <button id="slider-prev-btn-${safeId}" type="button" aria-label="Previous Media" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-800 shadow-md border border-slate-200/80 flex items-center justify-center transition-all opacity-85 group-hover:opacity-100 hover:scale-105 active:scale-95 focus:outline-none z-20 cursor-pointer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button id="slider-next-btn-${safeId}" type="button" aria-label="Next Media" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-800 shadow-md border border-slate-200/80 flex items-center justify-center transition-all opacity-85 group-hover:opacity-100 hover:scale-105 active:scale-95 focus:outline-none z-20 cursor-pointer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        ` : ''}
+
+        <!-- Bottom Caption Bar -->
+        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-3 pt-8 pointer-events-none z-10 flex items-end justify-between text-xs text-white">
+          <span id="active-media-title-${safeId}" class="truncate font-medium text-slate-200">${escapeHtml(firstMedia.title || p.title)}</span>
+          <span class="text-[11px] text-cyan-300 font-mono shrink-0 ml-2">Fludio Pune Works</span>
+        </div>
+      </div>
+
+      <!-- Thumbnails Gallery Below the Main Slider -->
+      <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-xs">
+        <div class="flex items-center justify-between mb-2.5 px-0.5">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-cyan-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Real Available Media
+            </span>
+            <span class="text-[11px] bg-cyan-50 text-cyan-800 border border-cyan-200 px-2 py-0.5 rounded-full font-semibold">
+              ${mediaList.length} Items &bull; ${photoCount} Photos, ${videoCount} Videos
+            </span>
+          </div>
+          <span class="text-[11px] text-slate-400 hidden sm:inline">Click thumbnail to inspect</span>
+        </div>
+
+        <!-- Horizontally Scrollable Thumbnails Strip -->
+        <div id="gallery-thumbs-strip-${safeId}" class="flex gap-2 overflow-x-auto pb-1.5 pt-1 scroll-smooth focus:outline-none" style="scrollbar-width: thin;">
+          ${mediaList.map((m, idx) => `
+            <button type="button" data-idx="${idx}" class="thumb-btn-${safeId} relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer ${idx === 0 ? 'border-cyan-600 ring-2 ring-cyan-500/30 opacity-100 scale-102 shadow-xs' : 'border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100'}" aria-label="View media item ${idx + 1}">
+              ${m.type === 'video' ? `
+                <video src="${m.src}#t=0.5" preload="metadata" muted playsinline class="w-full h-full object-cover pointer-events-none bg-slate-900"></video>
+                <span class="absolute inset-0 bg-slate-950/40 flex items-center justify-center pointer-events-none">
+                  <span class="w-6 h-6 rounded-full bg-cyan-600 text-white flex items-center justify-center shadow-xs">
+                    <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </span>
+                </span>
+                <span class="absolute bottom-1 right-1 bg-slate-900/90 text-white text-[9px] font-mono px-1 rounded pointer-events-none">VIDEO</span>
+              ` : `
+                <img src="${m.src}" alt="${escapeHtml(m.title || p.title)}" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              `}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Self-Contained Slider Controller Script -->
+      <script>
+      (function() {
+        var media = ${JSON.stringify(mediaList.map(m => ({ type: m.type, src: m.src, title: m.title || p.title })))};
+        var curIdx = 0;
+        var imgEl = document.getElementById('active-gallery-img-${safeId}');
+        var vidEl = document.getElementById('active-gallery-video-${safeId}');
+        var badgeEl = document.getElementById('active-media-type-${safeId}');
+        var counterEl = document.getElementById('active-media-counter-${safeId}');
+        var titleEl = document.getElementById('active-media-title-${safeId}');
+        var thumbs = document.querySelectorAll('.thumb-btn-${safeId}');
+        var prevBtn = document.getElementById('slider-prev-btn-${safeId}');
+        var nextBtn = document.getElementById('slider-next-btn-${safeId}');
+
+        function showMedia(idx) {
+          if (idx < 0) idx = media.length - 1;
+          if (idx >= media.length) idx = 0;
+          curIdx = idx;
+
+          var item = media[curIdx];
+          if (item.type === 'video') {
+            if (imgEl) imgEl.classList.add('hidden');
+            if (vidEl) {
+              vidEl.classList.remove('hidden');
+              if (!vidEl.src.endsWith(item.src)) {
+                vidEl.src = item.src;
+              }
+              vidEl.play().catch(function() {});
+            }
+            if (badgeEl) badgeEl.textContent = 'HD Video';
+          } else {
+            if (vidEl) {
+              vidEl.pause();
+              vidEl.classList.add('hidden');
+            }
+            if (imgEl) {
+              imgEl.classList.remove('hidden');
+              imgEl.src = item.src;
+              imgEl.alt = item.title;
+            }
+            if (badgeEl) badgeEl.textContent = 'Photo';
+          }
+
+          if (counterEl) counterEl.textContent = (curIdx + 1) + ' / ' + media.length;
+          if (titleEl) titleEl.textContent = item.title;
+
+          thumbs.forEach(function(btn, i) {
+            if (i === curIdx) {
+              btn.classList.add('border-cyan-600', 'ring-2', 'ring-cyan-500/30', 'opacity-100', 'scale-102', 'shadow-xs');
+              btn.classList.remove('border-slate-200', 'opacity-75');
+              btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            } else {
+              btn.classList.remove('border-cyan-600', 'ring-2', 'ring-cyan-500/30', 'opacity-100', 'scale-102', 'shadow-xs');
+              btn.classList.add('border-slate-200', 'opacity-75');
+            }
+          });
+        }
+
+        thumbs.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            var i = parseInt(btn.getAttribute('data-idx'), 10);
+            if (!isNaN(i)) showMedia(i);
+          });
+        });
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function() { showMedia(curIdx - 1); });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function() { showMedia(curIdx + 1); });
+        }
+
+        document.addEventListener('keydown', function(e) {
+          if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+          if (e.key === 'ArrowLeft') showMedia(curIdx - 1);
+          if (e.key === 'ArrowRight') showMedia(curIdx + 1);
+        });
+      })();
+      </script>
+    </div>
+  `;
+}
+
 // 1. GENERATE PRODUCT PAGES WITH COMPETITOR COMPARISON
 // --------------------------------------------------------------------------
 products.forEach(p => {
@@ -789,9 +959,7 @@ ${JSON.stringify(schemas, null, 2)}
           </div>
 
           <div>
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
-              <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-auto object-cover max-h-[500px]" width="600" height="400" fetchpriority="high" />
-            </div>
+            ${renderProductMediaGallery(p)}
             ${advantagesHtml}
             ${applicationsHtml}
           </div>

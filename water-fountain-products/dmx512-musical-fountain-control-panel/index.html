@@ -314,9 +314,475 @@
           </div>
 
           <div>
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
-              <img src="/images/dmx_control_panel.jpg" alt="DMX 512 Dancing Fountain Control Panels" class="w-full h-auto object-cover max-h-[500px]" width="600" height="400" fetchpriority="high" />
-            </div>
+            
+    <div class="space-y-4">
+      <!-- Main Product Media Slider -->
+      <div id="product-slider-panels" class="relative rounded-2xl overflow-hidden border border-slate-200/90 shadow-xl bg-slate-950 aspect-4/3 sm:aspect-16/10 flex items-center justify-center group select-none">
+        <!-- Media Stage -->
+        <div class="w-full h-full flex items-center justify-center relative bg-black/40">
+          <img id="active-gallery-img-panels" src="/images/dmx_control_panel.jpg" alt="DMX 512 Dancing Fountain Control Panels - Factory Production &amp; Installation Media" class="w-full h-full object-cover transition-opacity duration-300" width="600" height="400" fetchpriority="high" />
+          <video id="active-gallery-video-panels" src="" controls playsinline preload="metadata" class="hidden w-full h-full object-contain bg-black"></video>
+        </div>
+
+        <!-- Top Floating Badges -->
+        <div class="absolute top-3 inset-x-3 flex items-center justify-between pointer-events-none z-10">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="bg-slate-900/85 backdrop-blur-md text-cyan-300 border border-cyan-500/30 text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Factory Verified Media
+            </span>
+            <span id="active-media-type-panels" class="bg-cyan-700/90 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+              Photo
+            </span>
+          </div>
+          <span id="active-media-counter-panels" class="bg-slate-900/85 backdrop-blur-md text-white text-xs font-mono font-bold px-2.5 py-1 rounded-full border border-white/10 shadow-sm">
+            1 / 50
+          </span>
+        </div>
+
+        <!-- Left / Right Slider Navigation Controls -->
+        
+        <button id="slider-prev-btn-panels" type="button" aria-label="Previous Media" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-800 shadow-md border border-slate-200/80 flex items-center justify-center transition-all opacity-85 group-hover:opacity-100 hover:scale-105 active:scale-95 focus:outline-none z-20 cursor-pointer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button id="slider-next-btn-panels" type="button" aria-label="Next Media" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-800 shadow-md border border-slate-200/80 flex items-center justify-center transition-all opacity-85 group-hover:opacity-100 hover:scale-105 active:scale-95 focus:outline-none z-20 cursor-pointer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        
+
+        <!-- Bottom Caption Bar -->
+        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-3 pt-8 pointer-events-none z-10 flex items-end justify-between text-xs text-white">
+          <span id="active-media-title-panels" class="truncate font-medium text-slate-200">Fludio DMX 512 Electrical Automation Panel</span>
+          <span class="text-[11px] text-cyan-300 font-mono shrink-0 ml-2">Fludio Pune Works</span>
+        </div>
+      </div>
+
+      <!-- Thumbnails Gallery Below the Main Slider -->
+      <div class="bg-white rounded-xl border border-slate-200 p-3 shadow-xs">
+        <div class="flex items-center justify-between mb-2.5 px-0.5">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-cyan-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Real Available Media
+            </span>
+            <span class="text-[11px] bg-cyan-50 text-cyan-800 border border-cyan-200 px-2 py-0.5 rounded-full font-semibold">
+              50 Items &bull; 46 Photos, 4 Videos
+            </span>
+          </div>
+          <span class="text-[11px] text-slate-400 hidden sm:inline">Click thumbnail to inspect</span>
+        </div>
+
+        <!-- Horizontally Scrollable Thumbnails Strip -->
+        <div id="gallery-thumbs-strip-panels" class="flex gap-2 overflow-x-auto pb-1.5 pt-1 scroll-smooth focus:outline-none" style="scrollbar-width: thin;">
+          
+            <button type="button" data-idx="0" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-cyan-600 ring-2 ring-cyan-500/30 opacity-100 scale-102 shadow-xs" aria-label="View media item 1">
+              
+                <img src="/images/dmx_control_panel.jpg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="1" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 2">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-01.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="2" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 3">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-02.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="3" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 4">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-03.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="4" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 5">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-04.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="5" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 6">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-05.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="6" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 7">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-06.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="7" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 8">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-07.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="8" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 9">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-08.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="9" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 10">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-09.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="10" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 11">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-10.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="11" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 12">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-11.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="12" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 13">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-12.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="13" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 14">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-13.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="14" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 15">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-14.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="15" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 16">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-15.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="16" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 17">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-16.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="17" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 18">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-17.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="18" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 19">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-18.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="19" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 20">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-19.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="20" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 21">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-20.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="21" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 22">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-21.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="22" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 23">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-22.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="23" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 24">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-23.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="24" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 25">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-24.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="25" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 26">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-25.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="26" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 27">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-26.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="27" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 28">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-27.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="28" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 29">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-28.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="29" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 30">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-29.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="30" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 31">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-30.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="31" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 32">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-31.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="32" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 33">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-32.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="33" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 34">
+              
+                <img src="/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-33.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="34" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 35">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-01.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="35" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 36">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-02.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="36" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 37">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-03.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="37" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 38">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-04.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="38" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 39">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-05.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="39" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 40">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-06.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="40" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 41">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-07.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="41" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 42">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-08.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="42" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 43">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-09.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="43" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 44">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-10.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="44" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 45">
+              
+                <img src="/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-11.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="45" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 46">
+              
+                <img src="/images/realtime-products/fludio-dmx512-solenoid-valve-manifold-01.jpeg" alt="Fludio DMX 512 Electrical Automation Panel" loading="lazy" class="w-full h-full object-cover pointer-events-none" width="80" height="80" />
+              
+            </button>
+          
+            <button type="button" data-idx="46" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 47">
+              
+                <video src="/videos/fludio-fountain-electrical-automation-panel-testing-video-01.mp4#t=0.5" preload="metadata" muted playsinline class="w-full h-full object-cover pointer-events-none bg-slate-900"></video>
+                <span class="absolute inset-0 bg-slate-950/40 flex items-center justify-center pointer-events-none">
+                  <span class="w-6 h-6 rounded-full bg-cyan-600 text-white flex items-center justify-center shadow-xs">
+                    <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </span>
+                </span>
+                <span class="absolute bottom-1 right-1 bg-slate-900/90 text-white text-[9px] font-mono px-1 rounded pointer-events-none">VIDEO</span>
+              
+            </button>
+          
+            <button type="button" data-idx="47" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 48">
+              
+                <video src="/videos/fludio-musical-dancing-fountain-choreography-show-01.mp4#t=0.5" preload="metadata" muted playsinline class="w-full h-full object-cover pointer-events-none bg-slate-900"></video>
+                <span class="absolute inset-0 bg-slate-950/40 flex items-center justify-center pointer-events-none">
+                  <span class="w-6 h-6 rounded-full bg-cyan-600 text-white flex items-center justify-center shadow-xs">
+                    <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </span>
+                </span>
+                <span class="absolute bottom-1 right-1 bg-slate-900/90 text-white text-[9px] font-mono px-1 rounded pointer-events-none">VIDEO</span>
+              
+            </button>
+          
+            <button type="button" data-idx="48" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 49">
+              
+                <video src="/videos/fludio-musical-dancing-fountain-choreography-show-02.mp4#t=0.5" preload="metadata" muted playsinline class="w-full h-full object-cover pointer-events-none bg-slate-900"></video>
+                <span class="absolute inset-0 bg-slate-950/40 flex items-center justify-center pointer-events-none">
+                  <span class="w-6 h-6 rounded-full bg-cyan-600 text-white flex items-center justify-center shadow-xs">
+                    <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </span>
+                </span>
+                <span class="absolute bottom-1 right-1 bg-slate-900/90 text-white text-[9px] font-mono px-1 rounded pointer-events-none">VIDEO</span>
+              
+            </button>
+          
+            <button type="button" data-idx="49" class="thumb-btn-panels relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all cursor-pointer border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100" aria-label="View media item 50">
+              
+                <video src="/videos/fludio-musical-dancing-fountain-choreography-show-03.mp4#t=0.5" preload="metadata" muted playsinline class="w-full h-full object-cover pointer-events-none bg-slate-900"></video>
+                <span class="absolute inset-0 bg-slate-950/40 flex items-center justify-center pointer-events-none">
+                  <span class="w-6 h-6 rounded-full bg-cyan-600 text-white flex items-center justify-center shadow-xs">
+                    <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </span>
+                </span>
+                <span class="absolute bottom-1 right-1 bg-slate-900/90 text-white text-[9px] font-mono px-1 rounded pointer-events-none">VIDEO</span>
+              
+            </button>
+          
+        </div>
+      </div>
+
+      <!-- Self-Contained Slider Controller Script -->
+      <script>
+      (function() {
+        var media = [{"type":"image","src":"/images/dmx_control_panel.jpg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-01.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-02.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-03.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-04.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-05.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-06.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-07.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-08.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-09.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-10.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-11.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-12.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-13.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-14.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-15.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-16.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-17.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-18.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-19.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-20.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-21.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-22.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-23.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-24.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-25.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-26.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-27.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-28.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-29.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-30.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-31.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-32.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-fountain-electrical-automation-panel-plc-vfd-33.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-01.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-02.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-03.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-04.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-05.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-06.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-07.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-08.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-09.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-10.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-musical-fountain-controller-automation-11.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"image","src":"/images/realtime-products/fludio-dmx512-solenoid-valve-manifold-01.jpeg","title":"Fludio DMX 512 Electrical Automation Panel"},{"type":"video","src":"/videos/fludio-fountain-electrical-automation-panel-testing-video-01.mp4","title":"Fludio Automation Panel Testing & Live Control"},{"type":"video","src":"/videos/fludio-musical-dancing-fountain-choreography-show-01.mp4","title":"Fludio Automation Panel Testing & Live Control"},{"type":"video","src":"/videos/fludio-musical-dancing-fountain-choreography-show-02.mp4","title":"Fludio Automation Panel Testing & Live Control"},{"type":"video","src":"/videos/fludio-musical-dancing-fountain-choreography-show-03.mp4","title":"Fludio Automation Panel Testing & Live Control"}];
+        var curIdx = 0;
+        var imgEl = document.getElementById('active-gallery-img-panels');
+        var vidEl = document.getElementById('active-gallery-video-panels');
+        var badgeEl = document.getElementById('active-media-type-panels');
+        var counterEl = document.getElementById('active-media-counter-panels');
+        var titleEl = document.getElementById('active-media-title-panels');
+        var thumbs = document.querySelectorAll('.thumb-btn-panels');
+        var prevBtn = document.getElementById('slider-prev-btn-panels');
+        var nextBtn = document.getElementById('slider-next-btn-panels');
+
+        function showMedia(idx) {
+          if (idx < 0) idx = media.length - 1;
+          if (idx >= media.length) idx = 0;
+          curIdx = idx;
+
+          var item = media[curIdx];
+          if (item.type === 'video') {
+            if (imgEl) imgEl.classList.add('hidden');
+            if (vidEl) {
+              vidEl.classList.remove('hidden');
+              if (!vidEl.src.endsWith(item.src)) {
+                vidEl.src = item.src;
+              }
+              vidEl.play().catch(function() {});
+            }
+            if (badgeEl) badgeEl.textContent = 'HD Video';
+          } else {
+            if (vidEl) {
+              vidEl.pause();
+              vidEl.classList.add('hidden');
+            }
+            if (imgEl) {
+              imgEl.classList.remove('hidden');
+              imgEl.src = item.src;
+              imgEl.alt = item.title;
+            }
+            if (badgeEl) badgeEl.textContent = 'Photo';
+          }
+
+          if (counterEl) counterEl.textContent = (curIdx + 1) + ' / ' + media.length;
+          if (titleEl) titleEl.textContent = item.title;
+
+          thumbs.forEach(function(btn, i) {
+            if (i === curIdx) {
+              btn.classList.add('border-cyan-600', 'ring-2', 'ring-cyan-500/30', 'opacity-100', 'scale-102', 'shadow-xs');
+              btn.classList.remove('border-slate-200', 'opacity-75');
+              btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            } else {
+              btn.classList.remove('border-cyan-600', 'ring-2', 'ring-cyan-500/30', 'opacity-100', 'scale-102', 'shadow-xs');
+              btn.classList.add('border-slate-200', 'opacity-75');
+            }
+          });
+        }
+
+        thumbs.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            var i = parseInt(btn.getAttribute('data-idx'), 10);
+            if (!isNaN(i)) showMedia(i);
+          });
+        });
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function() { showMedia(curIdx - 1); });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function() { showMedia(curIdx + 1); });
+        }
+
+        document.addEventListener('keydown', function(e) {
+          if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+          if (e.key === 'ArrowLeft') showMedia(curIdx - 1);
+          if (e.key === 'ArrowRight') showMedia(curIdx + 1);
+        });
+      })();
+      </script>
+    </div>
+  
             
     <div class="mt-10 p-6 bg-cyan-50 border border-cyan-200 rounded-xl">
       <h3 class="text-lg font-bold text-cyan-950 mb-4 flex items-center gap-2">
