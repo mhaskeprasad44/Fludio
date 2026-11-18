@@ -1,3 +1,13 @@
+const {
+  renderSpecifierResources,
+  renderEngineeringCertifications,
+  renderServicesHubContent,
+  renderAboutHubContent,
+  renderProjectsHubContent,
+  renderFaqsHubContent,
+  renderContactHubContent,
+  renderProductsHubContent
+} = require('./hub_renderers.cjs');
 const fs = require('fs');
 const path = require('path');
 
@@ -978,6 +988,8 @@ ${JSON.stringify(schemas, null, 2)}
         ${subproductsHtml}
         ${specsHtml}
         ${renderComparisonTable(p.title)}
+        ${renderSpecifierResources(p)}
+        ${renderEngineeringCertifications()}
         ${faqsHtml}
 
         <!-- RFQ CTA Banner -->
@@ -1620,6 +1632,50 @@ coreHubs.forEach(hub => {
 
   const schemas = [SHARED_ORG_SCHEMA, SHARED_LOCAL_SCHEMA, breadcrumbsSchema];
 
+  if (hub.path === 'water-fountain-faqs') {
+    const faqsData = require('./extracted_faqs.json');
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqsData.map(f => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
+        }
+      }))
+    });
+  } else if (hub.path === 'fountain-design-installation-services') {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": `${canonicalUrl}#service`,
+      "name": "Turnkey Fountain Engineering & Installation Services",
+      "provider": { "@id": "https://www.fludio.in/#organization" },
+      "areaServed": "India",
+      "serviceType": "Turnkey Aquatic Engineering & Musical Fountain Construction",
+      "description": hub.desc
+    });
+  } else if (hub.path === 'about-water-fountain-engineers') {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": `${canonicalUrl}#about`,
+      "name": hub.h1,
+      "description": hub.desc,
+      "mainEntity": { "@id": "https://www.fludio.in/#organization" }
+    });
+  } else if (hub.path === 'contact-water-fountain-experts') {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": `${canonicalUrl}#contact`,
+      "name": hub.h1,
+      "description": hub.desc
+    });
+  }
+
   const fullHtml = `<!doctype html>
 <html lang="en" dir="ltr">
   <head>
@@ -1676,7 +1732,6 @@ ${JSON.stringify(schemas, null, 2)}
         ` : ''}
 
         ${hub.path === 'client-reviews-testimonials' ? `
-        
         <!-- Google Reviews Official Header Badge & Interactive Carousel Section -->
         <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 mb-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-4">
@@ -1705,7 +1760,7 @@ ${JSON.stringify(schemas, null, 2)}
           </div>
         </div>
 
-        <!-- Interactive Scrolling Carousel Section (Zero Images, Text Reviews Only) -->
+        <!-- Interactive Scrolling Carousel Section -->
         <div class="mb-14 bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
@@ -1726,7 +1781,6 @@ ${JSON.stringify(schemas, null, 2)}
             </div>
           </div>
 
-          <!-- Carousel Track Container -->
           <div id="hub-carousel-container" class="overflow-hidden">
             <div id="hub-carousel-track" class="flex gap-5 transition-transform duration-500 ease-out">
               ${reviews.map(r => `
@@ -1769,8 +1823,6 @@ ${JSON.stringify(schemas, null, 2)}
               `).join('')}
             </div>
           </div>
-
-          <!-- Carousel Dots -->
           <div id="hub-carousel-dots" class="flex justify-center items-center gap-2 mt-6"></div>
         </div>
 
@@ -1802,18 +1854,15 @@ ${JSON.stringify(schemas, null, 2)}
           function updateCarousel() {
             const maxIdx = getMaxIndex();
             if (currentIndex > maxIdx) currentIndex = maxIdx;
-            const firstSlide = slides[0];
-            if (!firstSlide) return;
-            const slideWidth = firstSlide.getBoundingClientRect().width;
-            const gap = 20;
-            const offset = currentIndex * (slideWidth + gap);
-            track.style.transform = 'translateX(-' + offset + 'px)';
+            const slideWidthPercent = 100 / getVisibleCount();
+            track.style.transform = 'translateX(-' + (currentIndex * slideWidthPercent) + '%)';
 
             dotsContainer.innerHTML = '';
             for (let i = 0; i <= maxIdx; i++) {
               const dot = document.createElement('button');
-              dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
-              dot.className = 'h-2 rounded-full transition-all duration-300 ' + (i === currentIndex ? 'bg-cyan-600 w-6' : 'bg-slate-300 hover:bg-slate-400 w-2');
+              dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+              dot.className = 'w-2.5 h-2.5 rounded-full transition-all cursor-pointer ' + 
+                (i === currentIndex ? 'bg-cyan-600 w-6' : 'bg-slate-300 hover:bg-slate-400');
               dot.addEventListener('click', function() {
                 currentIndex = i;
                 updateCarousel();
@@ -1825,23 +1874,21 @@ ${JSON.stringify(schemas, null, 2)}
 
           function nextSlide() {
             const maxIdx = getMaxIndex();
-            currentIndex = (currentIndex >= maxIdx) ? 0 : currentIndex + 1;
+            currentIndex = currentIndex >= maxIdx ? 0 : currentIndex + 1;
             updateCarousel();
           }
 
           function prevSlide() {
             const maxIdx = getMaxIndex();
-            currentIndex = (currentIndex <= 0) ? maxIdx : currentIndex - 1;
+            currentIndex = currentIndex <= 0 ? maxIdx : currentIndex - 1;
             updateCarousel();
           }
 
           function startTimer() {
             if (autoSlideTimer) clearInterval(autoSlideTimer);
             autoSlideTimer = setInterval(function() {
-              if (!isHovered) {
-                nextSlide();
-              }
-            }, 5000);
+              if (!isHovered) nextSlide();
+            }, 4500);
           }
 
           function resetTimer() {
@@ -1861,31 +1908,11 @@ ${JSON.stringify(schemas, null, 2)}
           startTimer();
         })();
         </script>
-` : ''}
-
-        
-        ${hub.path === 'water-fountain-products' ? `
-        <div id="product-filter-bar" class="flex items-center justify-center flex-wrap gap-2.5 mb-10">
-          <button type="button" data-filter="all" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-slate-900 text-white shadow-sm cursor-pointer">
-            All Products (${products.length})
-          </button>
-          <button type="button" data-filter="fountain" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
-            Water Fountains (${products.filter(p=>getNormalizedCategory(p)==='fountain').length})
-          </button>
-          <button type="button" data-filter="nozzles" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
-            Fountain Nozzles &amp; Jets (${products.filter(p=>getNormalizedCategory(p)==='nozzles').length})
-          </button>
-          <button type="button" data-filter="lights" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
-            Underwater &amp; Landscape Lights (${products.filter(p=>getNormalizedCategory(p)==='lights').length})
-          </button>
-          <button type="button" data-filter="accessories" class="prod-filter-btn px-5 py-2.5 rounded-full font-headline text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:border-cyan-600 hover:text-cyan-600 cursor-pointer">
-            Hardware &amp; Control Accessories (${products.filter(p=>getNormalizedCategory(p)==='accessories').length})
-          </button>
-        </div>
         ` : ''}
 
+        ${hub.path === 'fountain-engineering-blog' ? `
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          ${hub.path === 'fountain-engineering-blog' ? blogs.map(b => `
+          ${blogs.map(b => `
             <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
               <div>
                 <img src="${b.imageUrl}" alt="${escapeHtml(b.title)}" class="w-full h-48 object-cover" width="400" height="192" loading="lazy" />
@@ -1906,7 +1933,13 @@ ${JSON.stringify(schemas, null, 2)}
                 </a>
               </div>
             </div>
-          `).join('') : hub.path === 'client-reviews-testimonials' ? reviews.map(r => `
+          `).join('')}
+        </div>
+        ` : ''}
+
+        ${hub.path === 'client-reviews-testimonials' ? `
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          ${reviews.map(r => `
             <div class="bg-white border border-slate-200 rounded-2xl p-7 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
               <div>
                 <div class="flex items-center justify-between gap-3 mb-4">
@@ -1924,7 +1957,6 @@ ${JSON.stringify(schemas, null, 2)}
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
                   &ldquo;${escapeHtml(r.text)}&rdquo;
                 </p>
-
               </div>
               <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div class="flex items-center gap-3">
@@ -1944,70 +1976,18 @@ ${JSON.stringify(schemas, null, 2)}
                 </a>
               </div>
             </div>
-          `).join('') : products.map(p => {
-            const s = Fh[p.id] || p.id;
-            const normCat = getNormalizedCategory(p);
-            const badgeLabel = normCat === 'fountain' ? 'Water Fountain' : normCat === 'nozzles' ? 'Nozzle & Jet' : normCat === 'lights' ? 'IP68 Lighting' : 'Hardware & Controls';
-            return `
-              <div data-prod-cat="${normCat}" class="prod-catalog-card bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                <div>
-                  <div class="relative h-48 overflow-hidden bg-slate-900">
-                    <img src="${p.imageUrl}" alt="${escapeHtml(p.title)}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" width="400" height="192" loading="lazy" />
-                    <span class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider border border-white/10 shadow-xs">
-                      ${badgeLabel}
-                    </span>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
-                      <a href="/water-fountain-products/${s}" class="hover:text-cyan-600 transition-colors">${escapeHtml(p.title)}</a>
-                    </h3>
-                    <p class="text-sm text-slate-600 line-clamp-2 mb-4 leading-relaxed">${escapeHtml(p.description)}</p>
-                  </div>
-                </div>
-                <div class="px-6 pb-6 pt-0">
-                  <a href="/water-fountain-products/${s}" class="w-full bg-slate-50 hover:bg-cyan-600 hover:text-white text-slate-800 text-xs font-bold py-2.5 px-4 rounded-lg border border-slate-200 hover:border-cyan-600 transition-all flex items-center justify-center gap-1.5 shadow-2xs">
-                    <span>Explore Specifications &amp; Media</span> &rarr;
-                  </a>
-                </div>
-              </div>
-            `;
-          }).join('')}
+          `).join('')}
         </div>
-
-        
-        ${hub.path === 'water-fountain-products' ? `
-        <script>
-        (function() {
-          const filterBtns = document.querySelectorAll('.prod-filter-btn');
-          const cards = document.querySelectorAll('.prod-catalog-card');
-          if (!filterBtns.length || !cards.length) return;
-
-          filterBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-              const target = btn.getAttribute('data-filter');
-
-              filterBtns.forEach(function(b) {
-                b.classList.remove('bg-slate-900', 'text-white', 'shadow-sm');
-                b.classList.add('bg-white', 'border', 'border-slate-200', 'text-slate-700');
-              });
-              btn.classList.add('bg-slate-900', 'text-white', 'shadow-sm');
-              btn.classList.remove('bg-white', 'border', 'border-slate-200', 'text-slate-700');
-
-              cards.forEach(function(card) {
-                const cat = card.getAttribute('data-prod-cat');
-                if (target === 'all' || cat === target) {
-                  card.style.display = '';
-                } else {
-                  card.style.display = 'none';
-                }
-              });
-            });
-          });
-        })();
-        </script>
         ` : ''}
 
-        <div class="bg-slate-900 text-white rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto">
+        ${hub.path === 'water-fountain-products' ? renderProductsHubContent(products, Fh, getNormalizedCategory) : ''}
+        ${hub.path === 'fountain-design-installation-services' ? renderServicesHubContent() : ''}
+        ${hub.path === 'about-water-fountain-engineers' ? renderAboutHubContent() : ''}
+        ${hub.path === 'water-fountain-projects-portfolio' ? renderProjectsHubContent() : ''}
+        ${hub.path === 'water-fountain-faqs' ? renderFaqsHubContent() : ''}
+        ${hub.path === 'contact-water-fountain-experts' ? renderContactHubContent() : ''}
+
+        <div class="mt-16 bg-slate-900 text-white rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto shadow-xl">
           <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">Consult Fludio Technical Engineering Works</h2>
           <p class="text-slate-400 text-sm max-w-xl mx-auto mb-6">
             Direct dispatch from Narhe Dhayari Industrial Estate, Pune with complete on-site civil and electrical installation support across India.

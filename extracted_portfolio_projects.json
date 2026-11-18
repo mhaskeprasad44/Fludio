@@ -1,0 +1,85 @@
+[
+  {
+    "id": "metropol",
+    "title": "Metropol Plaza Commercial Center",
+    "location": "Mumbai, Maharashtra",
+    "description": "Turnkey design and installation of 24 synchronized dancing jets with dynamic variable pressure and high-intensity DMX 512 teal LED refractions.",
+    "impact_title": "Impact",
+    "impact_value": "30% increase in weekend foot traffic",
+    "imageUrl": "/images/project_metropol_mumbai.jpg",
+    "categories": [
+      "musical",
+      "musical-dancing",
+      "commercial"
+    ]
+  },
+  {
+    "id": "zen-garden",
+    "title": "Government Heritage Lake Dancing Fountain",
+    "location": "New Delhi, Delhi",
+    "description": "Multi-parameter synchronized dancing fountain array custom engineered for municipal landmark decoration, utilizing DMX 512 logic.",
+    "impact_title": "Highlight",
+    "impact_value": "PAN India Government Landmark Project",
+    "imageUrl": "/images/musical_fountain_hero.jpg",
+    "categories": [
+      "musical",
+      "musical-dancing",
+      "commercial"
+    ]
+  },
+  {
+    "id": "horizon-villa",
+    "title": "The Grand Lalit Resort Gardens",
+    "location": "Udaipur, Rajasthan",
+    "description": "Architectural focal water feature integrated into luxury resort entry landscape garden, featuring cascading terraces and micro-climate cooling.",
+    "impact_title": "Result",
+    "impact_value": "A+ Public Safety & 5-Star Prestige",
+    "imageUrl": "/images/project_udaipur_resort.jpg",
+    "categories": [
+      "static",
+      "commercial",
+      "residential"
+    ]
+  },
+  {
+    "id": "bengaluru-techpark",
+    "title": "Tech Park Waterfront Promenade",
+    "location": "Bengaluru, Karnataka",
+    "description": "Contemporary campus water architecture featuring linear reflecting canals, precision laminar jumping arches, and granite sheetfall fountains.",
+    "impact_title": "Audience",
+    "impact_value": "35,000+ Daily Tech Campus Footfall",
+    "imageUrl": "/images/project_bengaluru_techpark.jpg",
+    "categories": [
+      "architectural",
+      "commercial",
+      "static"
+    ]
+  },
+  {
+    "id": "pune-drydeck",
+    "title": "Smart City Public Dry Deck Plaza",
+    "location": "Pune, Maharashtra",
+    "description": "Civic urban pedestrian promenade featuring 36 programmable flush-floor dry deck jets with slip-resistant SS304 covers and interactive DMX sequencing.",
+    "impact_title": "Community",
+    "impact_value": "Premier Municipal Civic Plaza Attraction",
+    "imageUrl": "/images/project_pune_drydeck_plaza.jpg",
+    "categories": [
+      "dry-deck",
+      "commercial",
+      "musical"
+    ]
+  },
+  {
+    "id": "estate-static",
+    "title": "Royal Courtyard Static Tiered Fountain",
+    "location": "Jaipur, Rajasthan",
+    "description": "Majestic multi-tier circular architectural fountain in a private luxury estate, featuring high-foaming geyser center plume and concentric cascading rings.",
+    "impact_title": "Design",
+    "impact_value": "Heritage Architectural Landmark",
+    "imageUrl": "/images/static_tiered_fountain.jpg",
+    "categories": [
+      "static",
+      "residential"
+    ]
+  }
+]

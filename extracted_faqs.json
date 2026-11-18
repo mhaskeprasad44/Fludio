@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "category": "Turnkey & Engineering",
+    "question": "What is included in Fludio's turnkey fountain contracting services?",
+    "answer": "Fludio provides complete end-to-end turnkey fountain solutions: initial 3D conceptualization, hydraulic calculation loops, civil plumbing and cable conduit schematics, in-house manufacturing of SS304L hardware in Pune, DMX 512 control panel assembly, on-site mechanical/electrical installation, musical choreography programming, and client operator training."
+  },
+  {
+    "id": 2,
+    "category": "Turnkey & Engineering",
+    "question": "How long does a turnkey musical or architectural fountain installation take?",
+    "answer": "Project timelines typically range from 3 to 8 weeks depending on scale. Standard architectural static fountains and water cascades take 3 to 4 weeks, while large-scale synchronized DMX 512 musical dancing fountains, interactive dry decks, or lake aeration arrays take 6 to 8 weeks including factory testing in Pune and on-site acoustic synchronization."
+  },
+  {
+    "id": 3,
+    "category": "Turnkey & Engineering",
+    "question": "Do you supply civil construction blueprints and plumbing manifold CAD drawings?",
+    "answer": "Yes. Upon project confirmation, our engineering team provides complete AutoCAD schematics including foundation depth calculations, waterproof sump dimensions, pump room layouts, suction/discharge manifold piping diameters, overflow drain levels, and conduit sleeves for low-voltage IP68 lighting cables."
+  },
+  {
+    "id": 4,
+    "category": "Turnkey & Engineering",
+    "question": "Can clients visit your manufacturing facility in Pune to inspect hardware?",
+    "answer": "Yes, clients, architects, and government engineers are warmly welcome to visit our Pune factory located at Sr.no 38/1, Shed No.6, Khedekar Industrial Estate, Narhe Dhayari Road, Pune 411041. We conduct pre-shipment wet-run testing on our testing tanks to verify spray heights, DMX 512 response times, and IP68 seal integrity before dispatch."
+  },
+  {
+    "id": 5,
+    "category": "DMX 512 Musical Fountains",
+    "question": "How does Fludio synchronize dancing water jets with musical audio tracks?",
+    "answer": "We utilize industrial DMX 512 protocol controllers paired with high-speed Variable Frequency Drives (VFDs) and fast-response 24V DC solenoid valves. Water pressure and spray velocity are modulated to musical frequencies and beats in real time with sub-20-millisecond accuracy, creating breathtaking choreography where water dances in exact harmony with the audio soundtrack."
+  },
+  {
+    "id": 6,
+    "category": "DMX 512 Musical Fountains",
+    "question": "Can property managers change songs and fountain lighting shows on their own?",
+    "answer": "Yes. Our automated DMX 512 control consoles feature an intuitive touchscreen and PC-based interface. Property managers can choose from pre-programmed musical shows, upload new audio tracks with automated sync presets, set astronomical sunset/sunrise timers, and switch between tranquil daytime static modes and energetic evening musical shows."
+  },
+  {
+    "id": 7,
+    "category": "DMX 512 Musical Fountains",
+    "question": "What is the response speed of Fludio's fast-acting fountain solenoid valves?",
+    "answer": "Our customized IP68 underwater solenoid valves operate on 24V DC with high-temperature copper coils and Teflon diaphragms, capable of cycling up to 10 to 15 bursts per second. This enables instant water bursts, running chase waves, and jumping water jets without water hammer or mechanical vibration."
+  },
+  {
+    "id": 8,
+    "category": "DMX 512 Musical Fountains",
+    "question": "Can Fludio controllers integrate with external sound systems and laser projectors?",
+    "answer": "Yes. Our control architecture supports SMPTE timecode sync, standard XLR DMX 512 in/out, Ethernet Art-Net, and line-level audio outputs. This allows seamless integration with municipal PA systems, outdoor concert sound arrays, laser graphic projectors, and architectural building facade lighting."
+  },
+  {
+    "id": 9,
+    "category": "IP68 Underwater Lighting",
+    "question": "What electrical voltage do Fludio IP68 underwater LED lights operate on?",
+    "answer": "All Fludio underwater LED lights strictly operate on safe extra-low voltage (SELV) of 12V DC or 24V DC powered through isolated step-down transformers housed in the dry electrical control panel. This completely eliminates any risk of electrical shock in public plazas, hotel water bodies, or interactive child-friendly dry decks."
+  },
+  {
+    "id": 10,
+    "category": "IP68 Underwater Lighting",
+    "question": "What does the IP68 waterproof rating mean for fountain durability?",
+    "answer": "An IP68 certification signifies that the lighting fixture is 100% dust-tight and engineered for continuous, permanent underwater submersion at depths exceeding 1 meter (our units are pressure-tested up to 10 meters depth). We use marine-grade silicone gaskets, toughened optical tempered glass, and epoxy-potted cable entries to prevent moisture ingress over years of operation."
+  },
+  {
+    "id": 11,
+    "category": "IP68 Underwater Lighting",
+    "question": "Can your underwater LED spotlights and ring lights produce full RGBW color mixing?",
+    "answer": "Yes. We manufacture both standalone monochromatic lights (Warm White 3000K, Cool White 6500K) and dynamic 4-in-1 RGBW fixtures. The addition of dedicated 4000K true white diodes to the RGB array ensures natural pastel shades, pure whites, and vivid color transitions without color fringing."
+  },
+  {
+    "id": 12,
+    "category": "IP68 Underwater Lighting",
+    "question": "What is the operational lifespan and warranty of Fludio underwater lights?",
+    "answer": "Our IP68 LED fixtures utilize premium CREE and Bridgelux diodes rated for 50,000+ operational hours (over 10 years of nightly operation). Every unit comes with a standard 2-year industrial warranty with fast replacement support directly from our Pune factory."
+  },
+  {
+    "id": 13,
+    "category": "304L Materials & Metallurgy",
+    "question": "Why does Fludio standardize on SS304L stainless steel for all fountain hardware?",
+    "answer": "SS304L is an extra-low carbon variant of 304 austenitic stainless steel. The lower carbon content prevents chromium carbide precipitation during welding, virtually eliminating intergranular corrosion (weld decay) when exposed to chlorinated pool chemicals, sanitizers, and damp environments."
+  },
+  {
+    "id": 14,
+    "category": "304L Materials & Metallurgy",
+    "question": "What stainless steel grade do you recommend for coastal areas like Mumbai or Goa?",
+    "answer": "For coastal installations located within 5 km of the sea (e.g., Marine Drive Mumbai, Juhu, or Goa resorts) where airborne chloride salinity is elevated, Fludio manufactures nozzles, manifolds, and lighting enclosures from marine-grade SS316 or SS316L, which contains 2–3% molybdenum for superior resistance to pitting and crevice corrosion."
+  },
+  {
+    "id": 15,
+    "category": "304L Materials & Metallurgy",
+    "question": "Can Fludio fountains use recycled Sewage Treatment Plant (STP) water?",
+    "answer": "Yes. Many modern commercial developments and IT parks in Pune and Mumbai use treated STP water for landscape features. Fludio engineers specialized self-flushing dual-stage disc filtration systems, oversized impellers, and corrosion-resistant seals to ensure reliable fountain performance with treated effluent."
+  },
+  {
+    "id": 16,
+    "category": "Dry Deck & Public Plazas",
+    "question": "How do interactive dry deck fountains work without an open pool of water?",
+    "answer": "Dry deck fountains feature a flush architectural walking surface made of heavy-duty 304L stainless steel grates or stone tiles. All nozzles, 24V solenoids, and flush IP68 lights are recessed in a subterranean drainage channel beneath the deck. Water shoots up through the grates and instantly drains back into the underground reservoir, leaving no standing water hazard."
+  },
+  {
+    "id": 17,
+    "category": "Dry Deck & Public Plazas",
+    "question": "What safety features protect children in interactive splash pads and dry decks?",
+    "answer": "Safety is our foremost design priority: (1) Non-slip textured 304L cover plates preventing trips, (2) Smooth-radius spray orifices with no sharp edges, (3) Safe 24V DC electrical power, (4) In-line UV sterilization and continuous chlorination to maintain drinking-water grade sanitation, and (5) Soft water plume pressure regulators."
+  },
+  {
+    "id": 18,
+    "category": "Dry Deck & Public Plazas",
+    "question": "What weight load can Fludio dry deck fountain grates withstand?",
+    "answer": "Our standard pedestrian dry deck grates are rated for Class B (12.5 kN / 1.25 tons), easily accommodating heavy crowds, strollers, and wheelchairs. For plaza driveways and civic parade routes, we engineer Class C (250 kN / 25 tons) reinforced frames capable of supporting emergency vehicles and municipal sweepers."
+  },
+  {
+    "id": 19,
+    "category": "Floating Lake Aerators",
+    "question": "How do floating lake aerators prevent foul odors and algae in ponds and lakes?",
+    "answer": "Floating aerators pull oxygen-depleted water from the lake bottom and spray it high into the air as a fine droplet plume. This transfers large volumes of atmospheric dissolved oxygen (DO) into the water and circulates the water body, which stimulates beneficial aerobic bacteria to digest organic sludge, eliminating foul sulfur odors and suffocating algae blooms."
+  },
+  {
+    "id": 20,
+    "category": "Floating Lake Aerators",
+    "question": "What power capacities (HP) and spray patterns are available for lake aerators?",
+    "answer": "Fludio manufactures floating aerators from 1 HP up to 10 HP with high-density UV-resistant HDPE floats. Available spray patterns include Crown & Geyser, High-Volume Frothy Cascade, Trumpet Arch, and Wide Tiered Plume, with spray diameters spanning 15 feet to over 60 feet."
+  },
+  {
+    "id": 21,
+    "category": "Floating Lake Aerators",
+    "question": "How are floating aerators anchored and powered in large natural water bodies?",
+    "answer": "Aerators are securely anchored using dual-point marine nylon mooring lines with stainless steel anchor weights or shoreline tether brackets. Power is supplied via heavy-duty, submersible waterproof cables (SOOW / H07RN-F) routed along the lake bed to an IP65 shore-mounted electrical control panel with thermal overload protection."
+  },
+  {
+    "id": 22,
+    "category": "Pricing, Tenders & AMC",
+    "question": "How are fountain project costs determined, and what is the typical budget?",
+    "answer": "Project pricing depends on four primary parameters: (1) Basin dimensions and water volume, (2) Number and complexity of nozzles (static vs robotic dancing), (3) DMX 512 control channel density and pump horsepower, and (4) IP68 lighting count. We offer modular engineering packages starting from compact ₹1.5 Lakh architectural waterfalls up to multi-crore civic municipal musical landmarks."
+  },
+  {
+    "id": 23,
+    "category": "Pricing, Tenders & AMC",
+    "question": "Does Fludio participate in government tenders and municipal fountain procurement?",
+    "answer": "Yes. Fludio is an approved vendor and contractor for municipal corporations, Smart City Special Purpose Vehicles (SPVs), PWD, and CPWD projects across Maharashtra and India. We provide certified technical compliance sheets, OEM authorizations, GST invoices, and comprehensive EMD/tender documentation."
+  },
+  {
+    "id": 24,
+    "category": "Pricing, Tenders & AMC",
+    "question": "Does Fludio offer Annual Maintenance Contracts (AMC) and spare parts support?",
+    "answer": "Yes. We provide comprehensive Annual Maintenance Contracts (AMC) covering quarterly hydraulic inspections, nozzle ultrasonic descaling, VFD tuning, pump impeller checks, and emergency breakdown attendance. Because we manufacture our components in Pune, replacement nozzles, solenoid coils, LED drivers, and seals are always in stock for same-day dispatch."
+  }
+]
